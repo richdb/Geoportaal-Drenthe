@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<FLAMINGO xmlns:fmc="fmc">
+<!--legend-->
+<text>
+<string id="text"><nl><![CDATA[<b>Kwetsbaarheid voor nitraatuitspoeling</b>]]></nl></string>
+</text>
+<symbol label="uitspoeling: gering" url="../../assets/symbol.swf" fill="#B0E000" />
+<symbol label="uitspoeling: variabel" url="../../assets/symbol.swf" fill="#FFAA00" />
+<symbol label="uitspoeling: groot" url="../../assets/symbol.swf" fill="#FF0000" />
+</FLAMINGO>

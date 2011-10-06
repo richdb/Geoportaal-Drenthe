@@ -1,0 +1,321 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bumpbox 2.0 - Gallery | Grouping | Lightbox - Demo Page</title>
+<meta name="description" content="The all new bumpbox 2.0 with tons of options to influence behaviour and look. The perfect lightbox alternative." />
+<meta name="keywords" content="bumpbox,demo,lightbox" />
+<link href="css/default.css" rel="stylesheet" type="text/css" />
+<link rel="canonical" href="http://www.artviper.net/bumpbox-demo/" />
+</head>
+<body>
+<div id="mcenter"> 
+  <!-- fix div -->
+  <div class="fix_div" align="left"> 
+    <!-- header div -->
+    <div class="header_div">
+      <div class="header_left_div">
+        <div class="logo_pad"><a href="http://www.artviper.net"><img src="images/index_03.jpg" width="154" height="54" alt="" /></a></div>
+      </div>
+      <div class="header_right_div">
+        <div class="tagline_pad fs22 ts1w ls-1">professional webdesign, AJAX and PHP solutions</div>
+      </div>
+    </div>
+    <!-- end header div --> 
+    <!-- second section div -->
+    <div class="clear_div second_div_bg">
+      <div class="left_div">
+        <div class="left_box_heading">Bumpbox 2.0</div>
+        <div class="font_text1">a lightbox clone with support for PDF, flv, swf, audio, images, inline HTML and remote html files. <strong class="dkblue">Now also <br />
+          plays Youtube<sup>&copy;</sup> &amp; Vimeo<sup>&copy;</sup> videos directly out of the <br />
+          box!</strong> </div>
+        <div class="heading1">Easy implementation</div>
+        <div class="font_text2">Yet, the integration and implementation on your own site is pretty simple. Just add the scripts short before your closing body tag, add classes to your links that should use bumpbox, define a rel tag with the size that the bumpbox should have and you're ready to roll.</div>
+        <div class="heading1">Automatic media detection</div>
+        <div class="font_text2">Bumpbox automatically detects what kind of filetype you wish to show in the box, so you do not need to specify the type, easing the process of integration.</div>
+        <div class="heading1">Grouping and galleries</div>
+        <div class="font_text2">Bumpbox 2.0 now supports grouping elements, enabling you to have multiple galleries on one page. Follow the steps below to get your own gallery in seconds. <a href="http://www.youtube.com/embed/XpF32DRBPh0" class="bump2" rel="600-350"></a></div>
+        <div class="heading1">Youtube and Vimeo</div>
+        <div class="font_text2">Simply use the embed URL of these video portals as target.</div>
+      </div>
+      <div class="right_div">
+        <div align="center"><img src="images/index2_14.png" alt="" height="247" width="453" /></div>
+        <div class="small_text1">This is a sample of a bumpbox modal window</div>
+        <div class="heading1">Highly customizable</div>
+        <div class="font_text2">Bumpbox offers a vast range of customization options. You can influence the appearance inside a gallery easily, from the opacity of the background to the effects used on how bumpbox shows up: </div>
+        <div>
+          <ul>
+            <li>Class name for groups and galleries</li>
+            <li>Fly-in and fly-out speed of the box</li>
+            <li>Bumpbox boxed color</li>
+            <li>Background color &amp; opacity</li>
+            <li>Border-radius, color, weight of bumpbox</li>
+            <li>Box-shadow intensity &amp; color</li>
+            <li>Predefined icon sets to choose from</li>
+            <li>Fx Transitions selectable ( Bump, linear, quad etc. )</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- end second section div --> 
+    <!-- third section div -->
+    <div class="clear_div header_div">
+      <div class="middle_box_heading">Installation</div>
+    </div>
+    <!-- end third section div --> 
+    <!-- forth section div -->
+    <div class="clear_div new_div_bg hauto"  >
+      <div class="left_div">
+        <div class="heading1"><span class="fat">1.</span> Copy the files</div>
+        <div class="font_text2">Copy the files you have found in the RAR file to the root of your website ( usually htdocs/ ).</div>
+        <div class="heading1"><span class="fat">2.</span> Edit your document</div>
+        <div class="font_text2">
+          <p>After copying the files, open the website you wish to edit and add the following lines right before the closing body tag ( &lt;/body&gt; ):<br />
+            <br />
+            <span class="smallblue">&lt;script type=&quot;text/javascript&quot; src=&quot;js/mootools.js&quot;&gt;&lt;/script&gt;</span><br />
+            <span class="smallblue">&lt;script type=&quot;text/javascript&quot; src=&quot;js/bumpbox.js&quot;&gt;&lt;/script&gt;</span> <br />
+            <br />
+            If you intent to view FLV and SWF files, add the following line: </p>
+          <span class="smallblue">&lt;script type=&quot;text/javascript&quot; src=&quot;js/jwplayer.min.js&quot;&gt;&lt;/script&gt;</span></div>
+        <div class="heading1"><span class="fat">3.</span> Choosing a class name</div>
+        <div class="font_text2">
+          <p>Now choose and apply a class name to all links that should trigger bumpbox. In the end, your links should look like this, here we use &quot;bump&quot; as the class name:</p>
+          <p class="smallblue">&lt;a href=&quot;http://www.artviper.de&quot; class=&quot;bump&quot;&gt;SEO&lt;/a&gt;</p>
+          <p class="info"><strong>Note:</strong> Grouping can be achieved by using the same class name for those elements that should be grouped.</p>
+        </div>
+        <div class="heading1"><span class="fat">4.</span> Define a size for bumpbox</div>
+        <div class="font_text2">
+          <p>Each link can have a different size, matching the object size you wish to show. For that, we take the already used link from #3 and add the rel tag, which is used to determine the bumpbox size:</p>
+          <p><span class="smallblue">&lt;a href=&quot;http://www.artviper.de&quot; class=&quot;bump&quot; rel=&quot;800-600&quot;&gt;SEO&lt;/a&gt;</span></p>
+          <p>As you can see, we added rel=&quot;800-600&quot;, so the resulting bumpbox will be 800 x 600 pixels wide.</p>
+          <p class="info"><strong>Note:</strong> If you add a title to your &lt;a&gt; tag, it will be displayed right below the main content bumpbox.</p>
+               <div class="heading1"><span class="fat">5. </span>Activating Bumpbox</div>
+        <div class="font_text2">
+          <p>To activate bumpbox, we need to add (at least) the following script call:</p>
+          <p class="smallblue">&lt;script type=&quot;text/javascript&quot;&gt;          doBump('.bump');
+            &lt;/script&gt; </p>
+          <p>This enables bumpbox, and you are now ready to use it for the first time. Yet, there are a lot more options you can define to adjust the appearance of bumpbox to your liking.</p>
+          Continued on the right side...</div>
+       
+        </div>
+      </div>
+      <div class="right_div">
+ <div class="heading1"><span class="fat">6. </span>Setting up options</div>
+        <div class="font_text2">
+        </div>
+        <p><strong>Options available</strong></p>
+          <table width="95%" border="0" cellspacing="3" cellpadding="3">
+            <tr class="even">
+              <td class="c0">name</td>
+              <td>Class name for bumpbox objects, note the dot in front of the class name itself</td>
+            </tr>
+            <tr class="odd">
+              <td class="c1">inSpeed</td>
+              <td>Effect speed to show bumpbox ( in ms )</td>
+            </tr>
+            <tr class="even">
+              <td class="c2">outSpeed</td>
+              <td>Effect speed to remove bumpbox ( in ms )</td>
+            </tr>
+            <tr class="odd">
+              <td class="c3">boxColor</td>
+              <td>Hex color of bumpbox itself, omit #</td>
+            </tr>
+            <tr class="even">
+              <td class="c4">backColor</td>
+              <td>Hex color of the background overlay, omit #</td>
+            </tr>
+            <tr class="odd">
+              <td class="c5">bgOpacity</td>
+              <td>Opacity of the background overlay, values 0 - 1</td>
+            </tr>
+            <tr class="even">
+              <td class="c6">bRadius</td>
+              <td>Border radius of the bumpbox client window in px</td>
+            </tr>
+            <tr class="odd">
+              <td class="c7">borderWeight</td>
+              <td>Border weight of the bumpbox client window </td>
+            </tr>
+            <tr class="even">
+              <td class="c8">borderColor</td>
+              <td>Hex color of the bumpbox client window, omit #</td>
+            </tr>
+            <tr class="odd">
+              <td class="c9">boxShadowSize</td>
+              <td>Shadow spread size in px</td>
+            </tr>
+            <tr class="even">
+              <td class="c10">boxShadowColor</td>
+              <td>Hex color of bumpbox shadow, omit #</td>
+            </tr>
+            <tr class="odd">
+              <td class="c11">iconSet</td>
+              <td>Choose from 4 predefined icon sets</td>
+            </tr>
+            <tr class="even">
+              <td class="dkblue">effectsIn</td>
+              <td>Transition used for appearing see <a href="http://mootools.net/docs/core/Fx/Fx.Transitions">Transitions</a></td>
+            </tr>
+            <tr class="odd">
+              <td class="c12">effectsOut</td>
+              <td>Transition used for disappearing - see <a href="http://mootools.net/docs/core/Fx/Fx.Transitions">Transitions</a></td>
+            </tr>
+            <tr class="even">
+              <td class="c0">bgImage</td>
+              <td>Background image to be used</td>
+            </tr>
+            <tr class="odd">
+              <td class="c1">bgPosition</td>
+              <td>Background position</td>
+            </tr>
+            <tr class="even">
+              <td class="c12">bgRepeat</td>
+              <td>Background repeat</td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+          <p>Using a fully customized bumpbox:</p>
+        <p class="smallblue"><span class="c5"><strong>doBump</strong></span><strong>( '<span class="c0">.bump</span>',<span class="c1">750</span>, <span class="c2">500</span>, '<span class="c3">111</span>', '<span class="c4">900</span>', '<span class="c5">0.8</span>', <span class="c6">5</span>,<span class="c7"> 1</span> ,'<span class="c8">333</span>', <span class="c9">15</span>,'<span class="c10">000</span>', <span class="c11">4</span>,<br />
+            &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;<span class="dkblue">Fx.Transitions.Bounce.EaseOut</span>, <br />
+            &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;<span class="c12">Fx.Transitions.Bounce.EaseOut</span>,<br />
+            &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;'<span class="c0">images/demo_bg_bumpbox.png</span>',<br />
+            &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;<span class="c1">'top left</span>',<br/>
+            &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;'repeat-x'
+);</strong></p>
+          <p class="info"><strong>Note: </strong>If you wish to leave some of the parameters out ( i.e. the value for the background opacity, then write <span class="dkblue">null</span> instead a value ).</p>
+           <p><strong>Adding a background image</strong></p>
+          <p>By adding a nice background image you can enhance the impression bumpbox makes greatly. Set the image, position and repeat rules easily.</p>
+            <p><strong>Closing a bumpbox</strong></p>
+          <p>You can close an open bumpbox by either clicking the close icon, clicking into the background or by pressing the ESC key.</p>
+            <p><strong>Editing icon sets</strong></p>
+          <p>Of course you can add own icons for the close, previous and next buttons. Simply create a new folder under the &quot;iconsets&quot; folder, number it, and use it in your doBump() call ( using the iconset number ). Name the files according to the other icon sets ( prev.png next.png and closed.png ).</p>
+      </div>
+        
+      </div>
+      <div class="clear_div"></div>
+    </div>
+    <!-- end forth section div --> 
+    <!--start black div-->
+    <div class="clear_div"></div>
+    <div class="clear_div header_div">
+      <div class="middle_box_heading">
+       Demos
+      </div>
+      <div style="padding:10px 20px"><strong>IE</strong>: Here you can see how flash elements get hidden, so they won't cover bumpbox</div>
+      <div id="myContent"></div>
+      <div class="left_div">
+        <div class="heading1"> Single bumpbox item </div>
+        <p>Only one element defined as bumpbox, no previous and next icons visible. Most options on default values.</p>
+        <p><a href="http://www.artviper.net/website-tools/abc.jpg" title="Single click image" class="bump" rel="357-500">Click single item &raquo;</a></p>
+        <div class="heading1"> Type test</div>
+        <p>Here we show all types, bumpbox can handle. </p>
+  <p><a href="http://www.artviper.net/bumpbox-demo/artvipermedia.flv" class="bx2" rel="800-452" title="Playing now...">FLV Video  &raquo;</a><br />
+          <a href="http://www.artviper.net/bumpbox-demo/index.mp3" class="bx2" rel="400-120">MP3 Audio &raquo;</a> <br />
+          <a href="http://www.artviper.net/pc.swf" class="bx2" rel="480-480">SWF Video &raquo;</a><br />
+          <a href="http://www.artviper.net/test.pdf" class="bx2" rel="800-350">PDF File &raquo;</a><br />
+          <a href="http://www.artviper.net/website-tools/abc.jpg" class="bx2" rel="357-500">Image File &raquo;</a><br />
+          <a href="http://www.artviper.net" class="bx2" rel="1040-600">HTML File &raquo;</a><br />
+          <a href="^inlineHTML" class="bx2" rel="450-250">Inline HTML &raquo;</a><br />
+          <a href="http://www.youtube.com/embed/XpF32DRBPh0" class="bx2" rel="640-390">Youtube Video &raquo;</a><br />
+          <a href="http://player.vimeo.com/video/12939579" class="bx2" rel="400-300">Vimeo Video &raquo;</a>
+  </p>
+      </div>
+      <div class="right_div">
+        <div class="heading1"> Grouping bumpbox items</div>
+        <p>Multiple items added into one group, showing previous | next controls where applicable. Customized colors and effects.</p>
+        <p><a href="http://www.artviper.net/bumpbox-demo/artvipermedia.flv" class="bx" rel="800-452">Group item 1 &raquo;</a><br /><a href="http://www.artviper.net/index.mp3" class="bx" rel="400-93">Group item 2 &raquo;</a> <br /><a href="http://www.artviper.net/pc.swf" class="bx" rel="480-480">Group item 3 &raquo;</a></p>
+        <div class="heading1"> Mixed groups</div>
+        <p>Multiple groups with different option settings, different icon sets and a background image set.</p>
+        <p><a href="http://www.artviper.net/bumpbox-demo/artvipermedia.flv" class="bx3" rel="800-452">Group 1 - FLV &raquo;</a><br />
+          <a href="http://www.artviper.net/index.mp3" class="bx3" rel="400-93">Group 1  - MP3 &raquo;</a> <br />
+        <a href="http://www.artviper.net/pc.swf" class="bx3" rel="480-480">Group 1 - SWF &raquo;</a></p>
+        <p><a href="http://www.artviper.net/bumpbox-demo/artvipermedia.flv" class="bx4" rel="800-452">Group 2 - FLV &raquo;</a><br />
+          <a href="http://www.artviper.net/index.mp3" class="bx4" rel="400-93">Group 2  - MP3 &raquo;</a> <br />
+        <a href="http://www.artviper.net/pc.swf" class="bx4" rel="480-480">Group 2 - SWF &raquo;</a></p>
+        
+      </div>
+       <div class="leftdiv"></div>
+
+     
+    </div>
+    <div class="div5Black clear_div">
+      <div class="div_margin">
+        <p><strong style="font-family:Arial, Helvetica, sans-serif">Tested Browsers</strong>:<span style="padding-right:40px"></span> Firefox 3.6+, IE7, IE8, IE9, Opera 10+, Google Chrome 8+ - <br />
+        <span class="c4">Please note: Due to IE CSS3 issues, no rounded corners or box shadows apply.</span></p>
+</div>
+    </div>
+    <!--end black div--> 
+    
+    <!-- bottom div -->
+    <div class="bottom_bg clear_div">
+      <div class="div_margin">
+        <h2 class="blackHeding">&nbsp;</h2>
+        <div class="redHead">Need help? </div>
+        <div class="left_content">
+          <h2 class="blackHeding">Drop us a line at info@artviper.net<br />
+            or visit our <a href="http://www.artviper.net/wp">blog &raquo;</a></h2>
+        </div>
+        <div class="right_content">
+          <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.artviper.net%2Fwebsite-tools%2Fbumpbox-lightbox.php&amp;layout=standard&amp;show_faces=true&amp;width=250&amp;action=like&amp;font=segoe+ui&amp;colorscheme=light&amp;height=40" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:250px; height:40px;" allowTransparency="true"></iframe>
+          <div><g:plusone href="http://www.artviper.net/bumpbox-demo/"></g:plusone></div>
+          <div><a href="http://www.artviper.net/website-tools/website-tools-download.php"><img src="images/index2_36.png" /></a>
+          </div>
+        </div>
+        <div class="clear_div"></div>
+        <div class="bottomContent">released under GPL 3.0 license. <br />
+          all rights reserved ©2010 artViper designstudio<br />
+          <a href="http://www.artviper.net"><span>professional webdesign</span></a> and <a href="http://www.artviper.de">SEO München</a></div>
+      </div>
+      <div class="clear_div"></div>
+    </div>
+    <!-- end bottom div --> 
+  </div>
+  <!-- end fix div --> 
+</div>
+<div id="inlineHTML">
+  <div>
+    <p>This box is a hidden DIV on the page itself. Use it to show off content inside bumpbox. Use it i.e. for a login box.</p>
+  </div>
+  <div>
+    <input type="text" name="text" />
+  </div>
+  <div>
+    <textarea rows="" cols=""></textarea>
+  </div>
+</div>
+<script type="text/javascript" src="js/mootools.js"></script> 
+<script type="text/javascript" src="js/bumpbox-2.1-min.js" ></script> 
+<script type="text/javascript" src="mediaplayer/jwplayer.js"></script> 
+<script type="text/javascript" src="mediaplayer/swfobject.js"></script>
+ <script type="text/javascript">
+   var flashvars = {};
+var params = {wmode:'window' ,'z-index':0};
+var attributes = {};
+
+swfobject.embedSWF("test.swf", "myContent", "600", "60", "9.0.0", "expressInstall.swf", flashvars,params,attributes);
+
+
+
+    </script>
+<script type="text/javascript">
+window.addEvent('domready',function(){
+//names,inSpeed,outSpeed,boxColor,backColor,bgOpacity,bRadius,borderWeight,borderColor,boxShadowSize,boxShadowColor,iconSet,effectsIn,effectsOut
+doBump('.gallery',400,450,'000','35435a',0.5,7,2,'444',15,'000',4);
+doBump('.bump',500,250,'000','323232',0.7,7,2,'111',12,'111',3);
+doBump('.bx',750, 500, '000', '5f7d90', 0.7, 7, 2 ,'777', 15,'000', 1, Fx.Transitions.Bounce.easeOut, Fx.Transitions.Bounce.easeOut);
+doBump('.bx2',850, 500, '000', '6b7477', 0.7, 7, 2 ,'333', 15,'000', 2, Fx.Transitions.Back.easeOut, Fx.Transitions.linear);
+doBump('.bx3',500,250,'474747','575338',0.8,14,1,'232323',10,'111',3);
+doBump(names='.bx4',500,250,'181818','444',0.4,15,1,'111',12,'000',4,Fx.Transitions.Back.easeOut, Fx.Transitions.linear,'images/demo_bg_bumpbox.png','top left','repeat-x');
+})
+</script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">
+_uacct = "UA-840263-2";
+urchinTracker();
+</script>
+
+
+</body>
+</html>

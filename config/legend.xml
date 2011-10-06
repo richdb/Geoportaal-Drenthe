@@ -1,0 +1,1213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FLAMINGO xmlns:fmc="fmc">
+<fmc:Legend id="legend" symbolpath="assets" shadowsymbols="false" right="right" top="10" bottom="200" right="180" backgroundcolor="#FFFFFF" listento="map">
+<group label="Datasets" open="true" hideallbuton="true">  
+<item label="" canhide="true" listento="geoportaal.AB_EDRBESTUURLIJKEGRENS_750_V">
+<symbol label="EDR, bestuurlijke indeling" />
+</item>
+<item label="" canhide="true" listento="geoportaal.AB_EDRHOOFDINFRA_750_L">
+<symbol label="EDR, hoofd-infrastructuur" />
+</item>
+<item label="" canhide="true" listento="geoportaal.AB_EDRHOOFDKERNEN_750_V">
+<symbol label="EDR, hoofdkern" />
+</item>
+<item label="" canhide="true" listento="geoportaal.AB_EDRKREISGRENS_750_V">
+<symbol label="EDR, Kreisgrens" />
+</item>
+<item label="" canhide="true" listento="geoportaal.AB_GRENS_WATERSCHAPPEN_V">
+<symbol label="Waterschapsgrens" />
+</item>
+<item label="" canhide="true" listento="geoportaal.AB_PROVINCIEDRENTHE_V">
+<symbol label="Provinciegrens (10.000)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.ACN_PC_PC4NEDMETINFO_L">
+<symbol label="Postcode (lijn?, 4-cijferig)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.ACN_PC_POSTCODE4CIJFER_V">
+<symbol label="Postcode (vlak, 4-cijferig)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.AGR_GLASTUINBOUWGEBIED_V">
+<symbol label="Glastuinbouwgebied" />
+</item>
+<item label="" canhide="true" listento="geoportaal.EC_ECONOMISCHEKERNZONE_V">
+<symbol label="Economische kernzone" />
+</item>
+<item label="" canhide="true" listento="geoportaal.FAUNA_VOG_TELGEBIEDEN_100_V">
+<symbol label="Milieukartering, telgebied" />
+</item>
+<item label="" canhide="true" listento="geoportaal.GU_BUIS_HTL_IS_L">
+<symbol label="Hoofdbuisleiding" />
+</item>
+<item label="" canhide="true" listento="geoportaal.HIST_ATLASBLADINDELING_25_V">
+<symbol label="Bladindeling Topografische Atlas, TDN" />
+</item>
+<item label="" canhide="true" listento="geoportaal.HIST_GEWASVERDAMP_1989_G">
+<symbol label="Verdamping 1989" />
+</item>
+<item label="" canhide="true" listento="geoportaal.HIST_KNMI_NEERSLAG_1989_V">
+<symbol label="Neerslaggegevens KNMI" />
+</item>
+<item label="" canhide="true" listento="geoportaal.HIST_LGN2_V">
+<symbol label="Grondgebruik, LGN2, 1992 (vlak),(hist.)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.HIST_PLOTBLADINDELING_25_V">
+<symbol label="Bladindeling A0-kaarten 1:25.000" />
+</item>
+<item label="" canhide="true" listento="geoportaal.HONDERDMETERHOK_L">
+<symbol label="Kilometerhok (0.1 x 0.1 km)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.KILOMETERHOK_V">
+<symbol label="Kilometerhok (1 x 1 km)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.LNDSCHP_BEEKDAL_100_V">
+<symbol label="Beekdal" />
+</item>
+<item label="" canhide="true" listento="geoportaal.LNDSCHP_BEEKLOOP_100_L">
+<symbol label="Beekloop, belangrijke" />
+</item>
+<item label="" canhide="true" listento="geoportaal.LNDSCHP_BOSNATUURRUIM_V">
+<symbol label="Bos- en natuurgebied (ruim)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.LNDSCHP_EIGMAATSCHVWELDAAD_V">
+<symbol label="Eigendom, Maatschappij van Weldadigheid" />
+</item>
+<item label="" canhide="true" listento="geoportaal.LNDSCHP_GRENSNATLANDSCHP_DA_V">
+<symbol label="Nationaal landschap Drentsche Aa" />
+</item>
+<item label="" canhide="true" listento="geoportaal.LNDSCHP_GRENSNATPARKENENDA_V">
+<symbol label="Nationaal Park + Beek- & Esdorp land. DA" />
+</item>
+<item label="" canhide="true" listento="geoportaal.LNDSCHP_HIST_BEEKLOOP_100_L">
+<symbol label="Beekloop, belangrijke (historie)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.LNDSCHP_HIST_BELVEDERE_100_V">
+<symbol label="Belvedere gebied" />
+</item>
+<item label="" canhide="true" listento="geoportaal.LNDSCHP_HIST_GCDWINGVLD_100_V">
+<symbol label="Grens geb.coord. Dwingelderveld" />
+</item>
+<item label="" canhide="true" listento="geoportaal.LNDSCHP_HIST_GCHUNZE_V">
+<symbol label="Grens geb.coord. Hunze" />
+</item>
+<item label="" canhide="true" listento="geoportaal.LNDSCHP_HIST_GCMRSWEST_100_V">
+<symbol label="Grens geb.coord. Mars- en Westerstroom" />
+</item>
+<item label="" canhide="true" listento="geoportaal.LNDSCHP_HIST_GCREEST_V">
+<symbol label="Grens geb.coord. Reest" />
+</item>
+<item label="" canhide="true" listento="geoportaal.LNDSCHP_HIST_GVVLEDWAP_V">
+<symbol label="Grens geb.visie Vledder en Wapserv. Aa" />
+</item>
+<item label="" canhide="true" listento="geoportaal.LNDSCHP_HPOP_LNDSCHPONTWGEB_V">
+<symbol label="landschap. versterking, ontw. van ..." />
+</item>
+<item label="" canhide="true" listento="geoportaal.LNDSCHP_LANDSCHAPPENKRT_100_V">
+<symbol label="Landschappenkaart" />
+</item>
+<item label="" canhide="true" listento="geoportaal.LNDSCHP_LANDSCHAPSTYPE_100_V">
+<symbol label="Landschapstype" />
+</item>
+<item label="" canhide="true" listento="geoportaal.LNDSCHP_POP_LNDSCHPONTWGEB_V">
+<symbol label="Landschap, prioritair gebied voor ontw." />
+</item>
+<item label="" canhide="true" listento="geoportaal.LNDSCHP_ROLPRIORITAIR_250_V">
+<symbol label="Regeling onderhoud landschapselement" />
+</item>
+<item label="" canhide="true" listento="geoportaal.LUFOBLADINDELING2003_V">
+<symbol label="Luchtfoto 2003, bladindeling" />
+</item>
+<item label="" canhide="true" listento="geoportaal.LUFOBLADINDELING2004_V">
+<symbol label="Luchtfoto 2004, bladindeling" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_ARCH_250_P">
+<symbol label="Archeologisch object (belangrijk)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_BODGRAD_250_V">
+<symbol label="Gradient, bodemgradient" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_BRUTOEHS_POP_V">
+<symbol label="EHS-bruto en milieubeschermingsgeb. POP2" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_BWWH_100_V">
+<symbol label="Bodemwisselaar, Potentiekaart, H" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_BWWV_100_V">
+<symbol label="Bodemwisselaar, Potentiekaart, V" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_ESSEN_V">
+<symbol label="Essen van Drenthe" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_GBGDA_L">
+<symbol label="POV, grondwaterbescherming Drentsch Aa" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_GEBGRSOD_V">
+<symbol label="Oude Diep, gebiedsgrens" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_GLSLOC_P">
+<symbol label="Bodeminformatie (punt)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_GLSLOC_V">
+<symbol label="Bodeminformatie (vlak)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_GRADGEB_250_V">
+<symbol label="Gradient, belangrijk gradientgebied" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_GWKMTN_P">
+<symbol label="Grondwaterkwaliteitsmeetnet" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_HBB_L">
+<symbol label="Bodembestand, historisch (lijn)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_HBB_P">
+<symbol label="Bodembestand, historisch (punt)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_HBB_V">
+<symbol label="Bodembestand, historisch (vlak)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_IKANS_DA_100_V">
+<symbol label="Integrale Kansenkaart Drentsche Aa" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_INTERFGB_100_V">
+<symbol label="Interferentiegebied, Mogelijk" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_INTERFHZ_100_V">
+<symbol label="Interferentiegebied, Warmtewisselaar, H" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_KWBNO3_250_V">
+<symbol label="Nitraatuitspoeling, kwetsbaarheid" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_MBGD_V">
+<symbol label="Milieubeschermingsgebied, aangeduid" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_OBR100_100_V">
+<symbol label="Recirculatie, Bezwaar bij 100 mwh" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_OBR1000_100_V">
+<symbol label="Recirculatie, Bezwaar bij 1000 mwh" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_OBR10000_100_V">
+<symbol label="Recirculatie, Bezwaar bij 10000 mwh" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_OBWK100_100_V">
+<symbol label="Warmte/koude, Bezwaar bij 100 mwh" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_OBWK1000_100_V">
+<symbol label="Warmte/koude, Bezwaar bij 1000 mwh" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_OBWK10000_100_V">
+<symbol label="Warmte/koude, Bezwaar bij 10000 mwh" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_PO4VERM_250_V">
+<symbol label="Fosfaatbindend vermogen" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_PO4VERMF_250_V">
+<symbol label="Fosfaatbindend vermogen (ijzerrijk)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_POV06_V">
+<symbol label="POV, Milieuverordening" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_PVANA_V">
+<symbol label="Nitraat & ammoniak, inzet voor maatregel" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_SGB_V">
+<symbol label="Stimuleringsgebied SGB" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_UNR1000_100_V">
+<symbol label="Recirculatie, 1000 mwh, potentiekaart" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_UNR10000_100_V">
+<symbol label="Recirculatie, 10000 mwh, potentiekaart" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_UNWK100_100_V">
+<symbol label="Warmte/koude, Recirculatie, 100 mwh" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_UNWK1000_100_V">
+<symbol label="Warmte/koude, Recirculatie, 1000 mwh" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_UNWK10000_100_V">
+<symbol label="Warmte/koude, Recirculatie, 10000 mwh" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_VERBODZ_V">
+<symbol label="POV, verbodszone diepe boring" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_VEZEVZ_L">
+<symbol label="Ecologische verbindingszone, verzuringsgevoelig" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_VEZGEVGEB_V">
+<symbol label="Verzuringsgevoelig gebied" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_VEZVEG_V">
+<symbol label="Verzuringsgevoelige vegetatie" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_VORM_V">
+<symbol label="Vormenkaart" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_WAV_V">
+<symbol label="Ammoniak en veehouderij (Wet)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_BODEM_VEENDIKTE_100_V">
+<symbol label="Veendikte" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_GELUID_VLIEGBKL_100_L">
+<symbol label="Vliegveld, geluidscontour Bkl" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_GELUID_VLIEGKE_100_L">
+<symbol label="Vliegveld, geluidscontour Ke" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_GEMETENGELUIDCONTOUR_V">
+<symbol label="Geluidcontour, gemeten" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_GEZONEERDEBEDRTERR_V">
+<symbol label="Geluid, gezonneerde terreinen" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_HIST_BOBES_POV06_V">
+<symbol label="POV, Milieuverordening, mrt 06 (his)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_HIST_BOBES_RISAC_P">
+<symbol label="Bodembescherming, inventarisatie (1)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_HIST_BOBES_RISAC_V">
+<symbol label="Bodembescherming, inventarisatie (2)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_HIST_BOBES_RISGEB_100_V">
+<symbol label="Bodembescherming, risicovolle activiteit" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_HIST_BOSAN_WEITEVEEN_V">
+<symbol label="Bodemsanering, onderzoeksgebied" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_HIST_DA_CHINVENTARIS_V">
+<symbol label="Romda, cultuurhistorische verkenning" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_HIST_DA_LGN_V">
+<symbol label="Romda, grondgebruik" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_HIST_DA_RIOPRC_P">
+<symbol label="Romda, gerioleerde percelen" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_HIST_DA_SANOVERS_25_P">
+<symbol label="Romda, gesaneerde overstorten" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_HIST_KRS1991AMI_250_V">
+<symbol label="Korstmos, 1991 ammoniakminnend" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_HIST_KRS1991AMIJ_250_V">
+<symbol label="Korstmos, 1991 ammoniakmijdend" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_HIST_KRS9198AMI_250_V">
+<symbol label="Korstmos, 91-98 ammoniakminnend" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_HIST_KRS9198AMIJ_250_V">
+<symbol label="Korstmos, 91-98 ammoniakmijdend" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_HIST_MBG00_V">
+<symbol label="Milieubeschermingsgeb., aangew. 00 (his)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_HIST_MBGW97_V">
+<symbol label="Milieubeschermingsgeb., aangew. 97 (his)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_HIST_POV04_V">
+<symbol label="POV, Milieuverordening, jul 04 (his)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_HIST_ROMDA_SPUITVRIJ_L">
+<symbol label="Romda, spuitvrije zone" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_HIST_ROMDAGWKMTN_P">
+<symbol label="Romda, grondwaterkwaliteitsmeetnet" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_HIST_SGM_V">
+<symbol label="Stimuleringsgebied BGM (hist.)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_LUCHT_KRS1998AMI_250_V">
+<symbol label="Korstmos, 1998 ammoniakminnend" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_LUCHT_KRS1998AMIJ_250_V">
+<symbol label="Korstmos, 1998 ammoniakmijdend" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_LUCHT_KRS2004AMI_250_V">
+<symbol label="Korstmos, 2004 ammoniakminnend" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_LUCHT_KRS2004AMIJ_250_V">
+<symbol label="Korstmos, 2004 ammoniakmijdend" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_LUCHT_KRS9804AMI_250_V">
+<symbol label="Korstmos, 98-04 ammoniakminnend" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_LUCHT_KRS9804AMIJ_250_V">
+<symbol label="Korstmos, 98-04 ammoniakmijdend" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_LUCHT_KRSNEDAMI_250_V">
+<symbol label="Korstmos, Ned. ammoniakminnend" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_POP_WIN_ZAND_P">
+<symbol label="Delfstofwinning, zand etc (pop)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_VASTGESTGELUIDCONTOUR_V">
+<symbol label="Geluidcontour, vastgestelde zone 50 dB(A" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_VLIEGVEILIGHCTR_100_V">
+<symbol label="Vliegveld, veiligheidscontour, 1997" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_VLIEGVELDSTARTLANDING_L">
+<symbol label="Vliegveld, start- en landingsbaan" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_WIN_AARDGASOLIE_100_V">
+<symbol label="Delfstofwinning, aardgas en - olie" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_WIN_BODEMDDWIJWNV_100_L">
+<symbol label="NAM, bodemdaling De Wijk - Wanneperveen" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_WIN_ONTGRONDINGEN_V">
+<symbol label="Ontgronding" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_WIN_POP_ZANDZOEKGEB_V">
+<symbol label="Zandwinning, zoekgebied" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_WIN_ZAND_P">
+<symbol label="Delfstofwinning, zand" />
+</item>
+<item label="" canhide="true" listento="geoportaal.MILIEU_ZONERINGAANVLIEG_L">
+<symbol label="Vliegveld, zonering aanvliegroute" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_AARDKUNDIGWAARGEB_250_V">
+<symbol label="Aardkundig waardevol gebied" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_AARDKUNDIGWAARPNT_250_P">
+<symbol label="Aardkundig waardevol element" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_BEEKDROOGDAL_250_V">
+<symbol label="Beekdal en droogdal, waardevol" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_BEHEERSOVEREENKOMSTGR_V">
+<symbol label="Grens overeenkomstgebied" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_BOSGEMEENSCHAP_V">
+<symbol label="Bosgemeenschap, waardevol" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_BOSRESERVAAT_V">
+<symbol label="Bosreservaat" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_BOSUITBREIDING_V">
+<symbol label="Bosuitbreiding" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_BOSWET_V">
+<symbol label="Boswet" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_EERSTGEGADIGDENKRT_100_V">
+<symbol label="Eigendom, Eerstgegadigdenkaart" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_EGHABITATRICHTLIJN2003_V">
+<symbol label="EG-Habitatrichtlijngebied 2003" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_EGVOGELRICHTLIJN792000_V">
+<symbol label="EG-Vogelrichtlijngebied 1979-2000" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_EVZ_L">
+<symbol label="Ecologische verbindingszone" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_FAUNAKNELPUNTEN_P">
+<symbol label="Knelpunten faunapassage bij infra" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_FYSGEOGRAFISCHEKRT_100_V">
+<symbol label="Fysische geografie" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_GANZENFOERAGEERGEB_V">
+<symbol label="Natuurgebiedsplan, gebied voor ganzen" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_GEBIEDSPLAN2007_V">
+<symbol label="Natuurgebiedsplan, Integraal" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_GEBVISIEGRENSHUNZE_V">
+<symbol label="Grens geb.visie Hunze" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_GEBVISIEGRENSMIDDRENTHE_V">
+<symbol label="Grens geb.visie Middenveld" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_GEBVISIEGRENSNOORDVELD_V">
+<symbol label="Grens geb.visie Noordenveld" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_GEBVISIEGRENSOUDEVAART_V">
+<symbol label="Grens geb.visie Oude Vaart" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_GEBVISIEGRENSREEST_V">
+<symbol label="Grens geb.visie Reest" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_GEBVISIEGRENSSMILDE_V">
+<symbol label="Grens geb.visie Smilde" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_GEBVISIESBEGRENZING_V">
+<symbol label="Grens alle gebiedsvisies" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_GRADIENTRIJKGEB_100_L">
+<symbol label="Gradientrijke overgang" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_GRADIENTRIJKNAT_100_P">
+<symbol label="Gradientrijke situatie in natuurgebied" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HIST_BOSHEIDE1850_250_V">
+<symbol label="Bos en hei 1850 (hist.)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HIST_BOSHEIDE1900_250_V">
+<symbol label="Bos en hei 1900 (hist.)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HIST_BOSHEIDE1950_250_V">
+<symbol label="Bos en hei 1950 (hist.)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HIST_BOSNATPOP1_V">
+<symbol label="Bos- en natuurgebied (POP1)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HIST_ECOVERBHOUTWAL_100_L">
+<symbol label="Ecologische verbinding via bosje en/of houtwal (sp)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HIST_HABITATRICHTLIJN_V">
+<symbol label="EG-Habitatrichtlijngebied 2000 (his)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HIST_NATDOEL_1996_V">
+<symbol label="Natuurdoeltype Drenthe (his.)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HIST_NATDOEL_2002_V">
+<symbol label="Natuurdoeltype Drenthe 2002 (his)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HIST_NATELEMENTAGGEB_100_V">
+<symbol label="Natuurlijke elementen in agrarisch gebied" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HIST_NATONTW_100_V">
+<symbol label="Natuurontwikkeling (hist.)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HIST_NATUURFUNKTIE_100_V">
+<symbol label="Natuurfunctie (hist.)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HIST_NATUURGEBPLAN02_V">
+<symbol label="Natuurgebiedsplan, Integraal (hist 2002)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HIST_NATUURGEBPLAN02TOEV_V">
+<symbol label="Natuurgebiedsplan, Integraal (toev),(hist 2002)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HIST_NATUURGEBPLAN03_V">
+<symbol label="Natuurgebiedsplan, Integraal (hist 2003)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HIST_NATUURGEBPLAN05_V">
+<symbol label="Natuurgebiedsplan, Integraal (hist 2005)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HIST_NATUURGEBPLAN06_V">
+<symbol label="Natuurgebiedsplan, Integraal (hist 2006)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HIST_NATWSTRPKRT83_250_V">
+<symbol label="Natuurwaarde, Streekplan, kaart B.8.3." />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HIST_OLIGOTROOFGEB_100_V">
+<symbol label="Bos- en natuurgebied, voedselarm" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HIST_RELATIENOTA1998_V">
+<symbol label="Relatienotagebied, okt. 1998 (hist)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HIST_RELATIENOTA1999_V">
+<symbol label="Relatienotagebied, sept. 1999 (hist)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HIST_RELATIENOTA997_V">
+<symbol label="Relatienotagebied, juli 1997 (hist)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HIST_VENVEENTJE_100_P">
+<symbol label="Ven en veentje" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HIST_VOGELRICHTLIJN1998_V">
+<symbol label="EG-Vogelrichtlijngebied 1998 (hist.)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HIST_VOGELRICHTLIJN2000_V">
+<symbol label="EG-Vogelrichtlijngebied 2000 (hist.)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HIST_WBE1996_V">
+<symbol label="Wildbeheereenheid 1996 (his)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HIST_WBE1998_V">
+<symbol label="Wildbeheereenheid 1998 (his)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HPOP_GEBIEDVOORWEIDEVGL_V">
+<symbol label="Weidevogels: gebied voor .... (POPI)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HPOP_GWONTW_250_V">
+<symbol label="Natuurwaarde, gewenste ontw., NBL-visie" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HPOP_MEERMOERAS_100_V">
+<symbol label="Meer en moeras" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HPOP_NATBOSONTW_V">
+<symbol label="Bos accent natuur, ontw. van ..." />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_HPOP_ZANDPLAS_P">
+<symbol label="Zandplas, waardevol voor vogels, planten" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_KNELPUNTDAS_100_L">
+<symbol label="Knelpunten voor de das" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_LANDGOEDEREN_V">
+<symbol label="Landgoed, particulier natuurbeheer" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_LOOFBOSRIJKNAT_100_P">
+<symbol label="Loofbos, voedselrijk of vochtig" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_MACROGRADIENT_100_V">
+<symbol label="Gradient (macro) langs Drents Plateau" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_NATDMIDDENDRENTHE_V">
+<symbol label="Begrenzingenplan Midden Drenthe" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_NATDOEL_2007_V">
+<symbol label="Natuurdoeltype Drenthe, actualisatie" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_NATDOEL_BEEK_2007_V">
+<symbol label="Natuurdoeltype 2007, beek" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_NATDOEL_VEN_2007_P">
+<symbol label="Natuurdoeltype 2007, ven" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_NATDOELMINLNV_V">
+<symbol label="Natuurdoeltype Drenthe, Min. LNV" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_NATGEBPLANPROBLEEMGEBIED_V">
+<symbol label="Natuurgebiedsplan, probleemgebied" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_NATUURGEBPLANUILENBROEK_V">
+<symbol label="Natuurgebiedsplan, Uilenbroek" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_NBWETGEBIED_V">
+<symbol label="EG-Natuurbeschermingswetgebied" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_PMJPGEBIEDEN_V">
+<symbol label="Grens geb.coord PMJP-gebied" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_POP_BOSHOUTWAL_100_V">
+<symbol label="Bosje en houtwal: gebied met" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_POP_BOSNATINNATDOEL_V">
+<symbol label="Bos- en natuurgebied (POP2)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_POP_BOTWAARSLOOT_250_V">
+<symbol label="Botanische waarden in sloten" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_POP_ECOVERBHOUTWAL_100_L">
+<symbol label="Ecologische verbinding via bosje en/of houtwal (POP2)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_POP_ECOVERBPOP2_100_L">
+<symbol label="Ecologische verbindingszone (POP2)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_POP_GEBKENMERK_100_V">
+<symbol label="Gebiedskenmerk" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_POP_GZSGEBIEDEN_250_V">
+<symbol label="Ganzen, zwanen, steltlopers: gebied voor" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_POP_LOOFBOS_100_V">
+<symbol label="Loofbosjes, gebied met" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_POP_NATDOELPOP2_V">
+<symbol label="EHS-netto en Natuurdoelen, POP2" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_POP_NATUURWONTW_V">
+<symbol label="Natuurwaarde, ontwikkeling van" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_POP_ROBUUST_100_V">
+<symbol label="Ecologische verbinding, robuust" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_POP_ROBUUSTONDERB_100_V">
+<symbol label="Ecologische verbinding, robuust (onderb)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_POP_VRECGROENWOONVKGEB_P">
+<symbol label="Woonfunctie en verblijfsrecreatie voorkeur" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_POP_WEIDEVOGELGEB_250_V">
+<symbol label="Weidevogels: gebied voor .... (POPII)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_POP_WIJKENGEBIED_100_V">
+<symbol label="Wijken: gebied met" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_RUIMEJASGRENS_V">
+<symbol label="Grens landschapsgebied, ruime jas" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_STUIFZANDRIVIERDUIN_250_V">
+<symbol label="Stuifzand en rivierduin, waardevol" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_STUWWALHOOGVEEN_250_V">
+<symbol label="Stuwwal en hoogveen, waardevol" />
+</item>
+<item label="" canhide="true" listento="geoportaal.NAT_WILDBEHEEREENH2006_V">
+<symbol label="Wildbeheereenheid" />
+</item>
+<item label="" canhide="true" listento="geoportaal.OOV_LEGER_LAAGVLIEGGEB_250_V">
+<symbol label="Defensie, laagvlieggebied" />
+</item>
+<item label="" canhide="true" listento="geoportaal.OOV_LEGER_LAAGVLIEGROUTE_250_V">
+<symbol label="Defensie, laagvliegroute" />
+</item>
+<item label="" canhide="true" listento="geoportaal.OOV_LEGER_MUNITIEZONE_100_V">
+<symbol label="Defensie, zonering munitiecomplex" />
+</item>
+<item label="" canhide="true" listento="geoportaal.OOV_LEGER_OEFENTERREIN_100_V">
+<symbol label="Defensie, militair oefenterrein" />
+</item>
+<item label="" canhide="true" listento="geoportaal.OOV_LEGER_OPSTAPPSCHIETT_P">
+<symbol label="Defensie, heli opstappunt, schietterrein" />
+</item>
+<item label="" canhide="true" listento="geoportaal.OOV_NAT_BRANDWEER_P">
+<symbol label="Brandweer, natuurgebied, punt" />
+</item>
+<item label="" canhide="true" listento="geoportaal.OOV_NAT_BRANDWEERPADEN_L">
+<symbol label="Brandweer, natuurgebied, pad" />
+</item>
+<item label="" canhide="true" listento="geoportaal.OOV_RISICOVOGELGRIEP_V">
+<symbol label="Risicogebied vogelgriep" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RECR_BRTN_250_L">
+<symbol label="Beleidsvisie recreatietoervaart BRTN" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RECR_DAG_BEWEGWIJZERING_DA_P">
+<symbol label="Bewegwijzering, recreatieve ...." />
+</item>
+<item label="" canhide="true" listento="geoportaal.RECR_DAG_GOLFTERREIN_V">
+<symbol label="Golfterrein" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RECR_DAG_MOTORCROSSPC_100_L">
+<symbol label="Motorcross (OTR parcoursen)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RECR_DAG_RECREATIE_P">
+<symbol label="Recreatieve voorziening ed." />
+</item>
+<item label="" canhide="true" listento="geoportaal.RECR_HIST_GEBOUW_P">
+<symbol label="Recreatie (verblijfs-), gebouw (his)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RECR_HIST_ONTWDAGRECR_100_V">
+<symbol label="Ontwikkelingsschets dagrecreatie" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RECR_HIST_ONTWVERBLRECR_100_V">
+<symbol label="Ontwikkelingsschets verblijfsrecreatie" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RECR_HIST_TERREIN_1995_V">
+<symbol label="Recreatie (verblijfs-), terrein (his)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RECR_VERBL_GEBOUW_P">
+<symbol label="Recreatie (verblijfs-), gebouw" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RECR_VERBL_GROTER3H_P">
+<symbol label="Recreatie (verblijfs-), groter dan 3 ha" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RECR_VERBL_TERREIN_2003_V">
+<symbol label="Recreatie (verblijfs-), terrein" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_ANTENNEMASTMOBTELEFONIE_P">
+<symbol label="Antennemast voor mobiele communicatie" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_BUITENPLAATS_100_P">
+<symbol label="Landgoed, buitenplaats" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HIST_GEBIEDSKENMERK_100_V">
+<symbol label="STRP, gebiedskenmerk" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HIST_IBISBEDRIJVEN1997_V">
+<symbol label="IBIS, Bedrijventerrein 1997" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HIST_IBISBEDRIJVEN1998_V">
+<symbol label="IBIS, Bedrijventerrein 1998" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HIST_IBISBEDRIJVEN2000_V">
+<symbol label="IBIS, Bedrijventerrein 2000" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HIST_IBISBEDRIJVEN2001_V">
+<symbol label="IBIS, Bedrijventerrein 2001" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HIST_IBISBEDRIJVEN2002_V">
+<symbol label="IBIS, Bedrijventerrein 2002" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HIST_IBISBEDRIJVEN2003_V">
+<symbol label="IBIS, Bedrijventerrein 2003" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HIST_IBISBEDRIJVEN2004_V">
+<symbol label="IBIS, Bedrijventerrein 2004" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HIST_KANTOORLOKATIE1997_V">
+<symbol label="IBIS, Kantoorlokatie 1997" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HIST_KANTOORLOKATIE1998_V">
+<symbol label="IBIS, Kantoorlokatie 1998" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HIST_KANTOORLOKATIE2004_V">
+<symbol label="IBIS, Kantoorlokatie 2000-2004" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HIST_KERN1900_V">
+<symbol label="Kern, topografisch, historie rond 1900" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HIST_KERNTOPO1996_V">
+<symbol label="Kern, topografisch, eind 1996 (his)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HIST_KERNTOPO1997_V">
+<symbol label="Kern, topografisch, eind 1997 (his)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HIST_KERNTOPO1999_V">
+<symbol label="Kern, topografisch, eind 1999 (his)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HIST_KERNTOPO2001_V">
+<symbol label="Kern, topografisch, medio 2001 (his)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HIST_STATISTISCHEKERN_V">
+<symbol label="Kern, statistisch (hist)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HIST_WIJKBUURT_V">
+<symbol label="Wijk- en buurtindeling (oud)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HIST_ZONERING_100_V">
+<symbol label="STRP, functiekaart, zonering" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HOOGSPANNINGSMAST_100_P">
+<symbol label="Hoogspanningsmast" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HPOP_BOSONTW_V">
+<symbol label="POP-1, Bos (ontwerp)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HPOP_BOSVASTGESTELD_V">
+<symbol label="POP-1, Bos (vastgesteld)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HPOP_BOSVOORONTW_V">
+<symbol label="POP-1, Bos (voorontwerp)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HPOP_CONTOURLVASTGEST_L">
+<symbol label="POP-1, Contourlijn (vastgesteld)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HPOP_CONTOURLVOORONTW_L">
+<symbol label="POP-1, Contourlijn (voorontwerp)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HPOP_GEBIEDSINDELING_V">
+<symbol label="Gebiedsindeling, POP-1" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HPOP_HYDROAANDGEB_V">
+<symbol label="Hydrologische aandachtsgebied, POP-1" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HPOP_ONTSTADSRANDZON_100_L">
+<symbol label="Stadsrandzone (POP1)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HPOP_ONTWECOLVERB_100_L">
+<symbol label="Ecologische verbindingszones, ontwikkeling van" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HPOP_PUNTENVAN KAART2_P">
+<symbol label="Specifieke voorzieningen (POP2)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HPOP_SPECIFVOORZIEN_P">
+<symbol label="Specifieke voorzieningen (POP1)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HPOP_STADENDORPBSGEZ_V">
+<symbol label="Beschermde stads- en dorpsgez. (vlak) historie" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HPOP_ZONERINGONTW_V">
+<symbol label="POP-1, Zonering (ontwerp)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HPOP_ZONERINGVASTGEST_V">
+<symbol label="POP-1, Zonering (vastgesteld)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_HPOP_ZONERINGVOORONTW_V">
+<symbol label="POP-1, Zonering (voorontwerp)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_IBISBEDRIJVEN_V">
+<symbol label="IBIS, Bedrijventerrein 2006" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_ISV_STEDELIJKEVERNIEUWING_P">
+<symbol label="ISV, Stedelijke vernieuwing" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_KANTOORLOKATIE_V">
+<symbol label="IBIS, Kantoorlokatie 2006" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_KERNFRIESLAND_V">
+<symbol label="Kern, Friesland" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_KERNGRONINGEN_V">
+<symbol label="Kern, Groningen" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_KERNOVERIJSSEL_V">
+<symbol label="Kern, Overijssel" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_KERNTOPO_V">
+<symbol label="Kern, topografisch, medio 2003" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_LANDGOED_100_V">
+<symbol label="Landgoed" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_LANDINRICHTINGSGEBIED_V">
+<symbol label="Landinrichtingsgebied" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_BOSONTWERP_V">
+<symbol label="POP-2, Bos (ontwerp)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_BOSVASTGEST_V">
+<symbol label="POP-2, Bos (vastgesteld)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_BOSVOORONTW_V">
+<symbol label="POP-2, Bos (voorontwerp)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_CONTOURLONTW_L">
+<symbol label="POP-2, Contourlijn (ontwerp)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_CONTOURLVASTGEST_L">
+<symbol label="POP-2, Contourlijn (vastgesteld)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_CONTOURLVOORONTW_L">
+<symbol label="POP-2, Contourlijn (voorontwerp)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_CTRWATERVOORONTW_L">
+<symbol label="POP-2, Contourlijn water (voorontwerp)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_DIVERSEVOORZIEN_100_P">
+<symbol label="STRP, functiekaart, diverse voorzieningen" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_HYDROAANDGEBIED_V">
+<symbol label="Hydrologische aandachtsgebied, POP-2" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_LOFAR_V">
+<symbol label="LOFAR" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_MELKVEE_100_P">
+<symbol label="Melkveehouderij, inplaatsing" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_ONDERGRONDPLAS_250_V">
+<symbol label="Ondergrond (POP-2), plassen, globaal" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_ONDERGRONDWATER_250_L">
+<symbol label="Ondergrond (POP-2), waterwegen, globaal" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_ONDERGRONDWEGEN_250_L">
+<symbol label="Ondergrond (POP-2), wegen, globaal" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_ONTSTADSRANDZON_100_L">
+<symbol label="STRP, ontw.krt, stadsrandzone" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_ONTWBOSNATUUR_100_V">
+<symbol label="STRP, ontw.krt, bos accent natuur" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_ONTWECOLVERB_100_V">
+<symbol label="STRP, ontw.krt, ecologische verbinding" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_ONTWNATUURW_100_V">
+<symbol label="STRP, ontw.krt, natuurwaarde" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_POPKERNEN_V">
+<symbol label="Kern, Provinciaal Omgevingsplan (POP-2)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_RECREATIE_100_P">
+<symbol label="STRP, functiekaart, recreatie" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_RUIMTELBEGRENZING_L">
+<symbol label="Kern, ruimtelijke begrenzing" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_RUIMTELONTWIKKELING_V">
+<symbol label="Kern, ruimtelijke ontwikkeling" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_SCHEEPVAART_L">
+<symbol label="Scheepvaartkanaal (POP2)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_STADENDORPBSGEZ_P">
+<symbol label="Beschermde stads- en dorpsgez. (punt)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_STADENDORPBSGEZ_V">
+<symbol label="Beschermde stads- en dorpsgez. (vlak)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_STADSRANDZONE_L">
+<symbol label="Stadsrandzone (POP2)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_STEDELIJKNETWERK_L">
+<symbol label="Stedelijk netwerk" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_UITBREIDRICHTI_100_L">
+<symbol label="STRP, functiekaart, uitbreidingsrichting" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_UITBRRIGLASTUINGEB_L">
+<symbol label="Glastuinbouw, uitbreidingsrichting" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_ZONERINGONTW_V">
+<symbol label="POP-2, Zonering (ontwerp)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_ZONERINGVASTGEST_V">
+<symbol label="POP-2, Zonering (vastgesteld)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_POP_ZONERINGVOORONTW_V">
+<symbol label="POP-2, Zonering (voorontwerp)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_RADIOTELESCOOP_100_L">
+<symbol label="Radiotelescoop, zonering" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_REGIOZODRNRDOV_100_V">
+<symbol label="Grens regio zuid-Drenthe nrd-Overijssel" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_STRAALVERBINDING_100_L">
+<symbol label="Straalverbinding" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_STRAALVERBVRIJEHOOGTE_100_L">
+<symbol label="Straalverbinding, vrije hoogte" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_TOP250_VERZORGGEBIED_250_L">
+<symbol label="Verzorgingsstruktuur, gebiedsniveau" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_TOP250_VERZORGKERN_250_P">
+<symbol label="Verzorgingsstruktuur, kernniveau" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_TOP250_VERZORGZWARTVL_250_V">
+<symbol label="Verzorgingsstruktuur, zwarte vlek" />
+</item>
+<item label="" canhide="true" listento="geoportaal.RO_VHV_WIJKBUURT_V">
+<symbol label="Wijk- en buurtindeling, 1998" />
+</item>
+<item label="" canhide="true" listento="geoportaal.TDN_BONNEBLADINDELING_V">
+<symbol label="Bonneblad, bladindeling" />
+</item>
+<item label="" canhide="true" listento="geoportaal.TDN_TOP10NL_INDEX_V">
+<symbol label="Topografie, index Top10-vector" />
+</item>
+<item label="" canhide="true" listento="geoportaal.VIJFHONDERDMETERHOK_L">
+<symbol label="Kilometerhok (0.5 x 0.5 km)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.VIJFKILOMETERHOK_V">
+<symbol label="Kilometerhok (5 x 5 km)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.VV_HPOP_PVVP_L">
+<symbol label="Infra, Prov. verkeers- en vervoersplan" />
+</item>
+<item label="" canhide="true" listento="geoportaal.VV_INFRA_HFDBUISLEIDING_100_L">
+<symbol label="Buisleiding, hoofd" />
+</item>
+<item label="" canhide="true" listento="geoportaal.VV_INFRA_HOOFDENSPOORWEGEN_L">
+<symbol label="Infra, hoofdwegen en spoorwegen" />
+</item>
+<item label="" canhide="true" listento="geoportaal.VV_INFRA_HOOGSPCORRIDOR_100_V">
+<symbol label="Hoogspanningscorridor" />
+</item>
+<item label="" canhide="true" listento="geoportaal.VV_INFRA_HOOGSPLEIDING_100_L">
+<symbol label="Hoogspanningsleiding" />
+</item>
+<item label="" canhide="true" listento="geoportaal.VV_INFRA_KNOOPUNT_P">
+<symbol label="Knooppunt, bestaand of ontwikkeling" />
+</item>
+<item label="" canhide="true" listento="geoportaal.VV_INFRA_ONTWIKKELING_L">
+<symbol label="Hoofdinfrastructuur, ontwikkeling" />
+</item>
+<item label="" canhide="true" listento="geoportaal.VV_INFRA_PVVP_L">
+<symbol label="Infrastructuur, functionele indeling (POP1)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.VV_INFRA_SCHEEPVAART_100_L">
+<symbol label="Scheepvaartkanaal" />
+</item>
+<item label="" canhide="true" listento="geoportaal.VV_OV_BUSHALTEGEMWEG_P">
+<symbol label="Bushalte, gemeentelijke wegen" />
+</item>
+<item label="" canhide="true" listento="geoportaal.VV_OV_BUSHALTEPROVWEG_P">
+<symbol label="Bushalte, provinciale wegen" />
+</item>
+<item label="" canhide="true" listento="geoportaal.VV_OV_HFDBUSLIJN_V">
+<symbol label="Buslijn, netwerk verbindende" />
+</item>
+<item label="" canhide="true" listento="geoportaal.VV_POP_GOEDEROVERSLAGONTW_P">
+<symbol label="Goederenoverslag, ontwikkeling" />
+</item>
+<item label="" canhide="true" listento="geoportaal.VV_POP_INDELINGINFRA_L">
+<symbol label="Infrastructuur, functionele indeling (POP2)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.VV_POP_KNOOPPUNTINFRA_P">
+<symbol label="Knooppunt en aansluiting (voorontwerp)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.VV_POP_ONTWIKKELINGINFRA_L">
+<symbol label="Infrastructuur, ontwikkeling van" />
+</item>
+<item label="" canhide="true" listento="geoportaal.VV_PROVWEGBEHEER_L">
+<symbol label="Eigendom, Wegen" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_BEEK_100_L">
+<symbol label="Beek (gesmoothe lijn)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_BEEK_V">
+<symbol label="Beek (als vlak)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_BEEKHERSTEL_100_L">
+<symbol label="Beekherstel" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_BEMAALDEGEBIEDEN_NZV_L">
+<symbol label="Bemaling, waterschap Noorderzijlvest" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_GEOHYDROGEBA_250_V">
+<symbol label="Geohydrologische eenheid (A)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_GEOHYDROGEBB_250_V">
+<symbol label="Geohydrologische eenheid (B)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_GEOHYDROGEBC_250_V">
+<symbol label="Geohydrologische eenheid (C)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_GW_ONTTREKKINGDRINKW_250_P">
+<symbol label="Grondwater, onttrekking voor drinkwater" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_GW_ONTTREKKINGSREGISTER_P">
+<symbol label="Grondwateronttrekkingen 2001 (vastgesteld)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_GW_VERORDDIEP_V">
+<symbol label="Grondwater, gebruik diep, pop-2/verorden" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_HIST_DRAINAGE_100_V">
+<symbol label="Drainage" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_HIST_GWONTTREK_97_100_P">
+<symbol label="Grondwateronttrekking 1997 (hist.)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_HIST_GWPUT_93_100_P">
+<symbol label="Grondwaterput 1993 (hist.)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_HIST_GWPUT_98_100_P">
+<symbol label="Grondwaterput 1998 (alle filters) (hist." />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_HIST_OPPERVLAKTEWKWAL_P">
+<symbol label="Oppervlaktewater (kwaliteit per 1998)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_HIST_VANGGEBIED_100_V">
+<symbol label="Vanggebied muskusrattenbestrijding" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_HIST_VERDRGEB1997_100_V">
+<symbol label="Verdroogde gebieden 1997 (hist.)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_HIST_VERDRGEB1998_100_V">
+<symbol label="Verdroogde gebieden 1998 (hist.)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_HIST_VERDRGEB1999_100_V">
+<symbol label="Verdroogde gebieden 1999 (hist.)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_HIST_VERDRGEB2000_100_V">
+<symbol label="Verdroogde gebieden 2000 (hist.)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_HIST_WATERLOOP_100_L">
+<symbol label="Waterloop (whp) (hist.)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_HIST_WEERSTANDLAAG_100_V">
+<symbol label="Weestandbiedende laag" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_HIST_WHPECOVZONE_100_V">
+<symbol label="WHP, ecologische verbindingszone (hist)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_HIST_WHPG_100_V">
+<symbol label="WHP, functiekaart diepe grondwater (hist)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_HIST_WHPG_V">
+<symbol label="Grondwater, gebruik diep, pop-1" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_HIST_WHPO_100_V">
+<symbol label="WHP, functiekaart oppervlaktewater (hist)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_HIST_WS1820_1880_100_V">
+<symbol label="Historische waterschappen 1820-1880" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_HIST_WS1881_1900_100_V">
+<symbol label="Historische waterschappen 1881-1900" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_HIST_WS1901_1920_100_V">
+<symbol label="Historische waterschappen 1901-1920" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_HIST_WS1921_1940_100_V">
+<symbol label="Historische waterschappen 1921-1940" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_HIST_WS1941_1950_100_V">
+<symbol label="Historische waterschappen 1941-1950" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_HIST_WS1951_1960_100_V">
+<symbol label="Historische waterschappen 1951-1960" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_HIST_WSGRENS_100_V">
+<symbol label="Waterschapsgrens (historie)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_KEILEEM_100_V">
+<symbol label="Keileem" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_KWELINFILTRATIE_100_V">
+<symbol label="Kwel- en infiltratiegebied" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_OW_BERGING_V">
+<symbol label="Bergingsgebied" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_OW_VERDRGEB2002_100_V">
+<symbol label="Verdroogde gebieden 2002" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_OW_WATERAANVOERGEB_100_V">
+<symbol label="Wateraanvoer" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_OW_WATERLOOPMUSKUS_L">
+<symbol label="Waterloop (muskus)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_OW_WHHSYSTEEM_100_V">
+<symbol label="Waterhuishoudkundig systeem" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_OW_ZWEMBAD_P">
+<symbol label="Zwembad" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_PEILBUIS_P">
+<symbol label="Peilbuis" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_SCHAP_PEILGEBNZIJLVEST_L">
+<symbol label="Peilgebied, waterschap Noorderzijlvest" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_VERDROOGDEGEB_250_V">
+<symbol label="Verdroogde gebieden, toplijst" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WAT_WATERSCHADE1998_100_V">
+<symbol label="Waterschadegebied" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WELZ_CULTHIS_AMK_V">
+<symbol label="Archeologische monumentenkaart (AMK)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WELZ_CULTHIS_ARCHEOGEB_100_V">
+<symbol label="Archeologisch gebied" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WELZ_CULTHIS_ARCHWSTRPKRTB91_P">
+<symbol label="Archeologische waarde" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WELZ_CULTHIS_ARCHWSTRPKRTB91_V">
+<symbol label="Archeologische eenheid" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WELZ_CULTHIS_CHWNEDERZ_L">
+<symbol label="Cultuurhistorisch weg of kanaaldorp" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WELZ_CULTHIS_CHWNEDERZ_P">
+<symbol label="Cultuurhistorische nederzetting" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WELZ_CULTHIS_GAAFHEID_V">
+<symbol label="Cultuurhistorische gaafheid (pop)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WELZ_CULTHIS_MARKEGRENS_L">
+<symbol label="Markegrens" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WELZ_CULTHIS_MARKESTEEN_P">
+<symbol label="Markesteen" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WELZ_CULTHIS_OWMVERLEDEN_L">
+<symbol label="Cultuurhistorisch relict (lijn)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WELZ_CULTHIS_OWMVERLEDEN_V">
+<symbol label="Cultuurhistorisch relict (vlak)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WELZ_CULTHIS_WOIIMONUMENT_L">
+<symbol label="Wereldoorlog, WOII, Monument (lijn)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WELZ_CULTHIS_WOIIMONUMENT_P">
+<symbol label="Wereldoorlog, WOII, Monument (punt)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WELZ_CULTHIS_WOIIMONUMENT_V">
+<symbol label="Wereldoorlog, WOII, Monument (vlak)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WELZ_HIS_GAAFHEID_1990_V">
+<symbol label="Cultuurhistorische gaafheid (strp)" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WELZ_VOORZ_BASISVOORZIENING_P">
+<symbol label="Basisvoorziening in kernen" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WELZ_ZORG_HUISARTSBEREIK_V">
+<symbol label="Zorgvoorziening: huisarts" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WELZ_ZORG_VERPLEEGBEREIK_V">
+<symbol label="Zorgvoorziening: verpleeghuis" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WELZ_ZORG_VERZORGBEREIK_V">
+<symbol label="Zorgvoorziening: verzorgingshuis" />
+</item>
+<item label="" canhide="true" listento="geoportaal.WELZ_ZORG_ZIEKENHUISBEREIK_V">
+<symbol label="Zorgvoorziening: ziekenhuis" />
+</item>
+</group>
+</fmc:Legend>
+</FLAMINGO>

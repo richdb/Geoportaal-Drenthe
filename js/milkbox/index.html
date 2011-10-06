@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<title>Milkbox - Example page - See the html source</title>
+
+	<link rel="stylesheet" href="css/default.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/milkbox/milkbox.css" />
+	
+	<style type="text/css" title="text/css">
+		#test{ width:15px; color:#fff; }
+	</style>
+	
+ 	<script src="js/mootools-core-1.3.2-yc.js"></script>
+ 	<script src="js/mootools-more-1.3.2.1.js"></script> 
+	<script src="js/milkbox-yc.js"></script>
+
+	<script type="text/javascript">
+	// <![CDATA[
+		var addJsonGalleries;
+		
+		$(window).addEvent('domready',function(){
+			
+			addJsonGalleries = function(){
+			
+				//add 3 json galleries
+				milkbox.addGalleries([
+					{ name:'obj-gall1', autoplay:true, autoplay_delay:4, files:[ { href:'img/01b.jpg', title:'Test title' }, { href:'swf/testswf1.swf?var1=yellow&var2=300', size:"width:550, height:400" } ]},
+					
+					{ name:'obj-gall2', autoplay_delay:9, files:[ { href:'swf/testswf2.swf?var1=ultex&var2=30', size:"width:400, height:300" }, { href:'swf/testswf1.swf', size:"width:550, height:400" } ]},
+					
+					{ name:'obj-gall3', files:[ { href:'img/croda-b.jpg' }, { href:'img/ska-b.jpg' } ]}
+				]);
+			
+			}//addObjGalleries
+			
+		});
+	// ]]>
+	</script>
+	
+</head>
+
+<body>
+	<div id="box">	
+		<table id="gallery">
+			<tr>
+				<td><a href="img/01b.jpg" data-milkbox="milkbox:g1" title="Lorem ipsum..."><img src="img/01.jpg" alt="" width="100" height="100" /></a></td>
+				
+				<td><a href="img/croda-b.jpg" data-milkbox="milkbox:g1" title="There's an auto-sizing border-left in the nav section, that help to visually separate it from the caption. &lt;a href=#&gt;This is a link&lt;/a&gt;, use html entities and no quotes to write links in the title property. "><img src="img/croda.jpg" alt="" width="100" height="100" /></a></td>
+				
+				<td><a href="html-external/external.html" data-milkbox="milkbox:g1" data-milkbox-size="width:600,height:450" title="HTML page in iframe"><img src="img/html.png" alt="" width="100" height="100" /></a></td>
+				
+				<td style="width:100px"><a href="swf/logo.swf" data-milkbox="milkbox:g1" data-milkbox-size="width:600,height:200" title="This is an Swf file. You need Flash Player 10 to see it correctly"><img src="img/logo.jpg" alt="" width="100" height="100" /></a></td>
+			</tr>
+		</table>
+
+		<br /><br />
+		<a href="swf/testswf1.swf" title="single swf" data-milkbox="single" data-milkbox-size="width:650, height:250">Link to a single swf file</a>
+		<br />
+		<a href="img/02b.jpg" title="single jpg" data-milkbox="single">Link to a single jpg file</a>
+
+		<br /><br />
+		<a href="#" onclick="addJsonGalleries()">Add json galleries</a>
+		<br />
+		<a href="#" onclick="milkbox.open('obj-gall1',1)">Open a json gallery (add the galleries first!)</a>
+		<br /><br />
+		<a href="#" onclick="milkbox.setAutoPlay([{ gallery:'gall1', autoplay:true, delay:6 } ])">milkbox.setAutoPlay on the first thumb gallery (gall1)</a>
+		<br /><br />
+		<a href="#" onclick="milkbox.openWithFile({ href:'img/01b.jpg', title:'Test openWithFile with some layout and transitions tweaks'}, {overlayOpacity:1, fileboxBorderWidth:'10px', fileboxBorderColor:'#ff0000', resizeDuration:1, resizeTransition:'bounce:out', centered:true})">milkbox.openWithFile, with some customizations..</a>
+		
+		<br /><br />
+		<a href="#" onclick="milkbox.addGalleries('xml/galleries.xml')">Add some xml galleries (works only on a web server, not locally)</a>
+		<br />
+		<a href="#" onclick="milkbox.open('xmlG1',0)">Show an xml gallery (add the galleries first!)</a>
+		<br /><br />
+		<a href="#" onclick="milkbox.refreshDisplay({overlayOpacity:1, fileboxBorderWidth:'5px', fileboxBorderColor:'#00ff00', fileboxPadding:'5px', centered:false, resizeTransition:'quint:in', resizeDuration:2}, true)">refreshDisplay test (open one of the galleries after clicking here)</a>
+
+	</div><!-- /box -->
+
+</body>
+</html>
+  

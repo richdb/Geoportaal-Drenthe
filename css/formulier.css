@@ -1,0 +1,290 @@
+.formulier .noborder {
+border: 0px solid transparent;
+}
+
+.formulier legend {
+display:none;
+}
+
+.ongeldig {
+color: #ff0000 !important;
+font-weight: bold;
+}
+
+.ongeldig .verplicht {
+color: #ff0000; 
+font-weight: bold;
+}
+
+.formulier {
+position:relative;
+border: 1px solid #0081C3;
+background-color: #fafbfc;
+margin-top: 30px;
+margin-bottom: 10px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.formulier .opmerking {
+margin-left: 0px;
+margin-bottom:1em;
+}
+.formulier P.opmerking {
+margin-left: 10px;
+}
+.discussie .formulier .opmerking {
+margin-left: 10px;
+}
+
+
+.formulier fieldset{
+display:block;
+border:none;
+width: 80%;
+}
+
+.rechterkolom fieldset{
+width:200px;
+}
+.rechterkolom .bekendmakingzoeken .formulier .text input {
+width: 194px !important;
+}
+
+.formulier .inleiding_formulier {
+margin-left: 10px;
+}
+
+.formulier .foutmelding {
+color: #ff0000;
+font-weight: bold;
+margin-left: 20px;
+}
+
+.formulier .rij {
+margin-bottom: 10px;
+margin-left:10px;
+clear: left;
+}
+
+.rechterkolom .formulier .rij {
+width:200px;
+}
+
+.formulier .tekst{ 
+margin-left:10px;
+width: 80% !important;
+}
+.rechterkolom .formulier .tekst{
+width:200px;
+}
+.formulier .rij .label  {
+margin-bottom: 2px;
+}
+
+.formulier .label label {
+color: #c92c86;
+}
+
+.formulier .invoer .Captcha{
+display:block;
+padding-bottom:4px; 
+width: 80%;
+margin-right: 3em;
+}
+.formulier .invoer .Captcha img{
+padding:0px;
+margin:0x;
+border-width:0px;
+width: 100%;
+}
+
+.formulier .invoer input{
+background: url(../img/BG/bg-veld.gif) bottom left repeat-x;
+border: 1px solid #0081C3;
+margin-bottom:4px; 
+width: 80%;
+margin-right: 3em;
+}
+
+.rechterkolom .formulier .invoer input{
+width:200px;
+margin-right: 0em;
+}
+
+.formulier .invoer select{
+border: 1px solid #0081C3;
+margin-bottom:4px; 
+width: 80%;
+margin-right: 3em;
+}
+
+.formulier .invoer textarea {
+background: url(../img/BG/bg-veld.gif) bottom left repeat-x;
+border: 1px solid #0081C3;
+color: #0081C3;
+margin-bottom:4px; 
+width: 80%;
+height: 100px;
+}
+.rechterkolom .formulier .invoer textarea {
+width:200px;
+}
+
+.formulier .invoer textarea.verborgen {
+display: none;
+}
+
+.formulier .antwoorden select{
+border: 1px solid #0081C3;
+}
+
+.formulier .antwoorden ul {
+margin-left: 20px;
+}
+
+.formulier .antwoorden li {
+color: #003b59;
+}
+
+.formulier .antwoord {
+margin-top:2px;
+margin-bottom:2px;
+}
+
+.formulier .antwoord input{
+width:18px;
+background: none;
+border:0px; 
+padding: 0px !important;
+margin: 0px;
+float:left;
+clear:both;
+}
+.rechterkolom .zoeken .rij{
+width:200px;
+}
+.formulier .antwoord label{
+margin-left:0px;
+clear:right;
+font-weight: normal;
+text-decoration:none !important;  
+float:left;
+line-height: 1.35em;  
+width: 80%;
+}
+.rechterkolom .formulier .antwoord label{
+width:auto;
+}
+.formulier .tekst .label{
+width: 80%;
+}
+.rechterkolom .formulier .tekst .label{
+width:200px;
+}
+.formulier .invoer .checkbox{
+width:18px;
+background: none;
+border:0px; 
+padding: 0px !important;
+margin: 0px;
+}
+
+.formulier .verzenden {
+margin-left: 10px; 
+}
+.rechterkolom .formulier .verzenden {
+margin-left: 0px; 
+}
+.formulier .verzenden input{
+background-color: #fff;
+color: #c92c86;
+border: 1px solid #c92c86;
+font-weight: bold;
+background: #F5E6F0 url(../img/bullets/button-pijl.gif) 100% 50% no-repeat;
+padding-right: 14px;
+padding-left:2px;
+cursor:pointer;
+}
+
+
+
+
+.formulier .kop{
+display:kop;
+border:0px;
+margin-left:10px; 
+}
+
+.mailinglist .checkbox {
+clear: left;
+width:80%;
+display:block;
+margin:0px; 
+padding:0px;
+}
+
+.mailinglist .checkbox .label{
+float: right;
+display:block;
+padding-left:17px;
+
+}
+.mailinglist .checkbox .label label{
+text-align:left;
+display:block;
+}
+.mailinglist .checkbox .invoer{
+clear:left;
+float: left;
+}
+.mailinglist .checkbox .invoer input{
+float: left;
+
+}
+.mailinglist .checkbox .invoer input.input{
+display:block;
+clear:left;
+float:left;
+width:auto !important;
+background: none;
+background-color:transparent;
+border:0px; 
+padding: 0px !important;
+margin:0px;
+}
+.mailinglist .invoer-reeks {
+border:0px;
+margin-left:10px; 
+}
+.zoeken fieldset.zoekfilter {
+  display:block;
+	margin-bottom:1em;
+}
+.content .invoer input.datefield_day {
+	float:left;
+  width: 24px;
+  margin-right: 3px;
+}
+
+.content .invoer input.datefield_month {
+	float:left;
+  width: 24px;
+  margin-right: 3px;
+}
+
+.content .invoer input.datefield_year {
+	float:left;
+  width: 47px;
+	margin-right: 3px;
+}
+
+.content .invoer .datefield_untill {
+	float:left;
+  padding:0 5px 0px 2px;
+}
+
+.clearleft {
+clear: left;
+line-height:10%;
+}

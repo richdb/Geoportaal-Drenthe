@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FLAMINGO xmlns:fmc="fmc">
+
+<fmc:Legend id="legend" skin="f2" symbolpath="assets" shadowsymbols="false" width="215" right="right" top="top" bottom="bottom" listento="map" backgroundcolor="#FFFFFF">  	
+			<item label="Nitraatuitspoeling" canhide="true" listento="bodematlas.MILIEU_BOBES_KWBNO3_2006_V">
+			<symbol label="geen/ onvoldoende data"  url="../../assets/symbol.swf" fill="#FFFFFF" />
+			<symbol label="groot probleem"  url="../../assets/symbol.swf" fill="#FF0000" />
+			<symbol label="matig probleem"  url="../../assets/symbol.swf" fill="#FFD37F" />
+			<symbol label="geen probleem"  url="../../assets/symbol.swf" fill="#D3FFBE" />
+		</item>	
+</fmc:Legend>
+</FLAMINGO>

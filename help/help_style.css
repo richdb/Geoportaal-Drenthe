@@ -1,0 +1,26 @@
+BODY { COLOR: #333333; FONT-FAMILY: Arial, Sans Serif, Verdana; FONT-SIZE: 12px; leftmargin: 10px; topmargin: 5px; marginheight: 0px; marginwidth: 0px; }
+
+H1 { COLOR: #336699; FONT-FAMILY: Arial, Sans Serif, Verdana; FONT-SIZE: 20px; FONT-WEIGHT: bold; MARGIN-BOTTOM: 10px; MARGIN-TOP: 15px; }
+
+H2 { COLOR: #336699; FONT-FAMILY: Arial, Sans Serif, Verdana; FONT-SIZE: 16px; FONT-WEIGHT: bold; MARGIN-BOTTOM: 5px; MARGIN-TOP: 12px; }
+
+H3 { COLOR: #336699; FONT-FAMILY: Arial, Sans Serif, Verdana; FONT-SIZE: 12px; FONT-WEIGHT: bold; MARGIN-BOTTOM: 5px; MARGIN-TOP: 10px; }
+
+TABLE { COLOR: #333333; FONT-FAMILY: Arial, Sans Serif, Verdana; FONT-SIZE: 12px; }
+
+TD { COLOR: #333333; FONT-FAMILY: Arial, Sans Serif, Verdana; FONT-SIZE: 12px; }
+
+A:link { COLOR: #0066ff; }
+
+A:visited { COLOR: #800080; }
+
+ul	{ list-style-type: disc; margin-top: 0px; margin-left: 8px; padding-left: 8px; }
+
+ol	{ margin-top: 3px; }
+
+.h3a	{ COLOR: #336699; FONT-WEIGHT: bold; }
+
+.smalltext { COLOR: #666666; FONT-FAMILY: Arial, Sans Serif; FONT-SIZE: 10px; MARGIN-TOP: 10px; TEXT-DECORATION: none; }
+
+.commenttext { COLOR: #CC0000; FONT-FAMILY: Arial, Sans Serif; FONT-SIZE: 10px; MARGIN-TOP: 0px; }
+

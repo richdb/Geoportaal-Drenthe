@@ -1,0 +1,226 @@
+@charset "UTF-8";
+/**
+ * "Yet Another Multicolumn Layout" - (X)HTML/CSS Framework
+ *
+ * (en) Screen layout for YAML examples
+ * (de) Bildschirmlayout für YAML-Beispiele
+ *
+ * @copyright       Copyright 2005-2007, Dirk Jesse
+ * @license         CC-A 2.0 (http://creativecommons.org/licenses/by/2.0/),
+ *                  YAML-C (http://www.yaml.de/en/license/license-conditions.html)
+ * @link            http://www.yaml.de
+ * @package         yaml
+ * @version         3.0.3
+ * @revision        $Revision: 118 $
+ * @lastmodified    $Date: 2007-08-18 16:03:42 +0200 (Sa, 18 Aug 2007) $
+ */
+
+@media all
+{
+  /*------------------------------------------------------------------------------------------------------*/
+
+  /**
+   * (en) Formatting YAML's  basic layout elements
+   * (de) Gestaltung des YAML Basis-Layouts
+   */
+
+  /* (en) Marginal areas & page background */
+  /* (de) Randbereiche & Seitenhintergrund */
+  body { background: #0081C3 url("images/BGSite.jpg") repeat-x top left fixed; padding: 20px 0; }
+
+  /* (en) Layout: width, background, borders */
+  /* (de) Layout: Breite, Hintergrund, Rahmen */
+  #page_margins { min-width: 740px; max-width: 80em; margin:0 auto; border: 1px #003B59 solid; }
+  #page{ background: #fff; border: 0px #fff solid; }
+
+  /* (en) Centering layout in old IE-versions */
+  /* (de) Zentrierung des Layouts in alten IE-versionen */
+  body { text-align: center }
+  #page_margins { text-align:left }
+
+  /* (en) Designing main layout elements */
+  /* (de) Gestaltung der Hauptelemente des Layouts */
+  #header {
+    color: #000;
+    background: url("images/BGHeader.jpg") bottom right;
+    height:197px;	
+  }
+
+  #topnav { 
+	color: #666;
+	position:relative;
+	display:inline;
+	margin-top:-3px;
+	float:right;
+	color:#0081C3;/*licht blauw*/
+	height:31px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:85%;
+	background: transparent;
+	line-height:1.2em;
+	padding-right:14px;
+	}
+
+  #logo {	
+	color: #000;
+	display:inline;
+	margin-top:0px;    
+	height:138px;	
+  }
+	
+
+  /* (en) adjustment of main navigation */
+  /* (de) Anpassung der Hauptnavigation */
+  
+  #nav_main {
+	position:relative;
+	display:inline;
+	margin-top:5px;
+	height: 31px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:85%;	
+	float:left;	
+	background: transparent;
+	padding-left:14px;
+  }
+
+  #nav_path {
+	background: #FFFFFF;
+	height: 24px;
+	width: 728px;
+	float:right;	
+  }
+  
+  #main { background: #fff;padding:10px 0; }
+
+  #footer { 
+    color:#666; 
+    background: #FFFFFF;
+    padding: 15px;
+    border-top: 2px #efefef solid;
+
+  }
+
+  /*------------------------------------------------------------------------------------------------------*/
+
+  /**
+   * (en) Formatting content container
+   * (de) Formatierung der Inhalts-Container
+   *
+   * |-------------------------------|
+   * | #header                       |
+   * |-------------------------------|
+   * | #col1   | #col3     | #col2   |
+   * | 25%     | flexible  | 25%     |
+   * |-------------------------------|
+   * | #footer                       |
+   * |-------------------------------|
+   */
+
+
+ /* #col1 becomes the main content column | #col1 wird zur Hauptinhaltsspalte */
+#col1 { width: 75%; float:right}
+#col1_content { padding: 10px 20px 10px 10px; }
+
+/* hide #col2 | #col2 abschalten */
+#col2 { display:none; }
+
+/* #col3 becomes the left column | #col3 wird zur linken Spalte */
+#col3 { margin-left: 0; margin-right: 75%; }
+#col3_content { padding: 10px 10px 10px 20px; }
+
+#randtabel {
+	border-collapse: collapse; 
+	border-style: none;
+	border: solid 1px #000000;	
+}
+
+#randtabel2 {
+	background-color: #ebf4fa;
+	border-collapse: collapse; 
+	border-style: none;
+	border: solid 1px #000000;
+}
+
+#randtabelarchief {
+	background-color: #decccc;
+	border-collapse: collapse; 
+	border-style: none;
+	border: solid 1px #000000;
+}
+
+#randtabel3 {
+	background-color: #FFFFFF;
+	border-style: none;
+}
+
+#randkop {
+	background-color: #ebf4fa;
+	border: solid 1px #959595; 
+	font-weight:bold;
+	font-size: 105%;
+	text-align: center;
+}
+
+#randeditkop {	
+	font-size: 100%;
+	text-align: left;
+	font-weight:bold;	
+}
+
+#randkaart {
+	font-size: 10px;
+	text-align: right;	
+}
+#randkaart a { color: #dd6d07; background:transparent;}
+
+#randkaartdisc {
+	font-size: 9px;
+	text-align: left;	
+}
+
+.randkaartdisc {
+	font-size: 9px;
+	text-align: left;	
+}
+
+#randkaartvol {
+	font-size: 10px;
+	text-align: right;	
+}
+#randkaartvol a { color: #dd6d07; background:transparent;}
+
+#randedit {	
+	font-size: 95%;
+	text-align: left;	
+}
+
+#rand {
+	border: solid 1px #959595; 
+	text-align: left;
+	font-size: 95%;
+}
+
+#kopbegin {
+	color: #7f373b; 
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 150%;
+	font-weight: bold;
+	text-align: left;	
+}
+
+#kopnav {
+	background: transparent;	
+	text-align: left;	
+}
+
+
+  /*------------------------------------------------------------------------------------------------------*/
+
+  /**
+   * (en) Modifying "shiny buttons" navigation
+   * (en) Anpassung der "Shiny Buttons" Navigation
+   */
+ 
+
+}

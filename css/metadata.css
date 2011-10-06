@@ -1,0 +1,119 @@
+
+@media screen,tv,projection, print {
+	
+	
+	.metawrapper{
+   position: relative;
+   background-image:url(../images/BGContentItem.jpg);
+	background-position:left 0ex;
+	background-repeat:repeat-x;
+	background-color:#FFFFFF;   
+   float: left;
+   left: 0px;
+   width: 910px;
+   margin-bottom: 10px;   
+	}
+	
+	.left1{
+   position: relative;
+   float: left;
+   left: 0px;
+   width: 200px;
+   height: 470px;
+   }
+   
+   .left1kop{
+	position:relative;
+	
+	font-family:Georgia, "Times New Roman", Times, serif;
+	/*background-color:transparent;*/
+	font-size:120%;
+	display:block;
+	padding-top:0.4em;
+	padding-bottom:0.4em;
+	color:#007BBE;/*blauw*/
+	font-weight:bold;
+	} 	
+	
+	.left2{
+	position: relative;
+	float: left;
+	top: 40px;
+	left: 8px;
+	width: 480px;
+	height: 200px;
+	background-color:#F5FAFE;/*licht blauw*/
+    border-left:1px solid #003b59;/*donker blauw*/
+	border-right:1px solid #003b59;/*donker blauw*/
+	border-bottom:1px solid #003b59;/*donker blauw*/
+	border-top:1px solid #003b59;/*donker blauw*/
+	} 
+	
+	.left2zoek {
+	display:block;	
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-weight: bold;
+	/*background-color:transparent;*/
+	font-size:20px;
+/*	font-size:16px;*/
+	line-height:1.2em;	
+	color:#C92C86;/*roze*/
+	margin:0px;	
+	}
+	
+	
+	
+	.lefttekst table TD {
+	display:block;	
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	/*background-color:transparent;*/
+	font-size:12px;
+/*	font-size:16px;*/
+	line-height:1.2em;	
+	color:#000000;
+	margin:0px;	
+	}  
+	
+	.left3{
+   position: relative;
+   float: left;
+   left: 16px;
+   width: 200px;
+   height: 470px;   
+	}
+
+	.metawrapper.lefturl {
+	position:relative;	
+	left: 10px;
+	bottom: 4px;
+	text-decoration: none;
+	}
+	
+	.metawrapper.lefturl:link{
+	color: #333333;
+	font-weight:bold;
+	color:#007BBE;/*donker blauw*/
+	text-decoration: none;
+	}
+	
+	.metawrapper.lefturl:visited{
+	color: #333333;
+	font-weight:bold;
+	color:#007BBE;/*donker blauw*/
+	text-decoration: none;
+	}
+	
+	.metawrapper.lefturl:hover{
+	color: #333333;
+	font-weight:bold;
+	color:#007BBE;/*donker blauw*/
+	text-decoration: none;
+	}
+	
+	.metawrapper.lefturl:active{
+	color: #333333;
+	font-weight:bold;
+	color:#007BBE;/*donker blauw*/
+	text-decoration: none;
+	}	
+}

@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl">
+<head>
+<title>Geoportaal | Provincie Drenthe</title>
+<link href="css/DrentheWebSite.css" rel="stylesheet" type="text/css"/>
+<link href="css/DynamischDrenthe.css" rel="stylesheet" type="text/css"/>
+<link href="css/verticaleNav.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" href="js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen"/>
+<script type="text/javascript"> 
+/* <![CDATA[ */
+function initPopup() {
+ var iframeEl = document.getElementById('WAITFRAME');
+iframeEl.style.display='none';
+}
+function back(){
+var iframeEl = document.getElementById('WAITFRAME');
+iframeEl.style.display='none';
+}
+function execserver(ss) {
+WAITFRAME.document.location = ss;
+var iframeEl = document.getElementById('WAITFRAME');
+iframeEl.style.display='none';
+}
+$(document).ready(function() {
+$(".fancylink").fancybox({
+'width' : '75%',
+'height' : '75%', 
+'autoScale' : true,  
+'transitionIn' : 'none',  
+'transitionOut' : 'none', 
+'type' : 'iframe', 
+'scrolling': 'no', 
+'centerOnScroll': true
+});
+}); 
+$(document).ready(function(){ 
+$(".extlink1").fancybox({ 
+'width' : '55%',
+'height' : '75%', 
+'autoScale' : true,  
+'transitionIn' : 'none',  
+'transitionOut' : 'none', 
+'type' : 'iframe', 
+'scrolling': 'yes', 
+'centerOnScroll' : true});  
+});  
+/* ]]> */
+</script>
+<style> 
+.headerhouder .headerfoto {
+background-image:url(headers/10.jpg );
+</style>
+</head>
+<body>
+<div class="home">
+<div id="omhulsel" class="omhulsel">
+<div class="headerhouder" id="top">
+<div class="headertop">
+<div class="servicebalk">
+<a href="index.php?e=@GBIEXEC&p=GEBRUIKSITE">Over de kaarten</a>
+<span class="pijplijn"> </span>
+<a href="index.php?e=@GBIEXEC&p=GEBRUIKVIEWER">Uitleg</a>
+<span class="pijplijn"> </span>
+<a href="index.php?e=@GBIEXEC&p=VRAGEN">Veelgestelde vragen</a>
+<span class="pijplijn"> </span>
+<a href="http://www.drenthe.nl">Drenthe.nl</a>
+</div>
+</div>
+<div class="headerfoto">
+</div>
+<div class="headerbottom">
+<div class="servicebalk">
+<a href="index.php?e=@GBI&p=DATASETLIST">Alfabetisch zoeken</a>
+<span class="pijplijn"> </span>
+<a href="index.php?e=@GBI&p=DATASETSEARCH">Zoeken op trefwoord</a>
+<span class="pijplijn"> </span>
+<a href="index.php?e=@GBI&p=MAAKKAART">Maak een kaart</a>
+<span class="pijplijn"> </span>
+</div>
+</div>
+</div>
+<div class="linkerkolom">
+<div class="broodkruimel">
+<a href="http://www.provincie.drenthe.nl">Home</a><span class="tussenteken"> </span><a href="index.php">Geoportaal</a><span class="tussenteken"> </span><a href="?e=@GBI&p=DATASETLIST">Alfabetisch zoeken</a><span class="tussenteken"> </span>a </span>
+</div>
+<br>
+<div class="geo">
+<A href="?e=@GBI&p=DATASETLIST|a" title="Bekijk alle kaartlagen waarvan de titel begint met de letter A.">A</a>
+<span class="pijplijn"> </span>
+<A href="?e=@GBI&p=DATASETLIST|b" title="Bekijk alle kaartlagen waarvan de titel begint met de letter B.">B</a>
+<span class="pijplijn"> </span>
+<A href="?e=@GBI&p=DATASETLIST|c" title="Bekijk alle kaartlagen waarvan de titel begint met de letter C.">C</a>
+<span class="pijplijn"> </span>
+<A href="?e=@GBI&p=DATASETLIST|d" title="Bekijk alle kaartlagen waarvan de titel begint met de letter D.">D</a>
+<span class="pijplijn"> </span>
+<A href="?e=@GBI&p=DATASETLIST|e" title="Bekijk alle kaartlagen waarvan de titel begint met de letter E.">E</a>
+<span class="pijplijn"> </span>
+<A href="?e=@GBI&p=DATASETLIST|f" title="Bekijk alle kaartlagen waarvan de titel begint met de letter F.">F</a>
+<span class="pijplijn"> </span>
+<A href="?e=@GBI&p=DATASETLIST|g" title="Bekijk alle kaartlagen waarvan de titel begint met de letter G.">G</a>
+<span class="pijplijn"> </span>
+<A href="?e=@GBI&p=DATASETLIST|h" title="Bekijk alle kaartlagen waarvan de titel begint met de letter H.">H</a>
+<span class="pijplijn"> </span>
+<A href="?e=@GBI&p=DATASETLIST|i" title="Bekijk alle kaartlagen waarvan de titel begint met de letter I.">I</a>
+<span class="pijplijn"> </span>
+<A href="?e=@GBI&p=DATASETLIST|j" title="Bekijk alle kaartlagen waarvan de titel begint met de letter J.">J</a>
+<span class="pijplijn"> </span>
+<A href="?e=@GBI&p=DATASETLIST|k" title="Bekijk alle kaartlagen waarvan de titel begint met de letter K.">K</a>
+<span class="pijplijn"> </span>
+<A href="?e=@GBI&p=DATASETLIST|l" title="Bekijk alle kaartlagen waarvan de titel begint met de letter L.">L</a>
+<span class="pijplijn"> </span>
+<A href="?e=@GBI&p=DATASETLIST|m" title="Bekijk alle kaartlagen waarvan de titel begint met de letter M.">M</a>
+<span class="pijplijn"> </span>
+<A href="?e=@GBI&p=DATASETLIST|n" title="Bekijk alle kaartlagen waarvan de titel begint met de letter N.">N</a>
+<span class="pijplijn"> </span>
+<A href="?e=@GBI&p=DATASETLIST|o" title="Bekijk alle kaartlagen waarvan de titel begint met de letter O.">O</a>
+<span class="pijplijn"> </span>
+<A href="?e=@GBI&p=DATASETLIST|p" title="Bekijk alle kaartlagen waarvan de titel begint met de letter P.">P</a>
+<span class="pijplijn"> </span>
+<A href="?e=@GBI&p=DATASETLIST|q" title="Bekijk alle kaartlagen waarvan de titel begint met de letter Q.">Q</a>
+<span class="pijplijn"> </span>
+<A href="?e=@GBI&p=DATASETLIST|r" title="Bekijk alle kaartlagen waarvan de titel begint met de letter R.">R</a>
+<span class="pijplijn"> </span>
+<A href="?e=@GBI&p=DATASETLIST|s" title="Bekijk alle kaartlagen waarvan de titel begint met de letter S.">S</a>
+<span class="pijplijn"> </span>
+<A href="?e=@GBI&p=DATASETLIST|t" title="Bekijk alle kaartlagen waarvan de titel begint met de letter T.">T</a>
+<span class="pijplijn"> </span>
+<A href="?e=@GBI&p=DATASETLIST|u" title="Bekijk alle kaartlagen waarvan de titel begint met de letter U.">U</a>
+<span class="pijplijn"> </span>
+<A href="?e=@GBI&p=DATASETLIST|v" title="Bekijk alle kaartlagen waarvan de titel begint met de letter V.">V</a>
+<span class="pijplijn"> </span>
+<A href="?e=@GBI&p=DATASETLIST|w" title="Bekijk alle kaartlagen waarvan de titel begint met de letter W.">W</A>
+<span class="pijplijn"> </span>
+<A href="?e=@GBI&p=DATASETLIST|x" title="Bekijk alle kaartlagen waarvan de titel begint met de letter X.">X</A>
+<span class="pijplijn"> </span>
+<A href="?e=@GBI&p=DATASETLIST|y" title="Bekijk alle kaartlagen waarvan de titel begint met de letter Y.">Y</A>
+<span class="pijplijn"> </span>
+<A href="?e=@GBI&p=DATASETLIST|z" title="Bekijk alle kaartlagen waarvan de titel begint met de letter Z.">Z</A>
+<span class="pijplijn"> </span>
+</div>
+<div class="titel">
+<br>
+<h2>18 kaartlagen van de 693 kaartlagen</h2>
+</div>
+<div class="nieuwsberichten">
+<div class="geo">
+<A href="kaart.php?e=@KAART&p=GBI.NAT_AARDKUNDIGWAARPNT_250_P" title="Aardkundig waardevol element" class="fancylink">Bekijk kaartlaag</A></div>
+<br>
+<div class="nieuwsitem">
+<div class="inhoud"><div class="kop"><A href='?e=@GBI&p=DATASETEDIT|127|Aardkundig waardevol element|a|GBI.NAT_AARDKUNDIGWAARPNT_250_P|' class="extlink1" title="Bekijk de metagegevens van de kaartlaag." >Aardkundig waardevol element</A>
+</div>
+<div class="tekstplaat">
+<A href="kaart.php?e=@KAART&p=GBI.NAT_AARDKUNDIGWAARPNT_250_P" title="Aardkundig waardevol element" ><img src="../metadata/thumbs/NAT_AARDKUNDIGWAARPNT_250_P.jpg" style="border: none;" class="extlink"></A></div>
+<div class="tekst1">
+De aardkunde bestudeert de bovenste meters van de aarde en de vormen en patronen die aan het oppervlak zichtbaar zijn. Bijzonder stuifzandgebied met veel microreliëf, smeltwaterafzetting (waarschijnlijk came), petgat of meer. Provinciaal Omgevingsplan Drenthe POP, kaart 6 en Provinciaal Omgevingsplan Drenthe POPII, kaart 6.<br><br>
+</div>
+</div>
+</div>
+</div>
+<div class="nieuwsberichten">
+<div class="geo">
+<A href="kaart.php?e=@KAART&p=GBI.NAT_AARDKUNDIGWAARGEB_250_V" title="Aardkundig waardevol gebied" class="extlink">Bekijk kaartlaag</A></div>
+<br>
+<div class="nieuwsitem">
+<div class="inhoud"><div class="kop"><A href='?e=@GBI&p=DATASETEDIT|125|Aardkundig waardevol gebied|a|GBI.NAT_AARDKUNDIGWAARGEB_250_V|' class="extlink1" title="Bekijk de metagegevens van de kaartlaag." >Aardkundig waardevol gebied</A>
+</div>
+<div class="tekstplaat">
+<A href="kaart.php?e=@KAART&p=GBI.NAT_AARDKUNDIGWAARGEB_250_V" title="Aardkundig waardevol gebied" ><img src="../metadata/thumbs/NAT_AARDKUNDIGWAARGEB_250_V.jpg" style="border: none;" class="extlink"></A></div>
+<div class="tekst1">
+De aardkunde bestudeert de bovenste meters van de aarde en de vormen en patronen die aan het oppervlak zichtbaar zijn. Aardkundig waardevol gebied. Provinciaal Omgevingsplan Drenthe POP, kaart 6 en Provinciaal Omgevingsplan Drenthe POPII, kaart 6.<br><br>
+</div>
+</div>
+</div>
+</div>
+<div class="nieuwsberichten">
+<div class="geo">
+<A href="kaart.php?e=@KAART&p=GBI.MILIEU_BOBES_AARDKWAARDEVOL_P" title="Aardkundig waardevolle locatie" class="extlink">Bekijk kaartlaag</A></div>
+<br>
+<div class="nieuwsitem">
+<div class="inhoud"><div class="kop"><A href='?e=@GBI&p=DATASETEDIT|944|Aardkundig waardevolle locatie|a|GBI.MILIEU_BOBES_AARDKWAARDEVOL_P|' class="extlink1" title="Bekijk de metagegevens van de kaartlaag." >Aardkundig waardevolle locatie</A>
+</div>
+<div class="tekstplaat">
+<A href="kaart.php?e=@KAART&p=GBI.MILIEU_BOBES_AARDKWAARDEVOL_P" title="Aardkundig waardevolle locatie" ><img src="../metadata/thumbs/MILIEU_BOBES_AARDKWAARDEVOL_P.jpg" style="border: none;" class="extlink"></A></div>
+<div class="tekst1">
+Inventarisatie van aardkundig waardevolle locaties in Drenthe. De aardkunde bestudeert de bovenste meters van de aarde en de vormen en patronen die aan het oppervlak zichtbaar zijn.In deze kaartlaag zijn een groot aantal voorbeeldlocaties met een bijzondere aardkundige waarde opgenomen, zoals bijvoorbeeld celtic fields, reliëf en houtwallen.<br><br>
+</div>
+</div>
+</div>
+</div>
+<div class="nieuwsberichten">
+<div class="geo">
+<A href="kaart.php?e=@KAART&p=GBI.OGV_K2D_AARDK_WAARDEN_V" title="Aardkundige waarde, beschermingsniveau (OGV, 2010)" class="extlink">Bekijk kaartlaag</A></div>
+<br>
+<div class="nieuwsitem">
+<div class="inhoud"><div class="kop"><A href='?e=@GBI&p=DATASETEDIT|1184|Aardkundige waarde, beschermingsniveau (OGV, 2010)|a|GBI.OGV_K2D_AARDK_WAARDEN_V|' class="extlink1" title="Bekijk de metagegevens van de kaartlaag." >Aardkundige waarde, beschermingsniveau (OGV, 2010)</A>
+</div>
+<div class="tekstplaat">
+<A href="kaart.php?e=@KAART&p=GBI.OGV_K2D_AARDK_WAARDEN_V" title="Aardkundige waarde, beschermingsniveau (OGV, 2010)" ><img src="../metadata/thumbs/OGV_K2D_AARDK_WAARDEN_V.jpg" style="border: none;" class="extlink"></A></div>
+<div class="tekst1">
+Aardkundige waarde, beschermingsniveau (OGV, 2010), kaart 2D (Omgevingsvisie).<br><br>
+</div>
+</div>
+</div>
+</div>
+<div class="nieuwsberichten">
+<div class="geo">
+<A href="kaart.php?e=@KAART&p=GBI.OGV_K2D_AARDK_WAARDEN_STER_P" title="Aardkundige waarde, stergebied (OGV, 2010)" class="extlink">Bekijk kaartlaag</A></div>
+<br>
+<div class="nieuwsitem">
+<div class="inhoud"><div class="kop"><A href='?e=@GBI&p=DATASETEDIT|1185|Aardkundige waarde, stergebied (OGV, 2010)|a|GBI.OGV_K2D_AARDK_WAARDEN_STER_P|' class="extlink1" title="Bekijk de metagegevens van de kaartlaag." >Aardkundige waarde, stergebied (OGV, 2010)</A>
+</div>
+<div class="tekstplaat">
+<A href="kaart.php?e=@KAART&p=GBI.OGV_K2D_AARDK_WAARDEN_STER_P" title="Aardkundige waarde, stergebied (OGV, 2010)" ><img src="../metadata/thumbs/OGV_K2D_AARDK_WAARDEN_STER_P.jpg" style="border: none;" class="extlink"></A></div>
+<div class="tekst1">
+Aardkundige waarde, stergebied (OGV, 2010), kaart 2D (Omgevingsvisie).<br><br>
+</div>
+</div>
+</div>
+</div>
+<div class="nieuwsberichten">
+<div class="geo">
+<A href="kaart.php?e=@KAART&p=GBI.NAT_AGRARISCHBEHEERTYPE_V" title="Agrarisch beheertype" class="extlink">Bekijk kaartlaag</A></div>
+<br>
+<div class="nieuwsitem">
+<div class="inhoud"><div class="kop"><A href='?e=@GBI&p=DATASETEDIT|1069|Agrarisch beheertype|a|GBI.NAT_AGRARISCHBEHEERTYPE_V|' class="extlink1" title="Bekijk de metagegevens van de kaartlaag." >Agrarisch beheertype</A>
+</div>
+<div class="tekstplaat">
+<A href="kaart.php?e=@KAART&p=GBI.NAT_AGRARISCHBEHEERTYPE_V" title="Agrarisch beheertype" ><img src="../metadata/thumbs/NAT_AGRARISCHBEHEERTYPE_V.jpg" style="border: none;" class="extlink"></A></div>
+<div class="tekst1">
+Sinds 1 januari 2010 geldt de nieuwe SNL-regeling voor natuur-agrarisch natuur- en landschapsbeheer. Op basis van deze regeling heeft de provincie Drenthe het Natuurbeheerplan 2009 gemaakt. Voor het onderdeel agrarisch natuur- en landschapsbeheer soms gekoppeld aan zoekgebieden. Voor het onderdeel natuur geldt nog de oude regeling SND op basis van programma beheer. Inrichting en functieverandering (kwaliteitsimpuls) loopt per 1 januari 2010, zowel voor agrarisch natuurbeheer als natuurbeheer via de PMJP.Dit thema heeft betrekking op het eventueel toekennen van subsidie voor agrarisch natuurbeheer.<br><br>
+</div>
+</div>
+</div>
+</div>
+<div class="nieuwsberichten">
+<div class="geo">
+<A href="kaart.php?e=@KAART&p=GBI.NAT_AGRNATRUIMEJASFAUNA_V" title="Agrarisch natuurgebied ruime jas faunarand" class="extlink">Bekijk kaartlaag</A></div>
+<br>
+<div class="nieuwsitem">
+<div class="inhoud"><div class="kop"><A href='?e=@GBI&p=DATASETEDIT|1077|Agrarisch natuurgebied ruime jas faunarand|a|GBI.NAT_AGRNATRUIMEJASFAUNA_V|' class="extlink1" title="Bekijk de metagegevens van de kaartlaag." >Agrarisch natuurgebied ruime jas faunarand</A>
+</div>
+<div class="tekstplaat">
+<A href="kaart.php?e=@KAART&p=GBI.NAT_AGRNATRUIMEJASFAUNA_V" title="Agrarisch natuurgebied ruime jas faunarand" ><img src="../metadata/thumbs/NAT_AGRNATRUIMEJASFAUNA_V.jpg" style="border: none;" class="extlink"></A></div>
+<div class="tekst1">
+Sinds 1 januari 2010 geldt de nieuwe SNL-regeling voor natuur-agrarisch natuur- en landschapsbeheer. Op basis van deze regeling heeft de provincie Drenthe het Natuurbeheerplan 2009 gemaakt. Voor het onderdeel agrarisch natuur- en landschapsbeheer soms gekoppeld aan zoekgebieden. Voor het onderdeel natuur geldt nog de oude regeling SND op basis van programma beheer. Inrichting en functieverandering (kwaliteitsimpuls) loopt per 1 januari 2010, zowel voor agrarisch natuurbeheer als natuurbeheer via de PMJP. Dit thema heeft betrekking op het eventueel toekennen van subsidie voor Agrarisch Natuur Beheer.<br><br>
+</div>
+</div>
+</div>
+</div>
+<div class="nieuwsberichten">
+<div class="geo">
+<A href="kaart.php?e=@KAART&p=GBI.MILIEU_BOBES_WAV_V" title="Ammoniak en veehouderij (Wet)" class="extlink">Bekijk kaartlaag</A></div>
+<br>
+<div class="nieuwsitem">
+<div class="inhoud"><div class="kop"><A href='?e=@GBI&p=DATASETEDIT|1283|Ammoniak en veehouderij (Wet)|a|GBI.MILIEU_BOBES_WAV_V|' class="extlink1" title="Bekijk de metagegevens van de kaartlaag." >Ammoniak en veehouderij (Wet)</A>
+</div>
+<div class="tekstplaat">
+<A href="kaart.php?e=@KAART&p=GBI.MILIEU_BOBES_WAV_V" title="Ammoniak en veehouderij (Wet)" ><img src="../metadata/thumbs/MILIEU_BOBES_WAV_V.jpg" style="border: none;" class="extlink"></A></div>
+<div class="tekst1">
+Vastgestelde voor verzuring gevoelige onderdelen van de ecologische hoofdstructuur en voor verzuring gevoelige gebieden in de nog niet begrensde ecologische verbindingszones, alsmede de zonering van 250 m. (de WAV-kaart/Wet Ammoniak en veehouderij).Voor meer informatie zie: http://www.provincie.drenthe.nl/thema/bodem/item_5255/wet-ammoniak/"<br><br>
+</div>
+</div>
+</div>
+</div>
+<div class="nieuwsberichten">
+<div class="geo">
+<A href="kaart.php?e=@KAART&p=GBI.WELZ_CULTHIS_ARCHEOGEB_100_V" title="Archeologisch gebied" class="extlink">Bekijk kaartlaag</A></div>
+<br>
+<div class="nieuwsitem">
+<div class="inhoud"><div class="kop"><A href='?e=@GBI&p=DATASETEDIT|37|Archeologisch gebied|a|GBI.WELZ_CULTHIS_ARCHEOGEB_100_V|' class="extlink1" title="Bekijk de metagegevens van de kaartlaag." >Archeologisch gebied</A>
+</div>
+<div class="tekstplaat">
+<A href="kaart.php?e=@KAART&p=GBI.WELZ_CULTHIS_ARCHEOGEB_100_V" title="Archeologisch gebied" ><img src="../metadata/thumbs/WELZ_CULTHIS_ARCHEOGEB_100_V.jpg" style="border: none;" class="extlink"></A></div>
+<div class="tekst1">
+Belangrijke archeologische gebieden, onder meer aandachtsgebied in het Provinciaal Milieubeleidsplan (PMP), kaart 3.<br><br>
+</div>
+</div>
+</div>
+</div>
+<div class="nieuwsberichten">
+<div class="geo">
+<A href="kaart.php?e=@KAART&p=GBI.MILIEU_BOBES_ARCH_250_P" title="Archeologisch object (belangrijk)" class="extlink">Bekijk kaartlaag</A></div>
+<br>
+<div class="nieuwsitem">
+<div class="inhoud"><div class="kop"><A href='?e=@GBI&p=DATASETEDIT|228|Archeologisch object (belangrijk)|a|GBI.MILIEU_BOBES_ARCH_250_P|' class="extlink1" title="Bekijk de metagegevens van de kaartlaag." >Archeologisch object (belangrijk)</A>
+</div>
+<div class="tekstplaat">
+<A href="kaart.php?e=@KAART&p=GBI.MILIEU_BOBES_ARCH_250_P" title="Archeologisch object (belangrijk)" ><img src="../metadata/thumbs/MILIEU_BOBES_ARCH_250_P.jpg" style="border: none;" class="extlink"></A></div>
+<div class="tekst1">
+Belangrijke archeologische objecten als aandachtsgebied. Kaart 3 uit het PMP (Provinciaal Milieubeleidsplan).<br><br>
+</div>
+</div>
+</div>
+</div>
+<div class="nieuwsberichten">
+<div class="geo">
+<A href="kaart.php?e=@KAART&p=GBI.WELZ_CULTHIS_ARCHWSTRPKRTB91_V" title="Archeologische eenheid" class="extlink">Bekijk kaartlaag</A></div>
+<br>
+<div class="nieuwsitem">
+<div class="inhoud"><div class="kop"><A href='?e=@GBI&p=DATASETEDIT|8|Archeologische eenheid|a|GBI.WELZ_CULTHIS_ARCHWSTRPKRTB91_V|' class="extlink1" title="Bekijk de metagegevens van de kaartlaag." >Archeologische eenheid</A>
+</div>
+<div class="tekstplaat">
+<A href="kaart.php?e=@KAART&p=GBI.WELZ_CULTHIS_ARCHWSTRPKRTB91_V" title="Archeologische eenheid" ><img src="../metadata/thumbs/WELZ_CULTHIS_ARCHWSTRPKRTB91_V.jpg" style="border: none;" class="extlink"></A></div>
+<div class="tekst1">
+Archeologische eenhedenStreekplan Drenthe, kaart B.9.1.Onderdeel zeer belangrijke archeologische eenheden als aandachtsgebied. Provinciaal Milieubeleidsplan (PMP), Kaart 3 en POP (Provinciaal Omgevingsplan), kaart 8.<br><br>
+</div>
+</div>
+</div>
+</div>
+<div class="nieuwsberichten">
+<div class="geo">
+<A href="kaart.php?e=@KAART&p=GBI.WELZ_CULTHIS_AMK_V" title="Archeologische monumentenkaart (AMK)" class="extlink">Bekijk kaartlaag</A></div>
+<br>
+<div class="nieuwsitem">
+<div class="inhoud"><div class="kop"><A href='?e=@GBI&p=DATASETEDIT|483|Archeologische monumentenkaart (AMK)|a|GBI.WELZ_CULTHIS_AMK_V|' class="extlink1" title="Bekijk de metagegevens van de kaartlaag." >Archeologische monumentenkaart (AMK)</A>
+</div>
+<div class="tekstplaat">
+<A href="kaart.php?e=@KAART&p=GBI.WELZ_CULTHIS_AMK_V" title="Archeologische monumentenkaart (AMK)" ><img src="../metadata/thumbs/WELZ_CULTHIS_AMK_V.jpg" style="border: none;" class="extlink"></A></div>
+<div class="tekst1">
+De archeologische monumenten zoals gehanteerd door de Rijksdienst Oudheidkundig Bodemonderzoek (ROB).De Archeologische Monumenten Kaart (AMK) bevat een overzicht van belangrijke archeologische terreinen in Nederland. De terreinen zijn beoordeeld op verschillende criteria en op grond daarvan zijn de terreinen ingedeeld in categorieën met archeologische waarde, hoge archeologische waarde en zeer hoge archeologische waarde (o.a. de beschermde monumenten).<br><br>
+</div>
+</div>
+</div>
+</div>
+<div class="nieuwsberichten">
+<div class="geo">
+<A href="kaart.php?e=@KAART&p=GBI.WELZ_CULTHIS_ARCHWSTRPKRTB91_P" title="Archeologische waarde" class="extlink">Bekijk kaartlaag</A></div>
+<br>
+<div class="nieuwsitem">
+<div class="inhoud"><div class="kop"><A href='?e=@GBI&p=DATASETEDIT|7|Archeologische waarde|a|GBI.WELZ_CULTHIS_ARCHWSTRPKRTB91_P|' class="extlink1" title="Bekijk de metagegevens van de kaartlaag." >Archeologische waarde</A>
+</div>
+<div class="tekstplaat">
+<A href="kaart.php?e=@KAART&p=GBI.WELZ_CULTHIS_ARCHWSTRPKRTB91_P" title="Archeologische waarde" ><img src="../metadata/thumbs/WELZ_CULTHIS_ARCHWSTRPKRTB91_P.jpg" style="border: none;" class="extlink"></A></div>
+<div class="tekst1">
+Archeologische waarden
+Streekplan Drenthe, kaart B.9.1.<br><br>
+</div>
+</div>
+</div>
+</div>
+<div class="nieuwsberichten">
+<div class="geo">
+<A href="kaart.php?e=@KAART&p=GBI.WELZ_CULTHIS_IKAW_100_V" title="Archeologische waardenkaart (IKAW)" class="extlink">Bekijk kaartlaag</A></div>
+<br>
+<div class="nieuwsitem">
+<div class="inhoud"><div class="kop"><A href='?e=@GBI&p=DATASETEDIT|485|Archeologische waardenkaart (IKAW)|a|GBI.WELZ_CULTHIS_IKAW_100_V|' class="extlink1" title="Bekijk de metagegevens van de kaartlaag." >Archeologische waardenkaart (IKAW)</A>
+</div>
+<div class="tekstplaat">
+<A href="kaart.php?e=@KAART&p=GBI.WELZ_CULTHIS_IKAW_100_V" title="Archeologische waardenkaart (IKAW)" ><img src="../metadata/thumbs/WELZ_CULTHIS_IKAW_100_V.jpg" style="border: none;" class="extlink"></A></div>
+<div class="tekst1">
+Indicatieve kaart archeologische waarden (IKAW). Dit landelijk bestand is het resultaat van een rekenkundige bewerking op basis van een model van de ROB (Rijksdienst Oudheidkundig Bodemonderzoek). Uitgangspunt bij de vervaardiging van de IKAW is dat er een verband bestaat tussen de bodemgesteldheid en activiteiten van mensen in het verleden, zoals bijvoorbeeld akkerbouw. Op grond daarvan is op de IKAW aangegeven hoe groot de kans is om bij de uitvoering van plannen op archeologische resten te stuiten.<br><br>
+</div>
+</div>
+</div>
+</div>
+<div class="nieuwsberichtenhist">
+<div class="geo">
+<A href="kaart.php?e=@KAART&p=GBI.NAT_HIST_AGRNATUURGEBIED_2009_V" title="Agrarisch natuurgebied 2009 (historie)" class="extlink">Bekijk kaartlaag</A></div>
+<br>
+<div class="nieuwsitem">
+<div class="inhoud"><div class="kop"><A class="extlink1" href='?e=@GBI&p=DATASETEDIT|1075|Agrarisch natuurgebied 2009 (historie)|a|GBI.NAT_HIST_AGRNATUURGEBIED_2009_V|' title="Bekijk de metagegevens van de kaartlaag." >Agrarisch natuurgebied 2009 (historie) HISTORISCH ARCHIEF</A>
+</div>
+<div class="tekstplaat">
+<A href="kaart.php?e=@KAART&p=GBI.NAT_HIST_AGRNATUURGEBIED_2009_V" title="Agrarisch natuurgebied 2009 (historie)" ><img src="../metadata/thumbs/NAT_HIST_AGRNATUURGEBIED_2009_V.jpg" style="border: none;" class="extlink"></A></div>
+<div class="tekst1">
+Sinds 1 januari 2010 geldt de nieuwe SNL-regeling voor natuur-agrarisch natuur- en landschapsbeheer. Op basis van deze regeling heeft de provincie Drenthe het Natuurbeheerplan 2009 gemaakt. Voor het onderdeel agrarisch natuur- en landschapsbeheer soms gekoppeld aan zoekgebieden. Inrichting en functieverandering (kwaliteitsimpuls) loopt per 1 januari 2010, zowel voor agrarisch natuurbeheer als natuurbeheer via de PMJP. Dit thema heeft betrekking op het eventueel toekennen van subsidie voor Agrarisch Natuur Beheer.<br><br>
+</div>
+</div>
+</div>
+</div>
+<div class="nieuwsberichtenhist">
+<div class="geo">
+<A href="kaart.php?e=@KAART&p=GBI.NAT_HIST_AGRNATRUIMEJAS_2009_V" title="Agrarisch natuurgebied ruime jas 2009 (historie)" class="extlink">Bekijk kaartlaag</A></div>
+<br>
+<div class="nieuwsitem">
+<div class="inhoud"><div class="kop"><A class="extlink1" href='?e=@GBI&p=DATASETEDIT|1076|Agrarisch natuurgebied ruime jas 2009 (historie)|a|GBI.NAT_HIST_AGRNATRUIMEJAS_2009_V|' title="Bekijk de metagegevens van de kaartlaag." >Agrarisch natuurgebied ruime jas 2009 (historie) HISTORISCH ARCHIEF</A>
+</div>
+<div class="tekstplaat">
+<A href="kaart.php?e=@KAART&p=GBI.NAT_HIST_AGRNATRUIMEJAS_2009_V" title="Agrarisch natuurgebied ruime jas 2009 (historie)" ><img src="../metadata/thumbs/NAT_HIST_AGRNATRUIMEJAS_2009_V.jpg" style="border: none;" class="extlink"></A></div>
+<div class="tekst1">
+Sinds 1 januari 2010 geldt de nieuwe SNL-regeling voor natuur-agrarisch natuur- en landschapsbeheer. Op basis van deze regeling heeft de provincie Drenthe het Natuurbeheerplan 2009 gemaakt. Voor het onderdeel agrarisch natuur- en landschapsbeheer soms gekoppeld aan zoekgebieden. Inrichting en functieverandering (kwaliteitsimpuls) loopt per 1 januari 2010, zowel voor agrarisch natuurbeheer als natuurbeheer via de PMJP. Dit thema heeft betrekking op het eventueel toekennen van subsidie voor Agrarisch Natuur Beheer.<br><br>
+</div>
+</div>
+</div>
+</div>
+<div class="nieuwsberichtenhist">
+<div class="geo">
+<a href="kaart.php?e=@KAART&p=GBI.NAT_HIST_AMBITIEKAART_2009_V" title="Ambitie natuur 2009 (historie)" class="extlink">Bekijk kaartlaag</a></div>
+<br>
+<div class="nieuwsitem">
+<div class="inhoud"><div class="kop"><A class="extlink1" href='?e=@GBI&p=DATASETEDIT|1072|Ambitie natuur 2009 (historie)|a|GBI.NAT_HIST_AMBITIEKAART_2009_V|' title="Bekijk de metagegevens van de kaartlaag." >Ambitie natuur 2009 (historie) HISTORISCH ARCHIEF</a>
+</div>
+<div class="tekstplaat">
+<A href="kaart.php?e=@KAART&p=GBI.NAT_HIST_AMBITIEKAART_2009_V" title="Ambitie natuur 2009 (historie)" ><img src="../metadata/thumbs/NAT_HIST_AMBITIEKAART_2009_V.jpg" style="border: none;" class="extlink"></a></div>
+<div class="tekst1">
+De ambitiekaart vormt het toetsingskader voor de SKNL.<br><br>
+</div>
+</div>
+</div>
+</div>
+<div class="nieuwsberichtenhist">
+<div class="geo">
+<A href="kaart.php?e=@KAART&p=GBI.MILIEU_HIST_BOBES_WAV_V" title="Ammoniak en veehouderij (Wet) (historie)" class="extlink">Bekijk kaartlaag</a></div>
+<br>
+<div class="nieuwsitem">
+<div class="inhoud"><div class="kop"><A class="extlink1" href='?e=@GBI&p=DATASETEDIT|549|Ammoniak en veehouderij (Wet) (historie)|a|GBI.MILIEU_HIST_BOBES_WAV_V|' title="Bekijk de metagegevens van de kaartlaag." >Ammoniak en veehouderij (Wet) (historie) HISTORISCH ARCHIEF</a>
+</div>
+<div class="tekstplaat">
+<A href="kaart.php?e=@KAART&p=GBI.MILIEU_HIST_BOBES_WAV_V" title="Ammoniak en veehouderij (Wet) (historie)" ><img src="../metadata/thumbs/MILIEU_HIST_BOBES_WAV_V.jpg" style="border: none;" class="extlink"></a></div>
+<div class="tekst1">
+Vastgestelde voor verzuring gevoelige onderdelen van de ecologische hoofdstructuur en voor verzuring gevoelige gebieden in de nog niet begrensde ecologische verbindingszones, alsmede de zonering van 250 m. (de WAV-kaart/Wet Ammoniak en veehouderij)). Provinciaal Omgevingsplan Drenthe. POPII, kaart F.<br><br>
+</div>
+</div>
+</div>
+</div>
+<br>
+<div class="watermerk"><div class="wapen"></div></div>
+</div>
+</div>
+</body>
+</html>
+

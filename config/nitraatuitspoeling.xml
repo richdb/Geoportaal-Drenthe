@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<FLAMINGO xmlns:fmc="fmc"> 
+<fmc:Legend id="legend" skin="f2" symbolpath="assets" shadowsymbols="false" width="215" right="right" top="top" bottom="bottom" listento="map" backgroundcolor="#FFFFFF">  	
+	<string id="outofscale" nl="Buiten schaalbereik;&lt;br&gt;zoom naar deze laag..." en="Outside range;&lt;br&gt;zoom to layer" de="Au?rhalb des Ma?tabsbereichs;&lt;br&gt;vergr??" fr="Hors ?elle..." />
+	<style id=".group" font-family="arial,verdana" font-size="12px" color="#000000" display="block" font-weight="normal" />
+	<style id=".group_mouseover" font-family="arial,verdana" font-size="12px" color="#000000" display="block" font-weight="normal" />
+	<style id=".item" font-family="arial,verdana" font-size="11px" color="#333333" display="block" font-weight="normal" />
+	<style id=".item_link" font-family="arial,verdana" font-size="11px" color="#0033cc" display="block" font-weight="normal" text-decoration="underline" />
+	<style id=".symbol" font-family="arial,verdana" font-size="11px" color="#333333" display="block" font-weight="normal" />
+	<style id=".symbol_link" font-family="arial,verdana" font-size="11px" color="#0033cc" display="block" font-weight="normal" text-decoration="underline" />
+	<style id=".outofscale" font-family="arial,verdana" font-size="10px" color="#0066cc" display="block" font-style="italic" />
+	<style id=".text" font-family="arial,verdana" font-size="10px" color="#333333" display="block" font-style="italic" />
+<!--Legenda-items. Hieronder wordt de legenda opgebouwd.-->
+	<group label="Nitraatuitspoeling" open="true">
+		<item label="dgggggdf" canhide="false" listento="bodematlas.MILIEU_BOBES_KWBNO3_2006_V">
+		<symbol label="geen of onvoldoende data"  url="../../assets/symbol.swf" fill="#FFFFFF" />
+		<symbol label="groot probleem"  url="../../assets/symbol.swf" fill="#FF0000" />
+		<symbol label="matig probleem"  url="../../assets/symbol.swf" fill="#FFD37F" />		
+        <symbol label="geen probleem"  url="../../assets/symbol.swf" fill="#D3FFBE" />		
+	    </item >
+	 </group >	
+	
+<!--Kaart ondergrond is eigenlijk een standaard-legenda-item dat altijd getoond wordt.-->
+	<group label="Kaart ondergrond" open="false">
+		<string id="label" nl="Kaart ondergrond" en="Base map" de="Hintergrundkarte" fr="Arrière-plan de la carte" />
+		<item label="" listento="johan">
+			<string id="label" nl="Kaart ondergrond" en="Base map" de="Hintergrundkarte" fr="Arrière-plan de la carte" />
+			<symbol label="Spoorlijn"  url="../../assets/symbol.swf" line_4="#808080"  line_dash_2="#ffffff"  >
+				<string id="label" nl="Spoorlijn" en="Railwayline" de="Eisenbahnlinie" fr="Ligne de chemin de fer" />
+			</symbol>
+			<symbol label="Autosnelweg"  url="../../assets/symbol.swf" line_5="#aaabde" line_2="#ffffff" maxscale="1325" minscale="2.64" >
+				<string id="label" nl="Autosnelweg" en="Motorway" de="Autobahn" fr="Autoroute" />
+			</symbol>
+			<symbol label="Autosnelweg"  url="../../assets/symbol.swf" line_5="#aaabde"  maxscale="2.64" minscale="0" >
+				<string id="label" nl="Autosnelweg" en="Motorway" de="Autobahn" fr="Autoroute" />
+			</symbol>
+			<symbol label="Hoofdweg"  url="../../assets/symbol.swf" line_4="#ffc564" maxscale="79.5" minscale="2.64" >
+				<string id="label" nl="Hoofdweg" en="Main road" de="Hauptverkehrsstraße" fr="Route principale" />
+			</symbol>
+			<symbol label="Hoofdweg"  url="../../assets/symbol.swf" line_2="#ffc564" maxscale="2.64" minscale="0" >
+				<string id="label" nl="Hoofdweg" en="Main road" de="Hauptverkehrsstraße" fr="Route principale" />
+			</symbol>
+			<symbol label="Doorgaande weg"  url="../../assets/symbol.swf" line_4="#f6d0b2" line="#ffffff"  maxscale="79.5" minscale="2.64" >
+				<string id="label" nl="Doorgaande weg" en="Through road" de="Durchgangsstraße" fr="Voie de traverse" />
+			</symbol>
+			<symbol label="Doorgaande weg"  url="../../assets/symbol.swf" line_2="#f6d0b2" maxscale="2.64" minscale="0" >
+				<string id="label" nl="Doorgaande weg" en="Through road" de="Durchgangsstraße" fr="Voie de traverse" />
+			</symbol>
+			<symbol label="Bebouwd"  url="../../assets/symbol.swf" fill="#dbdbdb"  >
+				<string id="label" nl="Bebouwd" en="Built-up" de="Bebauung" fr="Zone bâtie" />
+			</symbol>
+			<symbol label="Overig"  url="../../assets/symbol.swf" fill="#f9fce8"  maxscale="2.64" minscale="0" >
+				<string id="label" nl="Overig" en="Other" de="Sonstiges" fr="Divers" />
+			</symbol>
+			<symbol label="Bos"  url="../../assets/symbol.swf" fill="#dfffb9">
+				<string id="label" nl="Bos" en="Woods" de="Wald" fr="Forêt" />
+			</symbol>
+			<symbol label="Bouwland"  url="../../assets/symbol.swf" fill="#ffffff"  maxscale="2.64" minscale="0" >
+				<string id="label" nl="Bouwland" en="Farmland" de="Bauland" fr="Terre cultivable" />
+			</symbol>
+			<symbol label="Weiland"  url="../../assets/symbol.swf" fill="#f9fce8"  >
+				<string id="label" nl="Weiland" en="Meadows" de="Weideland" fr="Pâturage" />
+			</symbol>
+			<symbol label="Heide"  url="../../assets/symbol.swf" fill="#efdaed"  maxscale="2.64" minscale="0" >
+				<string id="label" nl="Heide" en="Moorland" de="Heide" fr="Prairie" />
+			</symbol>
+			<symbol label="Zand"  url="../../assets/symbol.swf" fill="#ffffbf"  maxscale="2.64" minscale="0" >
+				<string id="label" nl="Zand" en="Sand" de="Sand" fr="Sable" />
+			</symbol>
+			<symbol label="Overig gebruik"  url="../../assets/symbol.swf" fill="#dbdbdb"  maxscale="2.64" minscale="0" >
+				<string id="label" nl="Overig gebruik" en="Other use" de="sonstige Nutzung" fr="Usage divers" />
+			</symbol>
+			<symbol label="Water"  url="../../assets/symbol.swf" fill="#ccf6ff"  >
+				<string id="label" nl="Water" en="Water" de="Wasser" fr="Eau" />
+			</symbol>
+		</item>
+	</group>
+</fmc:Legend>
+</FLAMINGO>

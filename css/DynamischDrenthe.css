@@ -1,0 +1,38 @@
+/* color:#0081C3;/*licht blauw*/
+   
+  .tekstbrowser {
+  display:none;
+  visibility:hidden;
+  }
+  html {
+	border:0px;
+	margin:0px;
+	padding:0px;
+  height: 100%;
+  }
+  body {
+	border:0px;
+	margin:0px;
+	padding:0px;
+  background-color:#0081C3;/*licht blauw*/
+	background-image:url(../images/BGSite.jpg);
+	background-position:left top;
+	background-repeat:repeat-x;
+  }
+  .headerhouder{
+	border:0px;
+	margin:0px;
+	padding:0px;
+  height:198px;
+	background-image:url(../images/BGHeader.jpg);
+	background-repeat:repeat-x;
+  }
+	.headerhouder .headerfoto{
+	border:0px;
+	margin:0px;
+	padding:0px;
+	background-image:url(../images/header_natuur.jpg);
+	background-position:left top;
+	background-repeat:no-repeat;
+  height:139px;
+	}

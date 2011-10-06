@@ -1,0 +1,579 @@
+/* --- Algemene elementen --- */
+ * { 
+	margin:0; 
+	padding:0; 
+	border:0;
+	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; 
+	font-size: 11pt;
+	text-decoration:none; 	
+}
+
+a:link {
+	background-color: #FFFFFF;
+	color: #0073b1;
+	font-size:11pt;
+}
+
+a:visited {
+	background-color: #FFFFFF;
+	color: #0073b1;
+	font-size:11pt;
+}
+
+a:hover {
+	background-color: #FFFFFF;
+	color: #dd6d07;
+	text-decoration: underline;	
+}
+
+a:active {
+	background-color: #FFFFFF;
+	color: #0073b1;
+	font-size:11pt;
+} 
+
+select {
+	width: 300px;
+	border: solid 1px #007FC5;
+	color: #000000; 
+	font-size: 100%;
+	border: solid 1px #ebf4fa;    
+}
+
+input {
+	color: #000000; 
+	border: solid 1px #000000;    
+}
+
+
+li {
+	color: #0073b1;
+	font-size: 100%;
+}
+
+.pdf a:link {
+	background-color: transparent;
+	color: #0073b1;
+	font-size:9pt;
+}
+
+.pdf a:visited {
+	background-color: transparent;
+	color: #0073b1;
+	font-size:9pt;
+}
+
+.pdf a:hover {
+	background-color: transparent;
+	color: #dd6d07;
+	text-decoration: underline;	
+}
+
+.pdf a:active {
+	background-color: transparent;
+	color: #0073b1;
+	font-size:9pt;
+} 
+
+.kopbegin {
+	background: url(../images/bg-blokheader-lichtblauw.gif) 0px 0px repeat-x;	
+	color: #FFFFFF;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 120%;
+	font-weight: bold;
+}
+
+.kopbegin a:link {
+	background-color: transparent;
+	color: #FFFFFF;
+	font-size:11pt;
+}
+
+.kopbegin a:visited {
+	background-color: transparent;
+	color: #FFFFFF;
+	font-size:11pt;
+}
+
+.kopbegin a:hover {
+	background-color: transparent;
+	color: #dd6d07;
+	text-decoration: underline;	
+}
+
+.kopbegin a:active {
+	background-color: transparent;
+	color: #FFFFFF;
+	font-size:11pt;
+} 
+
+.kopbegin li {
+	color: #0073b1;
+	font-size: 95%;
+	font-weight: normal;
+	font-family: Verdana, Geneva, Arial;
+}
+
+.kop {
+	background-color: #ebf4fa;
+	border: solid 1px #959595; 
+	font-weight:bold;
+	font-size: 130%;
+	text-align: center;
+}
+
+.rand {
+	border: solid 1px #959595; 
+	text-align: left;
+	font-size: 95%;
+}
+
+.randedit {
+	background-color: #ebf4fa;
+	font-size: 95%;
+	text-align: left;
+	
+}
+
+.randeditkop {
+	background-color: #ebf4fa;
+	font-size: 100%;
+	text-align: left;
+	font-weight:bold;
+	
+}
+
+.randkop {
+	background-color: #ebf4fa;
+	border: solid 1px #959595; 
+	font-weight:bold;
+	font-size: 105%;
+	text-align: center;
+}
+
+.randkop a:hover {
+	background-color: #ebf4fa;
+}
+
+.randkop a:link {
+	background-color: #ebf4fa;
+}
+
+.randkop a:visited {
+	background-color: #ebf4fa;
+}
+
+.img1 { vertical-align: middle; }
+
+.linkkop {
+	background-color: #ebf4fa;
+	border: solid 1px #959595; 
+	font-weight:bold;
+	font-size: 85%;
+	text-align: right;
+	vertical-align:middle
+}
+
+.linkkop a:hover {
+	background-color: #ebf4fa;
+}
+
+.linkkop a:link {
+	background-color: #ebf4fa;
+}
+
+.linkkop a:visited {
+	background-color: #ebf4fa;
+}
+
+.linkkop1 {
+	background-color: #ebf4fa;
+	border: solid 1px #959595; 
+	font-weight:bold;
+	font-size: 85%;
+	text-align: center;
+	vertical-align:middle
+}
+
+.linkkop1 a:hover {
+	background-color: #ebf4fa;
+}
+
+.linkkop1 a:link {
+	background-color: #ebf4fa;
+}
+
+.linkkop1 a:visited {
+	background-color: #ebf4fa;
+}
+
+
+.randtabel {
+	border-collapse: collapse; 
+	border-style: none;
+	border: solid 1px #000000;
+	
+}
+
+.randtabel1 {
+	border-style: none;
+	border: solid 1px #000000;
+	
+}
+
+.randtabel2 {
+	background-color: #ebf4fa;
+	border-collapse: collapse; 
+	border-style: none;
+	border: solid 1px #000000;
+}
+
+.randtabel3 {
+	background-color: #FFFFFF;
+	border-style: none;
+}
+
+
+.randtabeledit {	
+	background-color: #ebf4fa;
+	vertical-align:top
+}
+
+h1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 135%;
+	color: #7f373b;
+}
+
+h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 150%;
+	color: #7f373b;
+}
+
+
+
+/* --- Body elementen --- */
+body {
+	background: #013567 url(../images/bg-gradient.jpg) 0% 0% repeat-x;text-align:center;
+}
+
+#bodycontainer_center {
+	text-align:center;
+}
+
+#bodycontainer {
+	margin-left:auto; 
+	margin-right:auto;
+	text-align:left;
+	width: 1200px;
+	height: 840px;
+	border: 1px solid #000;
+	padding: 0;
+	background-color: #fff; 
+	margin-top: 22px;
+}
+
+#bodycontainer1 {
+	margin-left:auto; 
+	margin-right:auto;
+	text-align:left;	
+	padding: 0;
+	background-color: #fff; 	
+}
+
+/* --- Header en navigatie elementen --- */
+#header {			
+	width: 940px;
+	position: absolute;
+	top: 20px;
+	
+}
+
+#serviceblok {			
+	width: 728px;	
+	height: 32px;
+	float:right;
+	font-size: 100%
+	
+}
+
+#serviceblok div.dezedatum{			
+	margin-top: 8px;
+	margin-right: 18px;	
+	float: left;
+	font-size: 90%
+}
+
+#serviceblok div.servicelinks{		
+	margin-top: 8px;			
+	float: left;
+	font-size: 95%
+}
+
+#serviceblok div.servicelinks ul{		
+	list-style-type:none;
+	display: block;
+	font-size: 95%
+}
+
+#serviceblok div.servicelinks li{		
+	float: left;
+	margin-right: 15px;			
+	font-size: 95%
+}
+
+#serviceblok div.servicelinks a{		
+	padding-right: 16px;
+	background: url(../images/linkpijl-oranje.gif) bottom right no-repeat;
+	color: #007bbe;
+	font-size: 95%
+}
+
+#serviceblok div.servicelinks a:hover{		
+	background: url(../images/linkpijl-lichtblauw.gif) bottom right no-repeat;
+	color: #dd6d07;
+	text-decoration: underline;
+	font-size: 95%
+}
+
+#headerimage {			
+	width: 100%;			
+	height:140px;
+	clear:right;
+	margin-right: 8px;
+	background: url(../images/gbi_achtergrond.jpg) top right no-repeat;	
+}
+
+#contentcontainer {	
+	position: relative;
+	margin-top: 20px;
+	margin-left: 8px;
+	margin-right: 8px;
+	clear:both;
+}
+
+#contentkolomkaart {	
+	width: 300px;
+	float: left;
+	margin-right: 10px;
+	color: #FFFFFF;
+}
+
+#contentkoloml {	
+	width: 300px;
+	float: left;
+	margin-right: 10px;	
+}
+
+#contentkolomr {	
+	width: 614px;
+	float: left;	
+}
+
+#hoofdnavigatie {	
+	display:inline;
+	width: 728px;			
+	float:right;
+	margin-right: 8px;	
+}
+
+.nav {
+  height:24px;
+  width: 728px;
+  background: url(../images/bg-mainnav.gif) 0px 0px repeat-x;
+}
+
+.nav_menu li,
+.nav_menu li.selected {
+
+  font-weight:bold;
+  height:auto;
+  width:auto !important;  
+}
+
+.nav_menusubsub a.selecteditem {
+  text-decoration:underline;
+}
+
+.nav_menu li.selected ul {
+  margin: 0px 0px 0px -17px;
+  padding: 0px 0px 0px 0px;
+  background-color:#ebf4fa;
+}
+
+.nav_menu li a, .nav_menu li p {
+  display:block;
+  color:#010099;
+  margin-right:10px;
+  margin-left:0px;
+  padding:2px 0px 4px 0px;  
+  font-size:80%;
+}
+
+.nav_menu li p {
+ cursor: default;
+}
+
+#hpnav {
+  position:relative;
+  margin: 0px; 
+  padding: 0px 0px 0px 0px;
+  width: auto;
+  float:none;
+  z-index:90;
+  list-style-type:none;  
+}
+
+#hpnav li {
+  position: relative;
+  height:24px;
+  left:0px;
+  display:block;
+  float:left;
+  font-size: 85%;
+  padding:3px 10px 0px 5px;
+  margin-right: 15px;
+  background: url(../images/bg-mainnav-item.gif) top right repeat-x;
+}
+
+
+
+#hpnav > li:hover {  
+   background: url(../images/bg-mainnav-item-inv.gif) top right repeat-x;
+}
+
+#hpnav > li:hover a {
+  text-decoration:none;
+}
+
+#hpnav li ul {
+  position: absolute; 
+  left: 0px;
+  top: 24px;
+  display: none;
+  width:180px;
+  margin:0px;
+  padding:0px; 
+  border-style:solid;
+  border-width:1px;
+  border-color:#0073b1;
+  /*overflow:hidden;*/
+  z-index:98;
+}
+
+#hpnav li ul ul {
+  position: absolute; 
+  left: 180px;
+  top: -1px;
+  display: none;
+  width:180px;
+  margin:0px;
+  padding:0px; 
+  border-style:solid;
+  border-width:1px;
+  border-color:#0073b1;
+  /*overflow:hidden;*/
+  z-index:98;
+}
+
+#hpnav li ul li {
+  position:relative;
+  display:block;
+  width:180px; 
+  padding:1px 0px 1px 5px;
+  background-color:#fff;
+  background-image: none;
+  font-weight:normal;
+  border-style:none; 
+  margin:0px;
+  height: auto;
+}
+
+#hpnav li ul.nav_menusub li a{
+  color: #0073b1;
+  font-size:95%;
+}
+
+#hpnav li ul.nav_menusubsub li a{
+  color: #0073b1;
+  font-size:110%;
+}
+
+
+#hpnav li ul li:hover {
+  background-color:#cce3ef;*
+}
+
+#hpnav li ul li a {
+  margin:0px;
+  padding-left:0px; 
+}
+
+#hpnav li ul li a:hover { 
+  color: #003b59; 
+}
+
+ /* The magic */
+#hpnav li:hover ul.nav_menusub,
+#hpnav li.over ul.nav_menusub { 
+  position:absolute;
+  left: 0px;
+  display: block;
+  background-color:#FFFFFF;
+  z-index:100;
+}
+
+#hpnav ul li:hover ul.nav_menusubsub,
+#hpnav ul li.over ul.nav_menusubsub { 
+  position:absolute;
+  left: 180px;
+  display: block;
+  background-color:#FFFFFF;
+  z-index:100;
+}
+
+div.blokheader {			
+	height:24px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+div.blokheader.donkerblauw {
+	background: url(../images/bg-blokheader-donkerblauw.gif) 0px 0px repeat-x;
+ }
+
+div.blokheader p{			
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 95%;
+	font-weight: bold;
+	color: #fff;
+	margin-left: 8px;
+	padding-top: 2px;	
+}
+
+div.bloklist-item, div.bloklist-nolink-item {			
+	overflow			: auto;
+	border: solid;
+	border-left-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-top-width: 0px;	
+	margin-left: 2px;
+	margin-right: 2px;
+	padding-top: 3px;
+	padding-bottom: 2px;
+	background: #fff;
+	font-size: 70%;	
+	height: 580px;
+}
+
+div.bloklist-item.donkerblauw a, div.bloklist-item.donkerblauw span, div.bloklist-nolink-itemtext.donkerblauw a{			
+	color: #003b59;
+	line-height: 1.5em;	
+}
+
+div.bloklist-item.donkerblauw a:hover{		
+	color: #dd6d07;
+	text-decoration: underline;
+}

@@ -1,0 +1,48 @@
+.formulier .invoer textarea {
+width:78%;
+}
+
+.index .formulier .invoer select {
+width:80% !important;
+}
+
+.pagina .middenkolom{
+display:inline-block;
+}
+.pagina .middenkolom .middeninhoud{
+width:100%;
+}
+
+#hpnav {
+}
+
+#hpnav li {
+	display:block;
+	float:left;
+  margin:0px 1em 0px 0px;
+  padding:0px 1em 0px 0px;
+ 	height:1.7em;
+	background-image:url(../img/BG/plijltjenaarrechts01.gif);
+	background-position:right 0.4em;
+	background-repeat:no-repeat;
+	color:#FFFFFF;
+  font-weight:bold;
+	text-decoration:none;
+	width:auto !important;
+	cursor:pointer;
+}
+#hpnav li.over {
+	display:block;
+	float:left;
+  margin:0px 1em 0px 0px;
+  padding:0px 1em 0px 0px;
+ 	height:1.7em;
+	background-image:url(../img/BG/plijltjenaarbeneden01.gif);
+	background-position:right 0.4em;
+	background-repeat:no-repeat;
+	color:#FFD139;/*geel*/
+  font-weight:bold;
+	text-decoration:none;
+	width:auto !important;
+	cursor:pointer;
+}

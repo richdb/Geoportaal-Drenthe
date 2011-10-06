@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FLAMINGO xmlns:fmc="fmc">
+<fmc:Legend id="legend" symbolpath="../legend/" listento="map" shadowsymbols="true" width="215" right="right" top="top" bottom="bottom" backgroundcolor="#FFFFFF">
+	<group label="Nitraatuitspoeling" open="true">
+		<item label="" canhide="true" listento="geoportaal.MILIEU_BOBES_KWBNO3_250_V">
+			<symbol label="Landschappen van het landijs"  url="../../assets/symbol.swf" fill="#BEFFE8" />
+			<symbol label="Landschapselementen van poolwoestijn en toendra"  url="../../assets/symbol.swf" fill="#E8BEFF" />
+			<symbol label="Moderne geologische tijd, Holoceen"  url="../../assets/symbol.swf" fill="#FFFFBE" />
+			<symbol label="Door de mens gemaakte landvormen"  url="../../assets/symbol.swf" fill="#9C9C9C" />
+		</item>
+	</group >
+</fmc:Legend>
+</FLAMINGO>

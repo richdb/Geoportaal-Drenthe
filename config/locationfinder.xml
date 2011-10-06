@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FLAMINGO xmlns:fmc="fmc">
+
+<fmc:LocationFinder id="locationfinder" >
+<LOCATIONS id="gemeente" server="http://www.drenthe.info/kaarten" service="tdn_grenzen"  servlet="ARCIMS/ims" layerid="TDN_GEMEENTEGRENZEN_V" searchfield="OMSCHRIJVING" outputfields="OMSCHRIJVING">
+<string id="output" nl="[OMSCHRIJVING]" en="[OMSCHRIJVING]" de="[OMSCHRIJVING]" fr="[OMSCHRIJVING]" />
+<string id="label" nl="Zoek een gemeente" en="Zoek een gemeente" de="Kommune suchen" fr="Recherche d'une commune" />
+</LOCATIONS>
+<LOCATIONS id="plaats" server="http://www.drenthe.info/kaarten" service="ondergrond_kerntopo"  servlet="ARCIMS/ims" layerid="RO_KERNTOPO_V" searchfield="KERNNAAM" outputfields="KERNNAAM">
+<string id="output" nl="[KERNNAAM]" en="[KERNNAAM]" de="[KERNNAAM]" fr="[KERNNAAM]" />
+<string id="label" nl="Zoek een plaats" en="Zoek een plaats" de="Platz suchen" fr="Recherche d'une ville/village" />
+</LOCATIONS>
+<LOCATIONS id="postcode" server="http://www.drenthe.info/kaarten" service="ACN_PC_postcode6cijfer_V"  servlet="ARCIMS/ims" layerid="ACN_PC_POSTCODE6CIJFER_V" searchfield="PC6" outputfields="PC6">
+<string id="output" nl="[PC6]" en="[PC6]" de="[PC6]" fr="[PC6]" />
+<string id="label" nl="Zoek een postcode" en="Zoek een postcode" de="Postkode suchen?" fr="Recherche d'une Code postage?" />
+</LOCATIONS>
+<LOCATIONS id="straatnaam" server="http://www.drenthe.info/kaarten" service="ondergrond_top10_wegen_spoorwegen_v"  servlet="ARCIMS/ims" layerid="NWB_WEG_DRUITSNEDE_WEGEN_L" searchfield="STR_GEM" outputfields="STR_GEM">
+<string id="output" nl="[STR_GEM]" en="[STR_GEM]" de="[STR_GEM]" fr="[STR_GEM]" />
+<string id="label" nl="Zoek een straat" en="Zoek een straat" de="Strasse suchen?" fr="Recherche d'un avenue?" />
+</LOCATIONS>
+</fmc:LocationFinder>
+
+</FLAMINGO>

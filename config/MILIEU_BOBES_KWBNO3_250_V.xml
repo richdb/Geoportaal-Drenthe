@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FLAMINGO xmlns:fmc="fmc">
+<fmc:Legend id="legend" symbolpath="../legend/" listento="map" shadowsymbols="true" width="215" right="right" top="top" bottom="bottom" backgroundcolor="#FFFFFF">
+			<item label="Nitraatuitspoeling" canhide="true" listento="geoportaal.MILIEU_BOBES_KWBNO3_250_V">
+			<symbol label="uitspoeling: gering"  url="../../assets/symbol.swf" fill="#B0E000" />
+			<symbol label="uitspoeling: variabel"  url="../../assets/symbol.swf" fill="#FFAA00" />
+			<symbol label="uitspoeling: groot"  url="../../assets/symbol.swf" fill="#FF0000" />			
+		</item>	
+</fmc:Legend>
+</FLAMINGO>

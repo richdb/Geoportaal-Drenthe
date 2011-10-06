@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<FLAMINGO xmlns:fmc="fmc" xmlns:tpc="tpc" languages="en,nl,de,fr" tooltipdelay="500">
+
+<!-- DDE window-->
+<fmc:Window id="downloadSelectorWindow" skin="g" top="10" left="10" width="500" height="500" canresize="true" canclose="true" visible="false">
+  	<string id="title" en="Download Selector" nl="Downloadkiezer"/>
+<tpc:DownloadSelector id="downloadSelector" top="10" left="10" right="right -10" bottom="bottom -10" listento="map,downloadSelectorWindow,legend" ddeservleturl="http://www.drenthe.info/kaarten/DDEDownload/flamingo" debug="false">
+        	<tpc:DownloadLegend id="downloadLegend"/>
+          <tpc:crs label="Lat/Long" data="LL84"/>          
+          <tpc:crs label="Belgie Lambert 72" data="EPSG:31370"/>
+	  <tpc:crs label="Rijksdriehoek" data="EPSG:28992"/>
+          <tpc:outputFormat label="AutoCAD DXF Rel 12" data="2dxf12.fme"/>
+		  <tpc:outputFormat label="AutoCAD DXF Rel 14" data="2dxf14.fme"/>
+		  <tpc:outputFormat label="AutoCAD DXF 2000" data="2dxf2000.fme"/>
+		  <tpc:outputFormat label="AutoCAD DWG Rel 12" data="2dwg12.fme"/>
+		  <tpc:outputFormat label="AutoCAD DWG Rel 14" data="2dwg14.fme"/>
+		  <tpc:outputFormat label="AutoCAD DWG 2000" data="2dwg2000.fme"/>
+		  <tpc:outputFormat label="ARC/INFO E00 Archive files" data="2e00.fme"/>
+		  <tpc:outputFormat label="Encapsulated PostScript (EPS)" data="2eps.fme"/>
+		  <tpc:outputFormat label="ESRI GML" data="2esriGML.fme"/>
+		  <tpc:outputFormat label="GML 2 (Safe Schema)" data="2gml2.fme"/>
+		  <tpc:outputFormat label="Illustrator Encapsulated PostScript (EPS)" data="2ieps.fme"/>
+		  <tpc:outputFormat label="MicroStation V7 Design Files (DGN)" data="2igdsV7.fme"/>
+		  <tpc:outputFormat label="MicroStation V8 Design Files (DGN)" data="2igdsV8.fme"/>
+		  <tpc:outputFormat label="MapInfo TAB (Native)" data="2mapinfo.fme"/>
+		  <tpc:outputFormat label="MapInfo MID/MIF" data="2mif.fme"/>		  		  
+          <tpc:outputFormat label="ESRI Shape files" data="2shp.fme"/>          
+	<tpc:inArea label="Westerveld" coords="204348+527192+228639+527192+228639+549304+204348+549304+204348+527192"/>
+	<tpc:inArea label="Tynaarlo" coords="228179+560589+248063+560589+248063+579660+228179+579660+228179+560589"/>
+	<tpc:inArea label="Assen" coords="228712+550108+238566+550108+238566+564560+228712+564560+228712+550108"/>
+	<tpc:inArea label="Aa en Hunze" coords="233931+543155+258967+543155+258967+568447+233931+568447+233931+543155"/>
+	<tpc:inArea label="De Wolden" coords="211021+514316+232333+514316+232333+535064+211021+535064+211021+514316"/>
+	<tpc:inArea label="Coevorden" coords="235341+516287+254793+516287+254793+544354+235341+544354+235341+516287"/>
+	<tpc:inArea label="Borger-Odoorn" coords="244883+536263+266542+536263+266542+557381+244883+557381+244883+536263"/>
+	<tpc:inArea label="Emmen" coords="252210+517411+269919+517411+269919+544135+252210+544135+252210+517411"/>
+	<tpc:inArea label="Hoogeveen" coords="223694+519169+239195+519169+239195+535343+223694+535343+223694+519169"/>
+	<tpc:inArea label="Meppel" coords="204481+520425+215809+520425+215809+532038+204481+532038+204481+520425"/>
+	<tpc:inArea label="Noordenveld" coords="216518+555884+232149+555884+232149+580247+216518+580247+216518+555884"/>
+	<tpc:inArea label="Midden-Drenthe" coords="220435+528266+245355+528266+245355+558170+220435+558170+220435+528266"/>
+	  
+</tpc:DownloadSelector>
+</fmc:Window>
+
+
+<!--<fmc:Scalebar id="sbmi" skin="style1" xcenter="50%" left="left +60" bottom="bottom -5" width="100" units=" km" magicnumber="1609.344" listento="map">
+<style id=".label" font-family="verdana" font-size="10px" color="#555555" display="block" font-weight="normal"/>
+<style id=".units" font-family="verdana" font-size="10px" color="#555555" display="block" font-weight="normal"/>
+</fmc:Scalebar>-->
+<fmc:Container bordercolor="#b8b8b8" backgroundcolor="#FFFFFF" backgroundalpha="70" left="left +200" bottom="bottom" right="400">
+    <fmc:Scalebar top="10" left="left +10" width="165" listento="map" skin="style1" minscale="100" magicnumber="1000" units=" km">
+			<style id=".label" font-family="arial,verdana" font-size="11px" color="#666666" display="block" />
+			<style id=".units" font-family="arial,verdana" font-size="11px" color="#666666" display="block" />
+    </fmc:Scalebar>
+    <fmc:Scalebar top="10" left="left +10" width="165" listento="map" skin="style1" maxscale="100" magicnumber="1" units=" m">
+			<style id=".label" font-family="arial,verdana" font-size="11px" color="#666666" display="block" />
+			<style id=".units" font-family="arial,verdana" font-size="11px" color="#666666" display="block" />
+    </fmc:Scalebar>
+</fmc:Container>
+
+<fmc:Container bordercolor="#b8b8b8" backgroundcolor="#FFFFFF" backgroundalpha="70" left="right -100" bottom="bottom" right="right">
+    <fmc:Coordinates  id="coordinates" listento="map"  left="left +35" bottom="bottom +3 " decimals="0" decimals="0">
+       <string id="title" nl="identify"/>
+       <string id="xy" nl="x:[x]&lt;br&gt;y:[y]"/>
+       <style id=".xy" font-family="arial,verdana" font-size="11px" color="#666666" font-style="bold" display="block" />
+    </fmc:Coordinates>
+</fmc:Container>
+
+<!--legend-->
+<fmc:Container bordercolor="#b8b8b8" backgroundcolor="#FFFFFF" backgroundalpha="70" right="left +200" top="30" bottom="320" left="left">
+  <fmc:Legend id="legend" symbolpath="assets" shadowsymbols="false" right="right" top="0" bottom="320" backgroundcolor="#FFFFFF">  	
+<string id="outofscale" nl="Buiten schaalbereik;&lt;br&gt;zoom naar deze laag..." en="Outside range;&lt;br&gt;zoom to layer" de="Au?rhalb des Ma?tabsbereichs;&lt;br&gt;vergr??" fr="Hors ?elle..." />
+	<style id=".group" font-family="arial,verdana" font-size="12px" color="#000000" display="block" font-weight="normal" />
+	<style id=".group_mouseover" font-family="arial,verdana" font-size="12px" color="#000000" display="block" font-weight="normal" />
+	<style id=".item" font-family="arial,verdana" font-size="12px" color="#333333" display="block" font-weight="normal" />
+	<style id=".item_link" font-family="arial,verdana" font-size="12px" color="#0033cc" display="block" font-weight="normal" text-decoration="underline" />
+	<style id=".symbol" font-family="arial,verdana" font-size="12px" color="#333333" display="block" font-weight="normal" />
+	<style id=".symbol_link" font-family="arial,verdana" font-size="12px" color="#0033cc" display="block" font-weight="normal" text-decoration="underline" />
+	<style id=".outofscale" font-family="arial,verdana" font-size="10px" color="#0066cc" display="block" font-style="italic" />
+	<style id=".text" font-family="arial,verdana" font-size="10px" color="#333333" display="block" font-style="italic" />
+  </fmc:Legend>
+</fmc:Container>
+
+
+<fmc:Container bordercolor="#b8b8b8" backgroundcolor="#FFFFFF" left="left +200" top="top" bottom="30" right="270">
+<fmc:ToolGroup left="left" top="top" tool="zoom" listento="map">
+<fmc:ToolZoomin id="zoom">
+	<string id="tooltip" nl="Inzoomen: klik op de kaart of sleep een rechthoek op de kaart" en="Zoom in: click on the map or draw a rectangle on the map" de="Ausschnitt vergrößern: Klicken Sie auf die Karte oder ziehen Sie mit gedrückter Maustaste ein Viereck auf." fr="Agrandir : cliquer sur la carte ou glisser un rectangle sur la carte" />
+</fmc:ToolZoomin>
+<fmc:ToolZoomout left="30">
+	<string id="tooltip" nl="Uitzoomen: klik op de kaart of sleep een rechthoek op de kaart" en="Zoom out: click on the map or draw a rectangle on the map" de="Ausschnitt verkleinern: Klicken Sie auf die Karte oder ziehen Sie mit gedrückter Maustaste ein Viereck auf." fr="Diminuer : cliquer sur la carte ou glisser un rectangle sur la carte" />
+</fmc:ToolZoomout>
+<fmc:ToolPan left="60">
+	<string id="tooltip" nl="Kaart verslepen: klik op de kaart en houd uw linkermuisknop ingedrukt" en="Drag map: click on the map and hold your left mouse button" de="Karte verschieben: Klicken Sie auf die Karte und halten Sie die linke Maustaste gedrückt." fr="Déplacer la carte : cliquer sur la carte et maintenir le bouton gauche de la souris enfoncé" />
+</fmc:ToolPan>
+ <fmc:ButtonPrev  left="90" listento="map" >
+  		<string id="tooltip" nl="Stap terug" en="Previous extent" de="Schritt zurück" fr="Précédent" />
+</fmc:ButtonPrev>
+<fmc:ButtonNext  left="120" listento="map" >
+  		<string id="tooltip" nl="Stap vooruit" en="Next extent" de="Schritt weiter" fr="Suivant" />
+</fmc:ButtonNext>
+<fmc:ButtonFull left="150" listento="map">
+		<string id="tooltip" nl="Zoom naar volledig kaarbeeld" en="Complete map image" de="Gesamtkartenansicht" fr="Carte complète" />
+</fmc:ButtonFull>
+<fmc:ToolIdentify left="180" identifyall="true">
+	<string id="tooltip" nl="Informatie opvragen: klik op een object op de kaart" en="Request information: click on a facility on the map" de="Informationen aufrufen: Klicken Sie auf ein Objekt auf der Karte." fr="Demande d'informations : cliquer sur un objet de la carte" />
+</fmc:ToolIdentify>
+<fmc:ToolMeasure left="210" units=" m"  decimals="0">
+	<string id="tooltip" nl="Afstand meten: klik op de kaart en houd uw linkermuisknop ingedrukt" en="Measure distance: click on the map and hold your left mouse button" de="Entfernung messen: Klicken Sie auf die Karte und halten Sie die linke Maustaste gedrückt." fr="Mesurer une distance : cliquer sur la carte et maintenir le bouton gauche de la souris enfoncé" />
+</fmc:ToolMeasure>
+
+<!-- DDE-button-->
+<tpc:DownloadSelectorButton left="240" bottom="25" listento="downloadSelectorWindow">
+      <string id="tooltip" en="Dowload maps" nl="Downloaden van kaarten"/>
+</tpc:DownloadSelectorButton>
+</fmc:ToolGroup>
+</fmc:Container>
+
+  <!-- location finder -->
+<fmc:Container bordercolor="#b8b8b8" backgroundcolor="#FFFFFF" backgroundalpha="70" left="left" top="350" right="200" bottom="582">
+  <fmc:LocationFinder id="locationfinder" left="left" top="top" width="200" bottom="250" listento="map">
+		<string id="label" nl="zoek..." en="search..." de="suche..." fr="recherche..." />
+		<string id="busy" nl="zoeken..." en="searching..." de="suchen..." fr="rechercher..." />
+		<string id="nohit" nl="Geen gegevens gevonden..." en="No data found..." de="Keine Daten gefunden..." fr="Pas de données trouvées..." />
+		<string id="prev" nl="vorige   " en="previous   " de="zurück   " fr="précédent   " />
+		<string id="next" nl="volgende" en="next" de="weiter" fr="suivant" />
+  </fmc:LocationFinder>
+</fmc:Container>
+
+<fmc:Window left="40" top="190" width="300" height="350" visible="false" skin="g" canclose="true" canresize="true" showresizebutton="true" backgroundalpha="80">
+<string id="title" en="identify"/>
+<fmc:Identifyresults width="100%" height="100%" listento="map"/>
+</fmc:Window>
+
+<fmc:Container borderwidth="0" bordercolor="#b8b8b8" left="left +200" top="30" bottom="bottom -27" right="right">
+<fmc:BorderNavigation skin="F1" width="100%" height="100%" listento="map"/>
+<fmc:Image right="right +30" bottom="bottom" width="240" height="36" mask="true" alpha="80" url="http://www.drenthe.info/kaarten/website/test/images/logo_drenthe.png"/>
+<fmc:MonitorLayer id="monitor" xcenter="50%" ycenter="50%" listento="map">
+<style id=".text" font-family="Arial" font-size="10px" color="#000000" display="block" font-weight="normal"/>
+<string id="waiting" en="Bezig met het maken van de kaart..."/>
+<string id="loading" en="Ontvangen kaart [percentage]%..."/>
+</fmc:MonitorLayer>
+<fmc:Map id="map" movequality="HIGH" extenthistory="10" width="100%" height="100%" extent="202000,512000,271000,581300" fullextent="202000,512000,271000,581300" minscale="0.1">
+<fmc:LayerIdentifyIcon/>
+		 <fmc:LayerArcIMS    id="Acetate_layer"
+                           name="Acetate_layer"
+                           identifyall="false"
+                           server="http://www.drenthe.info/kaarten/"
+                           servlet=""
+			   identifyids=""
+                           mapservice="Acetate_layer" >
+	</fmc:LayerArcIMS>
+       <fmc:LayerArcIMS    id="ondergrond_kerntopo_labels"
+                           name="ondergrond_kerntopo_labels"
+                           identifyall="false"
+                           server="http://www.drenthe.info/kaarten/"
+                           servlet=""
+			   identifyids=""
+                           mapservice="ondergrond_kerntopo_labels" >
+	</fmc:LayerArcIMS>
+	<fmc:LayerArcIMS    id="geoportaal"
+                        name="geoportaal"
+                        identifyall="true"
+                        server="http://www.drenthe.info/kaarten/"
+                        servlet=""
+						identifyids="ACN_ACN071_P,ACN_HIST_POSTCODE6CIJFER2004_P,ACN_PC_PC4NEDMETINFO_L,ACN_PC_POSTCODE4CIJFER_V,ACN_PC_POSTCODE5CIJFER_V,ACN_PC_POSTCODE6CIJFER_V,AHN_100_G,AHN_25_DR_G,AHN_25_G,AHN_5_G,GU_BUIS_HTL_IS_100_L,GU_BUIS_RTL_IS_L,GU_BUISLEIDING_L_100,GU_GASPIJPLEIDING_100_L,HIST_GEWAS_1989_G,HIST_KNMI_NEERSLAG_1989_V,HIST_LGN2_1992_G,HIST_LGN2_V,HIST_LGN3_1997_G,HIST_LGN3_V,HIST_LGN3PLUS_G,HIST_LGN3PLUS_V,KADASTERKAART_V,LGN_LGN5_2004_G,LGN_LGN5_V,LUFO2003_I,LUFO2004_I,LUFO2006_I,LUFOBLADINDELING2003_V,LUFOBLADINDELING2004_V,LUFOBLADINDELING2006_V,NWB_SPOORWEG_HECTOPUNTEN_P,NWB_SPOORWEG_OVERGANGEN_P,NWB_SPOORWEG_OVERSTEKEN_P,NWB_SPOORWEG_SPOORVAKKEN_L,NWB_SPOORWEG_TREINSTATIONS_P,NWB_VAARWEG_VAARWEGDR_L,NWB_WEG_DRUITSNEDE_HECTOPUNT_P,NWB_WEG_DRUITSNEDE_WEGEN_L,NWB_WEG_DRUITSNEDE_WEGVAKKEN_L,NWB_WEG_HECTOPUNT_P,NWB_WEG_WEGVAKKEN_L,OOV_RISICOGEVAARSTOF_V,OOV_RISICOINSTAL_V,RIVM_ZONES_HOOGSP_V,RO_CBS_BODEMSTAT2000_NL_V,RO_CBS_BODEMSTAT2003_NL_V,RO_CBSBODEMSTAT2000_DR_V,RO_HIST_IBISBEDRIJVEN1997_V,RO_HIST_IBISBEDRIJVEN1998_V,RO_HIST_IBISBEDRIJVEN2000_V,RO_HIST_IBISBEDRIJVEN2001_V,RO_HIST_IBISBEDRIJVEN2002_V,RO_HIST_IBISBEDRIJVEN2003_V,RO_HIST_IBISBEDRIJVEN2004_V,RO_HIST_IBISBEDRIJVEN2006_V,RO_HIST_IBISBEDRIJVENNED1996_V,RO_HIST_IBISBEDRIJVENNED1998_V,RO_HIST_KANTOORLOKATIE1997_V,RO_HIST_KANTOORLOKATIE1998_V,RO_HIST_KANTOORLOKATIE2004_V,RO_HIST_KANTOORLOKATIE2006_V,RO_HIST_KANTOORLOKNED1996_V,RO_HIST_KANTOORLOKNED1998_V,RO_IBISBEDRIJVEN_V,RO_KANTOORLOKATIE_V,RO_KERNFRIESLAND_V,RO_KERNGRONINGEN_V,RO_KERNOVERIJSSEL_V,SC_BODEMKAART2006_V,SC_HISTGRNDGEBR_HGN1900_G,TDN_BONNEBLADEN_RC,TDN_BONNEBLADINDELING_V,TDN_GEMEENTEGRENZEN_V,TDN_HIST_PROVGRENS_V,TDN_KRAYENHOFF_IX_1829_I,TDN_KRAYENHOFF_VII_1809_I,TDN_KRAYENHOFF_VIII_1829_I,TDN_PROVINCIEGRENZEN_750_V,TDN_RAS_25,TDN_RAS_50_RC,TDN_TOP10_GEBOUW_V,TDN_TOP10NL_INDEX_V,TDN_VEC250_V,TDN_VEC50_HUIS_V,TDN_VEC50_L,TDN_VEC50_V,AB_EDRBESTUURLIJKEGRENS_750_V,AB_EDRHOOFDINFRA_750_L,AB_EDRHOOFDKERNEN_750_V,AB_EDRKREISGRENS_750_V,AB_GEMEENTENDRENTHE_V,AB_GRENS_WATERSCHAPPEN_V,AB_HIST_GEMEENTEGRENS_V,AB_PROVINCIEDRENTHE_V,AGR_GLASTUINBOUWGEBIED_V,EC_ECONOMISCHEKERNZONE_V,GEO_HIST_MAAIVELD_1960_G,GEO_HIST_MAAIVELD_1960_P,GEO_MAAIVELD_2M_L,HIST_ATLASBLADINDELING_25_V,HIST_GEWASVERDAMP_1989_G,HIST_PLOTBLADINDELING_25_V,HONDERDMETERHOK_L,KILOMETERHOK_V,LNDSCHP_BEEKDAL_100_V,LNDSCHP_BEEKLOOP_100_L,LNDSCHP_BOSNATUURRUIM_V,LNDSCHP_EIGHDL_V,LNDSCHP_EIGMAATSCHVWELDAAD_V,LNDSCHP_EIGNMM_V,LNDSCHP_EIGORVELTE_V,LNDSCHP_EIGPARTICULIER_V,LNDSCHP_EIGSBB_V,LNDSCHP_GRENSNATLANDSCHP_DA_V,LNDSCHP_GRENSNATPARKENENDA_V,LNDSCHP_HDL_BEGRAZINGSEENH_V,LNDSCHP_HDL_OBJECTGRENZEN_L,LNDSCHP_HIST_BEEKLOOP_100_L,LNDSCHP_HIST_BELVEDERE_100_V,LNDSCHP_HIST_EIGHDL_1998_V,LNDSCHP_HIST_EIGHDL_1999_V,LNDSCHP_HIST_EIGHDL_2000_V,LNDSCHP_HIST_EIGHDL_2001_V,LNDSCHP_HIST_EIGHDL_2002_V,LNDSCHP_HIST_EIGHDL_2003_V,LNDSCHP_HIST_EIGHDL_2005_V,LNDSCHP_HIST_EIGHDL_2006_V,LNDSCHP_HIST_EIGNMM_1998_V,LNDSCHP_HIST_EIGNMM_V,LNDSCHP_HIST_EIGSBB_1998_V,LNDSCHP_HIST_EIGSBB_1999_V,LNDSCHP_HIST_GCDWINGVLD_100_V,LNDSCHP_HIST_GCHUNZE_V,LNDSCHP_HIST_GCMRSWEST_100_V,LNDSCHP_HIST_GCREEST_V,LNDSCHP_HIST_GVVLEDWAP_V,LNDSCHP_HPOP_LNDSCHPONTWGEB_V,LNDSCHP_LANDSCHAPPENKRT_100_V,LNDSCHP_LANDSCHAPSTYPE_100_V,LNDSCHP_POP_LNDSCHPONTWGEB_V,LNDSCHP_ROLPRIORITAIR_250_V,LNDSCHP_SBBNAARHDL_V,MILIEU_BOBES_AARDKUNDWAARDEN_V,MILIEU_BOBES_ARCH_250_P,MILIEU_BOBES_BODGRAD_250_V,MILIEU_BOBES_BRUTOEHS_POP_V,MILIEU_BOBES_BWWH_100_V,MILIEU_BOBES_BWWV_100_V,MILIEU_BOBES_ESSEN_V,MILIEU_BOBES_GBGDA_L,MILIEU_BOBES_GEBGRSOD_V,MILIEU_BOBES_GEOMORF_V,MILIEU_BOBES_GLSLOC_P,MILIEU_BOBES_GLSLOC_V,MILIEU_BOBES_GRADGEB_250_V,MILIEU_BOBES_GWKMTN_P,MILIEU_BOBES_HBB_L,MILIEU_BOBES_HBB_P,MILIEU_BOBES_HBB_V,MILIEU_BOBES_IKANS_DA_100_V,MILIEU_BOBES_INTERFGB_100_V,MILIEU_BOBES_INTERFHZ_100_V,MILIEU_BOBES_KWBNO3_250_V,MILIEU_BOBES_MBGD_V,MILIEU_BOBES_OBR100_100_V,MILIEU_BOBES_OBR1000_100_V,MILIEU_BOBES_OBR10000_100_V,MILIEU_BOBES_OBWK100_100_V,MILIEU_BOBES_OBWK1000_100_V,MILIEU_BOBES_OBWK10000_100_V,MILIEU_BOBES_PO4VERM_250_V,MILIEU_BOBES_PO4VERMF_250_V,MILIEU_BOBES_POV06_V,MILIEU_BOBES_PVANA_V,MILIEU_BOBES_SGB_V,MILIEU_BOBES_UNR1000_100_V,MILIEU_BOBES_UNR10000_100_V,MILIEU_BOBES_UNWK100_100_V,MILIEU_BOBES_UNWK1000_100_V,MILIEU_BOBES_UNWK10000_100_V,MILIEU_BOBES_VERBODZ_V,MILIEU_BOBES_VEZEVZ_L,MILIEU_BOBES_VEZGEVGEB_V,MILIEU_BOBES_VEZVEG_V,MILIEU_BOBES_VORM_V,MILIEU_BOBES_WAV_V,MILIEU_BOBES_ZANDKRT_V,MILIEU_BODEM_VEENDIKTE_100_V,MILIEU_GELUID_CTRVLIEGVELD_V,MILIEU_GELUID_CTRVLIEGVLD_BE_V,MILIEU_GELUID_VLIEGBKL_100_L,MILIEU_GELUID_VLIEGKE_100_L,MILIEU_GEMETENGELUIDCONTOUR_V,MILIEU_GEZONEERDEBEDRTERR_V,MILIEU_HIST_BK_GRHHLN_V,MILIEU_HIST_BOBES_POV06_V,MILIEU_HIST_BOBES_RISAC_P,MILIEU_HIST_BOBES_RISAC_V,MILIEU_HIST_BOBES_RISGEB_100_V,MILIEU_HIST_BODEMKAART_50_V,MILIEU_HIST_BOSAN_WEITEVEEN_V,MILIEU_HIST_DA_CHINVENTARIS_V,MILIEU_HIST_DA_LGN_V,MILIEU_HIST_DA_RIOPRC_P,MILIEU_HIST_DA_SANOVERS_25_P,MILIEU_HIST_FARMINV_P,MILIEU_HIST_GWT_50_V,MILIEU_HIST_GWT_GRHHLN_V,MILIEU_HIST_KRS1991AMI_250_V,MILIEU_HIST_KRS1991AMIJ_250_V,MILIEU_HIST_KRS9198AMI_250_V,MILIEU_HIST_KRS9198AMIJ_250_V,MILIEU_HIST_MBG00_V,MILIEU_HIST_MBGW97_V,MILIEU_HIST_POV04_V,MILIEU_HIST_ROMDA_SPUITVRIJ_L,MILIEU_HIST_ROMDAGWKMTN_P,MILIEU_HIST_SGM_V,MILIEU_LUCHT_KRS1998AMI_250_V,MILIEU_LUCHT_KRS1998AMIJ_250_V,MILIEU_LUCHT_KRS2004AMI_250_V,MILIEU_LUCHT_KRS2004AMIJ_250_V,MILIEU_LUCHT_KRS9804AMI_250_V,MILIEU_LUCHT_KRS9804AMIJ_250_V,MILIEU_LUCHT_KRSNEDAMI_250_V,MILIEU_POP_WIN_ZAND_P,MILIEU_VASTGESTGELUIDCONTOUR_V,MILIEU_VLIEGVEILIGHCTR_100_V,MILIEU_VLIEGVELDSTARTLANDING_L,MILIEU_WIN_AARDGASOLIE_100_V,MILIEU_WIN_BODEMDDWIJWNV_100_L,MILIEU_WIN_NAMKABEL_L,MILIEU_WIN_NAMLOCATIE_V,MILIEU_WIN_NAMPIJPLEIDING_L,MILIEU_WIN_ONTGRONDINGEN_V,MILIEU_WIN_POP_ZANDZOEKGEB_V,MILIEU_WIN_ZAND_P,MILIEU_ZONERINGAANVLIEG_L,NAT_AARDKUNDIGWAARGEB_250_V,NAT_AARDKUNDIGWAARPNT_250_P,NAT_AFRONDINGENKAART_V,NAT_BEEKDROOGDAL_250_V,NAT_BEHEERSOVEREENKOMSTGR_V,NAT_BOSGEMEENSCHAP_V,NAT_BOSRESERVAAT_V,NAT_BOSUITBREIDING_V,NAT_BOSWET_V,NAT_EERSTGEGADIGDENKRT_100_V,NAT_EGHABITATRICHTLIJN2003_V,NAT_EGVOGELRICHTLIJN792000_V,NAT_EHS_CONCRETISERING_V,NAT_EHS_EVZ_V,NAT_EIGENDOMWMD_V,NAT_EIGPARTICULIERGROEP_V,NAT_EVZ_L,NAT_FAUNAKNELPUNTEN_P,NAT_FYSGEOGRAFISCHEKRT_100_V,NAT_GANZENFOERAGEERGEB_V,NAT_GEBIEDSPLAN2007_V,NAT_GEBVISIEGRENSHUNZE_V,NAT_GEBVISIEGRENSMIDDRENTHE_V,NAT_GEBVISIEGRENSNOORDVELD_V,NAT_GEBVISIEGRENSOUDEVAART_V,NAT_GEBVISIEGRENSREEST_V,NAT_GEBVISIEGRENSSMILDE_V,NAT_GEBVISIESBEGRENZING_V,NAT_GRADIENTRIJKGEB_100_L,NAT_GRADIENTRIJKNAT_100_P,NAT_HIST_AFRONDINGSKRT1998_V,NAT_HIST_BOSHEIDE1850_250_V,NAT_HIST_BOSHEIDE1900_250_V,NAT_HIST_BOSHEIDE1950_250_V,NAT_HIST_BOSNATPOP1_V,NAT_HIST_ECOVERBHOUTWAL_100_L,NAT_HIST_HABITATRICHTLIJN_V,NAT_HIST_NATDOEL_1996_V,NAT_HIST_NATDOEL_2002_V,NAT_HIST_NATELEMENTAGGEB_100_V,NAT_HIST_NATONTW_100_V,NAT_HIST_NATUURFUNKTIE_100_V,NAT_HIST_NATUURGEBPLAN02_V,NAT_HIST_NATUURGEBPLAN02TOEV_V,NAT_HIST_NATUURGEBPLAN03_V,NAT_HIST_NATUURGEBPLAN05_V,NAT_HIST_NATUURGEBPLAN06_V,NAT_HIST_NATWSTRPKRT83_250_V,NAT_HIST_OLIGOTROOFGEB_100_V,NAT_HIST_RELATIENOTA1998_V,NAT_HIST_RELATIENOTA1999_V,NAT_HIST_RELATIENOTA997_V,NAT_HIST_VENVEENTJE_100_P,NAT_HIST_VOGELRICHTLIJN1998_V,NAT_HIST_VOGELRICHTLIJN2000_V,NAT_HIST_WBE1996_V,NAT_HIST_WBE1998_V,NAT_HPOP_GEBIEDVOORWEIDEVGL_V,NAT_HPOP_GWONTW_250_V,NAT_HPOP_MEERMOERAS_100_V,NAT_HPOP_NATBOSONTW_V,NAT_HPOP_ZANDPLAS_P,NAT_KNELPUNTDAS_100_L,NAT_LANDGOEDEREN_P,NAT_LOOFBOSRIJKNAT_100_P,NAT_MACROGRADIENT_100_V,NAT_NATDMIDDENDRENTHE_V,NAT_NATDOEL_2007_V,NAT_NATDOEL_BEEK_2007_V,NAT_NATDOEL_VEN_2007_P,NAT_NATDOELMINLNV_V,NAT_NATGEBPLANPROBLEEMGEBIED_V,NAT_NATURA2000_V,NAT_NATUURGEBPLANUILENBROEK_V,NAT_NBWETGEBIED_V,NAT_PMJPGEBIEDEN_V,NAT_POP_BOSHOUTWAL_100_V,NAT_POP_BOSNATINNATDOEL_V,NAT_POP_BOTWAARSLOOT_250_V,NAT_POP_ECOVERBHOUTWAL_100_L,NAT_POP_ECOVERBPOP2_100_L,NAT_POP_GEBKENMERK_100_V,NAT_POP_GZSGEBIEDEN_250_V,NAT_POP_LOOFBOS_100_V,NAT_POP_NATDOELPOP2_V,NAT_POP_NATUURWONTW_V,NAT_POP_ROBUUST_100_V,NAT_POP_ROBUUSTONDERB_100_L,NAT_POP_VRECGROENWOONVKGEB_P,NAT_POP_WEIDEVOGELGEB_250_V,NAT_POP_WIJKENGEBIED_100_V,NAT_RUIMEJASGRENS_V,NAT_STUIFZANDRIVIERDUIN_250_V,NAT_STUWWALHOOGVEEN_250_V,NAT_WATERWINGEBWMD_V,NAT_WILDBEHEEREENH2006_V,OOV_LEGER_LAAGVLIEGGEB_250_V,OOV_LEGER_LAAGVLIEGROUTE_250_L,OOV_LEGER_MILTERREIN_V,OOV_LEGER_MUNITIEZONE_100_V,OOV_LEGER_OEFENTERREIN_100_V,OOV_LEGER_OPSTAPPSCHIETT_P,OOV_NAT_BRANDWEER_P,OOV_NAT_BRANDWEERPADEN_L,OOV_RISICOVOGELGRIEP_V,RECR_BRTN_250_L,RECR_DAG_BEWEGWIJZERING_DA_P,RECR_DAG_GOLFTERREIN_V,RECR_DAG_MOTORCROSSPC_100_L,RECR_DAG_RECREATIE_P,RECR_HIST_GEBOUW_P,RECR_HIST_ONTWDAGRECR_100_V,RECR_HIST_ONTWVERBLRECR_100_V,RECR_HIST_TERREIN_1995_V,RECR_VERBL_GEBOUW_P,RECR_VERBL_GROTER3H_P,RECR_VERBL_TERREIN_2003_V,RO_ANTENNEMASTMOBTELEFONIE_P,RO_BUITENPLAATS_100_P,RO_CBSBODEMSTATBSH_V,RO_HIST_CBSBODEMSTAT1989BSH_V,RO_HIST_CBSBODEMSTAT1996_V,RO_HIST_GEBIEDSKENMERK_100_V,RO_HIST_KERN1900_V,RO_HIST_KERNTOPO1996_V,RO_HIST_KERNTOPO1997_V,RO_HIST_KERNTOPO1999_V,RO_HIST_KERNTOPO2001_V,RO_HIST_RESTCAPAC1996_100_V,RO_HIST_STATISTISCHEKERN_V,RO_HIST_WIJKBUURT_V,RO_HIST_ZONERING_100_V,RO_HOOGSPANNINGSMAST_100_P,RO_HPOP_BOSONTW_V,RO_HPOP_BOSVASTGESTELD_V,RO_HPOP_BOSVOORONTW_V,RO_HPOP_CONTOURLVASTGEST_L,RO_HPOP_CONTOURLVOORONTW_L,RO_HPOP_GEBIEDSINDELING_V,RO_HPOP_HYDROAANDGEB_V,RO_HPOP_ONTSTADSRANDZON_100_L,RO_HPOP_ONTWECOLVERB_100_L,RO_HPOP_PUNTENVANKAART2_P,RO_HPOP_SPECIFVOORZIEN_P,RO_HPOP_STADENDORPBSGEZ_V,RO_HPOP_ZONERINGONTW_V,RO_HPOP_ZONERINGVASTGEST_V,RO_HPOP_ZONERINGVOORONTW_V,RO_ISV_STEDELIJKEVERNIEUWING_P,RO_KERNTOPO_V,RO_LANDGOED_100_V,RO_LANDINRICHTINGSGEBIED_V,RO_POP_BOSONTWERP_V,RO_POP_BOSVASTGEST_V,RO_POP_BOSVOORONTW_V,RO_POP_CONTOURLONTW_L,RO_POP_CONTOURLVASTGEST_L,RO_POP_CONTOURLVOORONTW_L,RO_POP_CTRWATERVOORONTW_L,RO_POP_DIVERSEVOORZIEN_100_P,RO_POP_HYDROAANDGEBIED_V,RO_POP_LOFAR_V,RO_POP_MELKVEE_100_P,RO_POP_ONDERGRONDPLAS_250_V,RO_POP_ONDERGRONDWATER_250_L,RO_POP_ONDERGRONDWEGEN_250_L,RO_POP_ONTSTADSRANDZON_100_L,RO_POP_ONTWBOSNATUUR_100_V,RO_POP_ONTWECOLVERB_100_V,RO_POP_ONTWNATUURW_100_V,RO_POP_POPKERNEN_V,RO_POP_RECREATIE_100_P,RO_POP_RUIMTELBEGRENZING_L,RO_POP_RUIMTELONTWIKKELING_V,RO_POP_SCHEEPVAART_L,RO_POP_STADENDORPBSGEZ_P,RO_POP_STADENDORPBSGEZ_V,RO_POP_STADSRANDZONE_L,RO_POP_STEDELIJKNETWERK_L,RO_POP_UITBREIDRICHTI_100_L,RO_POP_UITBRRIGLASTUINGEB_L,RO_POP_ZONERINGONTW_V,RO_POP_ZONERINGVASTGEST_V,RO_POP_ZONERINGVOORONTW_V,RO_RADIOTELESCOOP_100_L,RO_REGIOZODRNRDOV_100_V,RO_STRAALVERBINDING_100_L,RO_STRAALVERBVRIJEHOOGTE_100_L,RO_TOP250_VERZORGGEBIED_250_L,RO_TOP250_VERZORGKERN_250_P,RO_TOP250_VERZORGZWARTVL_250_V,RO_VHV_WIJKBUURT_V,RO_WERKGEBIEDPOTENTIEEL_100_V,RO_WOONWERKPOTENTIEEL_100_V,VIJFHONDERDMETERHOK_L,VIJFKILOMETERHOK_V,VV_HPOP_PVVP_L,VV_INFRA_HFDBUISLEIDING_100_L,VV_INFRA_HOOFDENSPOORWEGEN_L,VV_INFRA_HOOGSPCORRIDOR_100_V,VV_INFRA_HOOGSPLEIDING_100_L,VV_INFRA_KNOOPUNT_P,VV_INFRA_ONTWIKKELING_L,VV_INFRA_PVVP_L,VV_INFRA_SCHEEPVAART_100_L,VV_OV_BUSHALTEGEMWEG_P,VV_OV_BUSHALTEPROVWEG_P,VV_OV_HFDBUSLIJN_L,VV_POP_GOEDEROVERSLAGONTW_P,VV_POP_INDELINGINFRA_L,VV_POP_KNOOPPUNTINFRA_P,VV_POP_ONTWIKKELINGINFRA_L,VV_PROVWEGBEHEER_L,WAT_BEEK_100_L,WAT_BEEK_V,WAT_BEEKHERSTEL_100_L,WAT_BEMAALDEGEBIEDEN_NZV_L,WAT_GEOHYDROGEBA_250_V,WAT_GEOHYDROGEBB_250_V,WAT_GEOHYDROGEBC_250_V,WAT_GW_ONTTREKKINGDRINKW_250_P,WAT_GW_ONTTREKKINGSREGISTER_P,WAT_GW_VERORDDIEP_V,WAT_HIST_DRAINAGE_100_V,WAT_HIST_GWONTTREK_97_100_P,WAT_HIST_GWPUT_93_100_P,WAT_HIST_GWPUT_98_100_P,WAT_HIST_OPPERVLAKTEWKWAL_P,WAT_HIST_VANGGEBIED_100_V,WAT_HIST_VERDRGEB1997_100_V,WAT_HIST_VERDRGEB1998_100_V,WAT_HIST_VERDRGEB1999_100_V,WAT_HIST_VERDRGEB2000_100_V,WAT_HIST_WATERBODEM_100_L,WAT_HIST_WATERLOOP_100_L,WAT_HIST_WEERSTANDLAAG_100_V,WAT_HIST_WHPECOVZONE_100_V,WAT_HIST_WHPF_100_V,WAT_HIST_WHPG_100_V,WAT_HIST_WHPG_V,WAT_HIST_WHPO_100_V,WAT_HIST_WS1820_1880_100_V,WAT_HIST_WS1881_1900_100_V,WAT_HIST_WS1901_1920_100_V,WAT_HIST_WS1921_1940_100_V,WAT_HIST_WS1941_1950_100_V,WAT_HIST_WS1951_1960_100_V,WAT_HIST_WSGRENS_100_V,WAT_KEILEEM_100_V,WAT_KWELINFILTRATIE_100_V,WAT_OW_BERGING_V,WAT_OW_VERDRGEB2002_100_V,WAT_OW_WATERAANVOERGEB_100_V,WAT_OW_WATERLOOPMUSKUS_L,WAT_OW_WHHSYSTEEM_100_V,WAT_OW_ZWEMBAD_P,WAT_PEILBUIS_P,WAT_SCHAP_PEILGEBNZIJLVEST_L,WAT_VERDROGING_100_V,WAT_VERDROOGDEGEB_250_V,WAT_WATERSCHADE1998_100_V,WELZ_CULTHIS_AMK_V,WELZ_CULTHIS_ARCHEOGEB_100_V,WELZ_CULTHIS_ARCHEOMONU_P,WELZ_CULTHIS_ARCHWSTRPKRTB91_P,WELZ_CULTHIS_ARCHWSTRPKRTB91_V,WELZ_CULTHIS_CHWNEDERZ_L,WELZ_CULTHIS_CHWNEDERZ_P,WELZ_CULTHIS_GAAFHEID_V,WELZ_CULTHIS_IKAW_100_V,WELZ_CULTHIS_MARKEGRENS_L,WELZ_CULTHIS_MARKESTEEN_P,WELZ_CULTHIS_OWMVERLEDEN_L,WELZ_CULTHIS_OWMVERLEDEN_V,WELZ_CULTHIS_RIETDAK_P,WELZ_CULTHIS_VUURSTEEN_P,WELZ_CULTHIS_WOIIMONUMENT_L,WELZ_CULTHIS_WOIIMONUMENT_P,WELZ_CULTHIS_WOIIMONUMENT_V,WELZ_HIST_GAAFHEID_1990_V,WELZ_VOORZ_BASISVOORZIENING_P,WELZ_ZORG_HUISARTSBEREIK_V,WELZ_ZORG_VERPLEEGBEREIK_V,WELZ_ZORG_VERZORGBEREIK_V,WELZ_ZORG_ZIEKENHUISBEREIK_V,V_KWO_PUNT_PUB,V_RB10_LIJN_PUB,V_RB10_POLY_PUB,V_RB10_PUNT_PUB,V_RB11_POLY_PUB,V_RB4_LIJN_PUB,V_RB5_POLY_PUB,V_RB6_LIJN_PUB,V_RB6_POLY_PUB,V_RB6_PUNT_PUB,V_RB7_LIJN_PUB,V_RB8_LIJN_PUB,V_RB8_POLY_PUB,V_RB8_PUNT_PUB,V_RB9_LIJN_PUB,V_RB9_POLY_PUB,V_KWO_PUNT_PROF,V_RB11_POLY_PROF,V_RB8_LIJN_PROF,V_RB8_POLY_PROF,V_RB8_PUNT_PROF,FAUNA_HIST_VOG_GRASPIEPER_25_P,FAUNA_HIST_VOG_GRAUWEGORS_25_P,FAUNA_HIST_VOG_GRUTTO_25_P,FAUNA_HIST_VOG_KEMPHAAN_25_P,FAUNA_HIST_VOG_KIEVIT_25_P,FAUNA_HIST_VOG_KWRTLKONGN_25_P,FAUNA_HIST_VOG_PAAPJE_25_P,FAUNA_HIST_VOG_SCHOLEKSTR_25_P,FAUNA_HIST_VOG_TURELUUR_25_P,FAUNA_HIST_VOG_VLDLEEUWRK_25_P,FAUNA_HIST_VOG_WATERSNIP_25_P,FAUNA_HIST_VOG_WULP_25_P,FAUNA_HIST_VOG_ZOMERTALNG_25_P,FAUNA_VOG_TELGEBIEDEN_100_V,FLORA_VEG_VEGKAART7478_V"	
+						legend="true"									
+						alpha="70"		
+                        mapservice="GDB_Geoportaal" >
+	</fmc:LayerArcIMS>
+       <fmc:LayerArcIMS    id="tdn_grenzen"
+                           name="tdn_grenzen"
+                           identifyall="false"
+                           server="http://www.drenthe.info/kaarten/"
+                           servlet=""
+			   identifyids=""
+                           mapservice="tdn_grenzen" >
+	</fmc:LayerArcIMS>
+       <fmc:LayerArcIMS    id="ondergrond_top10_wegen_spoorwegen_v"
+                           name="ondergrond_top10_wegen_spoorwegen_v"
+                           identifyall="false"
+                           server="http://www.drenthe.info/kaarten/"
+                           servlet=""
+			   identifyids=""
+                           mapservice="ondergrond_top10_wegen_spoorwegen_v" >
+	</fmc:LayerArcIMS>
+       <fmc:LayerArcIMS    id="ondergrond_top10_gebouw_v"
+                           name="ondergrond_top10_gebouw_v"
+                           identifyall="false"
+                           server="http://www.drenthe.info/kaarten/"
+                           servlet=""
+			   identifyids=""
+                           mapservice="ondergrond_top10_gebouw_v" >
+	</fmc:LayerArcIMS>
+       <fmc:LayerArcIMS    id="ondergrond_top10_water_v"
+                           name="ondergrond_top10_water_v"
+                           identifyall="false"
+                           server="http://www.drenthe.info/kaarten/"
+                           servlet=""
+			   identifyids=""
+                           mapservice="ondergrond_top10_water_v" >
+	</fmc:LayerArcIMS>
+       <fmc:LayerArcIMS    id="ondergrond_top10_terrein_v"
+                           name="ondergrond_top10_terrein_v"
+                           identifyall="false"
+                           server="http://www.drenthe.info/kaarten/"
+                           servlet=""
+			   identifyids=""
+                           mapservice="ondergrond_top10_terrein_v" >
+	</fmc:LayerArcIMS>
+       <fmc:LayerArcIMS    id="ondergrond_top50_v"
+                           name="ondergrond_top50_v"
+                           identifyall="false"
+                           server="http://www.drenthe.info/kaarten/"
+                           servlet=""
+			   identifyids=""
+                           mapservice="ondergrond_top50_v" >
+	</fmc:LayerArcIMS>
+       <fmc:LayerArcIMS    id="ondergrond_top250_v"
+                           name="ondergrond_top250_v"
+                           identifyall="false"
+                           server="http://www.drenthe.info/kaarten/"
+                           servlet=""
+			   identifyids=""
+                           mapservice="ondergrond_top250_v" >
+	</fmc:LayerArcIMS>
+</fmc:Map>
+</fmc:Container>
+</FLAMINGO>

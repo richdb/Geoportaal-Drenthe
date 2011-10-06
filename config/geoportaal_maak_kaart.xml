@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<FLAMINGO xmlns:fmc="fmc" xmlns:tpc="tpc/roo" languages="en,nl,de,fr" tooltipdelay="500" useexternalinterface="true" minwidth="600" minheight="500" backgroundcolor="#F5F5F5">
+
+<!-- DDE window-->
+<fmc:Window id="downloadSelectorWindow" skin="g" top="50" left="185"  width="500" height="475" canresize="true" canclose="true" visible="false">
+  	<string id="title" en="Download Selector" nl="Downloadkiezer"/>
+<fmc:DownloadSelector id="downloadSelector" visible="false" top="10" left="10" right="right -10" bottom="bottom -10" listento="map,legend" ddeservleturl="http://www.drenthe.info/kaarten/DDEDownload/flamingo" debug="false">
+        	<fmc:DownloadLegend id="downloadLegend"/>
+          <fmc:crs label="Rijksdriehoek" data="EPSG:28992"/>
+	  <fmc:crs label="Lat/Long" data="LL84"/>          
+          <fmc:crs label="Belgie Lambert 72" data="EPSG:31370"/>	  
+          <fmc:outputFormat label="ESRI Shape files" data="2shp.fme"/>          
+	  <fmc:outputFormat label="AutoCAD DXF Rel 12" data="2dxf12.fme"/>
+		  <fmc:outputFormat label="AutoCAD DXF Rel 14" data="2dxf14.fme"/>
+		  <fmc:outputFormat label="AutoCAD DXF 2000" data="2dxf2000.fme"/>
+		  <fmc:outputFormat label="AutoCAD DWG Rel 12" data="2dwg12.fme"/>
+		  <fmc:outputFormat label="AutoCAD DWG Rel 14" data="2dwg14.fme"/>
+		  <fmc:outputFormat label="AutoCAD DWG 2000" data="2dwg2000.fme"/>
+		  <fmc:outputFormat label="ARC/INFO E00 Archive files" data="2e00.fme"/>
+		  <fmc:outputFormat label="Encapsulated PostScript (EPS)" data="2eps.fme"/>
+		  <fmc:outputFormat label="ESRI GML" data="2esriGML.fme"/>
+		  <fmc:outputFormat label="GML 2 (Safe Schema)" data="2gml2.fme"/>
+		  <fmc:outputFormat label="Illustrator Encapsulated PostScript (EPS)" data="2ieps.fme"/>
+		  <fmc:outputFormat label="MicroStation V7 Design Files (DGN)" data="2igdsV7.fme"/>
+		  <fmc:outputFormat label="MicroStation V8 Design Files (DGN)" data="2igdsV8.fme"/>
+		  <fmc:outputFormat label="MapInfo TAB (Native)" data="2mapinfo.fme"/>
+		  <fmc:outputFormat label="MapInfo MID/MIF" data="2mif.fme"/>		  		  		
+	<fmc:inArea label="Westerveld" coords="204348+527192+228639+527192+228639+549304+204348+549304+204348+527192"/>
+	<fmc:inArea label="Tynaarlo" coords="228179+560589+248063+560589+248063+579660+228179+579660+228179+560589"/>
+	<fmc:inArea label="Assen" coords="228712+550108+238566+550108+238566+564560+228712+564560+228712+550108"/>
+	<fmc:inArea label="Aa en Hunze" coords="233931+543155+258967+543155+258967+568447+233931+568447+233931+543155"/>
+	<fmc:inArea label="De Wolden" coords="211021+514316+232333+514316+232333+535064+211021+535064+211021+514316"/>
+	<fmc:inArea label="Coevorden" coords="235341+516287+254793+516287+254793+544354+235341+544354+235341+516287"/>
+	<fmc:inArea label="Borger-Odoorn" coords="244883+536263+266542+536263+266542+557381+244883+557381+244883+536263"/>
+	<fmc:inArea label="Emmen" coords="252210+517411+269919+517411+269919+544135+252210+544135+252210+517411"/>
+	<fmc:inArea label="Hoogeveen" coords="223694+519169+239195+519169+239195+535343+223694+535343+223694+519169"/>
+	<fmc:inArea label="Meppel" coords="204481+520425+215809+520425+215809+532038+204481+532038+204481+520425"/>
+	<fmc:inArea label="Noordenveld" coords="216518+555884+232149+555884+232149+580247+216518+580247+216518+555884"/>
+	<fmc:inArea label="Midden-Drenthe" coords="220435+528266+245355+528266+245355+558170+220435+558170+220435+528266"/>
+	<string id="layers" en="Layers" nl="Kaartlagen"/>
+          <string id="inArea" en="Within Area" nl="Binnen gebied"/>
+          <string id="inGeometry" en="Within Geometry" nl="Binnen geometrie"/>
+          <string id="inBox" en="Within Box" nl="Binnen rechthoek"/>
+          <string id="inAll" en="Whole file" nl="Gehele bestand"/>
+          <string id="crs" en="Coord. Ref. System" nl="Coordinaatstelsel"/>
+          <string id="format" en="File Format" nl="Bestandsformaat"/>
+          <string id="emailAddress" en="Email Download To" nl="Download e-mailen naar"/>
+          <string id="warningNoLayer" en="Please select a layer" nl="Selecteer eerst een laag"/>
+          <string id="warningNoEmail" en="Please fill in a valid e-mail adress" nl="Vul een geldig e-mail adres in"/>
+          <string id="warningOutOfExtent" en="Requested extent outside the fullextent of the map" nl="Ingevulde coördinaten vallen buiten bereik van de kaart"/>
+          <string id="warningErrorInBox" en="Error in box coördinates" nl="Fouten in coördinaten van rechthoek"/>
+          <string id="extentButtonLabel" en="from map" nl="van kaart"/>  
+	<string id="requestButtonLabel" en="Send request" nl="Aanvraag versturen"/>
+	<string id="closeButtonLabel" en="Close" nl="Sluiten"/>
+</fmc:DownloadSelector>
+</fmc:Window>
+
+<!--print-->
+	<fmc:Window id="printWindow" skin="g" top="60" left="185" width="490" height="475" visible="false" skin="g" canresize="true" canclose="true">
+		<string id="title" en="Print Settings and Preview" nl="Printinstellingen en printvoorbeeld"/>
+		
+		<fmc:Print id="print" left="left 10" top="top 10" width="100%" height="100%" visible="false" borderwidth="0" listento="map,printWindow" scales="250000,100000,50000,20000,10000,5000,2000,1000,100">
+			<string id="resetIdentify" en="Reset Identify" nl="Identify herstellen"/>
+			<string id="previewSize" en="Preview at Original Size" nl="Printvoorbeeld op ware grootte"/>
+			<string id="toPrinter" en="Send to Printer" nl="Afdrukken"/>
+			<string id="choseTemplate" en="--Chose Template--" nl="-- Kies papierformaat --"/>
+			
+			<!--<fmc:BaseContainer left="220" right="right" top="35" height="100">
+				<fmc:Legend id="printLegend0" top=" 0" width="100%" height="100%" listento="printMap1"/>
+			</fmc:BaseContainer>-->
+			
+			<fmc:Text id="printertext" left="210" top="50">
+			<string id="text">
+			<nl>
+				<![CDATA[
+					<span class='text'>LET OP: Voor een afdruk dient u <br>uw printer op liggend (landscape) <BR>in te stellen.</span>
+				]]>
+			</nl>
+			</string>
+			</fmc:Text>		
+			
+			<fmc:ToolGroup  tool="toolzoominprint" left="10" top="175" listento="printMap1,printMap3">
+			<fmc:ToolPan  id="toolpanprint" left="0" >
+				<string id="tooltip" en="Drag map"  nl="Kaart verslepen: klik op de kaart en houd uw linkermuisknop ingedrukt" />
+			</fmc:ToolPan>
+			</fmc:ToolGroup>
+			
+			<fmc:BaseContainer left="130" top="183" borderwidth="0">
+				
+				<fmc:MonitorLayer id="printMonitor1" listento="printMap1">
+					<style id=".text" font-family="courier" font-size="12px" color="#666666" display="block" font-weight="normal"/>
+				</fmc:MonitorLayer>				
+				<fmc:MonitorLayer id="printMonitor3" listento="printMap3">
+					<style id=".text" font-family="courier" font-size="12px" color="#666666" display="block" font-weight="normal"/>
+				</fmc:MonitorLayer>
+			
+			</fmc:BaseContainer>
+
+			<fmc:PrintTemplate id="printTemplate1" name="liggend A4" dpi="300" format="A4" orientation="landscape" listento="printMonitor1" maps="printMap1">
+				<fmc:Map id="printMap1" configobject="map" name="kaartbeeld" left="left" width="77%" height="100%" movequality="HIGH" visible="false"/>
+				<!--<fmc:EditMap id="editMap1" name="redlining" width="100%" height="100%" listento="gis,printMap1" editable="false"/>-->
+				<fmc:Image name="A4 liggend" left="77%" vstretch="false" hstretch="false" url="../images/A4_liggend_flamingo.png"/>
+				<fmc:BitmapClone name="legenda" left="79%" width="25%" height="80%" top="11%" listento="legend" refreshrate="2500"/>
+				<!--<fmc:BitmapClone name="legendaedit" left="79%" width="25%" height="80%" top="11%" listento="editLegend" refreshrate="2500"/>-->
+				<!--<fmc:BitmapClone name="identify resultaten" width="40%" height="20%" left="left" visible="false" listento="window_info_html" refreshrate="2500"/>-->
+				<!--<fmc:PrintLabel name="tekst1" left="79%" top="93%" text="Aan deze kaart kunnen geen rechten worden ontleend" font-family="Arial,verdana" fontsize="6"/>-->
+				<!--<fmc:PrintLabel name="tekst2" left="79%" top="94%" text="Bron: Topografische ondergrond(c) TDKadaster    " font-family="Arial,verdana" fontsize="6"/>-->
+				<fmc:Scalebar name="schaalbalk" left="80%" top="98%" width="200" listento="printMap1" units=" m">
+						<style id=".label" font-family="verdana" font-size="10px" color="#555555" display="block" font-weight="normal"/>
+						<style id=".units" font-family="verdana" font-size="10px" color="#555555" display="block" font-weight="normal"/>
+				</fmc:Scalebar>	
+				<!--<fmc:PrintLabel name="schaal"  left="79%" top="95.5%" listento="printMap1"  text="Schaal: [scale]   " font-family="Arial,verdana" fontsize="6"/>-->
+				<!--<fmc:PrintLabel name="afdrukdatum" left="86%" top="95.5%"  text="Datum: [curdate]    " font-family="arial,verdana" fontcolor="#171717" fontsize="6"/>-->
+			</fmc:PrintTemplate>	
+			
+			<fmc:PrintTemplate id="printTemplate3" name="liggend A3" dpi="300" format="A3" orientation="landscape" listento="printMonitor3" maps="printMap3">
+				<fmc:Map id="printMap3" configobject="map" name="kaartbeeld" left="left" width="77%" height="100%" movequality="HIGH" visible="false"/>
+				<!--<fmc:EditMap id="editMap2" name="redlining" width="100%" height="100%" listento="gis,printMap3" editable="false"/>-->
+				<!--<fmc:EditMap id="editMap2" name="redlining" width="100%" height="100%" listento="gis,printMap1" editable="false"/>-->				
+				<fmc:Image name="A3 liggend" left="77%" vstretch="false" hstretch="false" url="../images/A3_liggend_flamingo.png"/>
+				<fmc:BitmapClone name="legenda" left="79%" width="25%" height="80%" top="12.5%" listento="legend" refreshrate="2500"/>
+				<!--<fmc:BitmapClone name="identify resultaten" width="40%" height="20%" left="left" visible="false" listento="window_info_html" refreshrate="2500"/>-->
+				<!--<fmc:PrintLabel name="tekst1" left="80%" top="93%" text="Aan deze kaart kunnen geen rechten worden ontleend" font-family="arial,verdana" fontsize="7"/>-->
+				<!--<fmc:PrintLabel name="tekst2" left="80%" top="94%" text="Bron: Topografische ondergrond(c) TDKadaster    " font-family="arial,verdana" fontsize="7"/>-->
+				<fmc:Scalebar name="schaalbalk" left="80%" top="98%" width="300" listento="printMap1" units=" m">
+						<style id=".label" font-family="verdana" font-size="10px" color="#555555" display="block" font-weight="normal"/>
+						<style id=".units" font-family="verdana" font-size="10px" color="#555555" display="block" font-weight="normal"/>
+				</fmc:Scalebar>
+				<!--<fmc:PrintLabel name="schaal"  left="80%" top="95.5%" listento="printMap3"  text="Schaal: [scale]   " font-family="arial,verdana" fontsize="7"/>-->
+				<!--<fmc:PrintLabel name="afdrukdatum" left="87%" top="95.5%"  text="Datum: [curdate]    " font-family="arial,verdana" fontcolor="#171717" fontsize="7"/>-->
+			</fmc:PrintTemplate>
+		</fmc:Print>	
+
+</fmc:Window>
+
+
+<!--maptip displayer-->
+<fmc:Maptip listento="map"/>
+  <fmc:Image  id="image" right="right" top="0" vstretch="false"  hstretch="false"/>
+  
+<fmc:Container backgroundcolor="#F5F5F5" right="right -220" top="0" height="100%" width="21">
+<fmc:Image width="21" top="top" left="left" vstretch="true" hstretch="true" url="../images/rect.png"/>  
+</fmc:Container>
+  
+<fmc:Container backgroundcolor="#F5F5F5" left="179" top="0" height="40" width="100%">
+<fmc:Image width="180" height="26" top="top +2 " right="right -190" vstretch="true" hstretch="true" url="../images/povlogo.png"/>
+	<fmc:ToolGroup tool="zoom" listento="map" width="100%" height="33" left="10" top="5" backgroundcolor="#F5F5F5">		
+	<fmc:ToolZoomin id="zoom" skin="f1">
+		<string id="tooltip" nl="Inzoomen: klik op de kaart of sleep een rechthoek op de kaart" en="Zoom in" de="Vergrößern" fr="Agrandir" />
+    </fmc:ToolZoomin>
+	<fmc:ToolZoomout left="30" skin="f1">
+		<string id="tooltip" nl="Uitzoomen: klik op de kaart of sleep een rechthoek op de kaart" en="Zoom out" de="Verkleinern" fr="Diminuer" />
+    </fmc:ToolZoomout>
+	<fmc:ToolPan left="60" skin="f1">
+		<string id="tooltip" nl="Kaart verslepen: klik op de kaart en houd uw linkermuisknop ingedrukt" en="Drag map" de="Karte verschieben" fr="Déplacer la carte" />
+    </fmc:ToolPan>
+	<fmc:ToolMeasure left="90" units=" m" decimals="2" skin="f1">
+		<string id="tooltip" nl="Afstand meten: klik op de kaart en houd uw linkermuisknop ingedrukt" en="Measure distance" de="Abstand messen" fr="Mesurer une distance" />
+    </fmc:ToolMeasure>
+	<fmc:ToolIdentify id="identifyTool" left="120" skin="f1">
+		<string id="tooltip" nl="Informatie opvragen: klik op een object op de kaart" en="Request information" de="Informationen abrufen" fr="Demande d'informations" />
+    </fmc:ToolIdentify>
+	<fmc:ButtonFull left="150" listento="map" >
+		<string id="tooltip" nl="Zoom naar volledig kaarbeeld" en="Complete map image" de="Gesamtkartenansicht" fr="Carte complète" />
+	</fmc:ButtonFull>
+	<fmc:ButtonPrev left="180" listento="map" >
+		<string id="tooltip" nl="Stap terug" en="Previous extent" de="Schritt zuruck" fr="Précédent" />
+	</fmc:ButtonPrev>
+	<fmc:ButtonNext left="210" listento="map" >
+		<string id="tooltip" nl="Stap vooruit" en="Next extent" de="Schritt weiter" fr="Suivant" />
+	</fmc:ButtonNext>
+	<fmc:DownloadSelectorButton left="240" bottom="24" listento="downloadSelector">
+      <string id="tooltip" en="Dowload maps" nl="Downloaden van kaarten"/>
+	</fmc:DownloadSelectorButton>
+	<fmc:PrintButton left="270" listento="print">
+		<string id="tooltip" nl="printvenster openen/ sluiten" en="open/ close the print window" de="Schritt weiter" fr="Suivant" />
+	</fmc:PrintButton>	
+	</fmc:ToolGroup>
+	<!-- DDE-button-->	
+	
+	<tpc:SliderHor left="330" width="150" top="10" listento="map_geoportaal"
+            minimum="0" maximum="100" initial="80" slidestep="5" setter="setAlpha">
+            <string id="label" en="Tranparancy areafill" nl="transparantie thema"/>
+            <string id="tooltip_plus" en="opaque" nl="ondoorzichtig"/>
+            <string id="tooltip_min" en="transparent" nl="transparant"/>
+            <string id="tooltip_slider" en="drag to change transparency" nl="schuif voor transparantie"/>
+            <style id=".text" font-family="verdana" font-size="10px" color="#444444" display="block" font-weight="normal"/>
+	</tpc:SliderHor>		
+</fmc:Container>  
+  
+<fmc:Container left="0" height="bottom -40" right="179" top="40" bordercolor="#606060" backgroundcolor="#F5F5F5">
+	<fmc:Map id="map_overview" height="130" width="168" clear="true" extent="202000,512000,271000,581300" fullextent="202000,512000,271000,581300" >
+		<fmc:LayerOverview listento="map" color="#33CC33"/>
+		<fmc:LayerImage imageurl="../assets/drenthe.swf" extent="202000,512000,271000,581300" listento="map"/>
+	</fmc:Map>    
+	<!-- location finder -->
+	<fmc:LocationFinder id="locationfinder" height="340" width="168" top="140" listento="map">
+		<string id="label" nl="zoek..." en="search..." de="suche..." fr="recherche..." />
+		<string id="busy" nl="zoeken..." en="searching..." de="suchen..." fr="rechercher..." />
+		<string id="nohit" nl="Geen gegevens gevonden..." en="No data found..." de="Keine Daten gefunden..." fr="Pas de données trouvées..." />
+		<string id="prev" nl="vorige   " en="previous   " de="zurück   " fr="précédent   " />
+		<string id="next" nl="volgende" en="next" de="weiter" fr="suivant" />
+	</fmc:LocationFinder>	
+</fmc:Container>
+
+<!--html informatie-->
+<fmc:Window id="window_info_html" width="400" height="400" top="55" left="185" visible="false" canclose="true" canresize="true" skin="g" defocusalpha="75">
+	<string id="title" en="identify"/>
+	<fmc:Identifyresults width="100%" height="100%" listento="map"/>
+</fmc:Window>
+
+
+<fmc:Container borderwidth="0" backgroundcolor="#F5F5F5" bordercolor="#606060" left="180" top="40" bottom="bottom -50" right="right -241">
+	
+	<fmc:BorderNavigation listento="map" top="0%" width="100%" height="100%" skin="f1">
+		<string id="tooltip_north" nl="naar boven" en="pan up" de="nach oben" fr="vers le haut "/>
+		<string id="tooltip_south" nl="naar onder" en="pan down" de="nach unten" fr="vers le bas"/>
+		<string id="tooltip_west" nl="naar links" en="pan left" de="nach links" fr="vers gauche"/>
+		<string id="tooltip_east" nl="naar rechts" en="pan right" de="nach rechts" fr="vers la droite"/>
+	</fmc:BorderNavigation>	
+	<fmc:MonitorLayer left="5" top="5" listento="map">
+		<style id=".text" font-family="Arial" font-size="10px" color="#000000" display="block" font-weight="bold"/>
+		<string id="waiting" en="Bezig met het maken van de kaart..."/>
+		<string id="loading" en="Ontvangen kaart [percentage]%..."/>
+	</fmc:MonitorLayer>	
+		<fmc:Map extenthistory="10" id="map" left="0" top="0%" height="100%" width="100%" bottom="bottom" clear="true" fadesteps="0" movetime="0" movesteps="0" visible="true" extent="202000,512000,271000,581300" fullextent="202000,512000,271000,581300" minscale="0.1" maptipdelay="1000">
+	<fmc:LayerIdentifyIcon/>
+		 <fmc:LayerArcIMS    id="Acetate_layer"
+                           name="Acetate_layer"
+                           identifyall="false"
+                           server="http://www.drenthe.info/kaarten/"
+                           servlet="/ARCIMS/ims"
+			   identifyids=""
+                           mapservice="Acetate_layer" >
+	</fmc:LayerArcIMS>
+	<fmc:LayerArcIMS    
+						id="Drenthe_mask"
+                        name="Drenthe_mask"
+                        identifyall="false"
+                        server="http://www.drenthe.info/kaarten/"
+                        servlet="/ARCIMS/ims"
+						identifyids=""
+						alpha="60"
+                        mapservice="drenthe_mask" >
+			</fmc:LayerArcIMS>
+       <fmc:LayerArcIMS    id="ondergrond_kerntopo_labels"
+                           name="ondergrond_kerntopo_labels"
+                           identifyall="false"
+                           server="http://www.drenthe.info/kaarten/"
+                           servlet="/ARCIMS/ims"
+			   identifyids=""
+                           mapservice="ondergrond_kerntopo_labels" >
+	</fmc:LayerArcIMS>
+	<fmc:LayerArcIMS    id="geoportaal"
+                        name="geoportaal"
+                        identifyall="true"
+                        server="http://www.drenthe.info/kaarten/"
+                        servlet="/ARCIMS/ims"
+						identifyids="#ALL#"							
+						legend="true"									
+						alpha="70"
+						identifydistance="20"	                        
+						mapservice="GDB_Geoportaal" >
+	</fmc:LayerArcIMS>
+       <fmc:LayerArcIMS    id="tdn_grenzen"
+                           name="tdn_grenzen"
+                           identifyall="false"
+                           server="http://www.drenthe.info/kaarten/"
+                           servlet="/ARCIMS/ims"
+			   identifyids=""
+                           mapservice="tdn_grenzen" >
+	</fmc:LayerArcIMS>
+	<fmc:LayerArcIMS    id="luchtfoto"
+                           name="luchtfoto2009_noscale"
+                           identifyall="false"
+                           server="http://www.drenthe.info/kaarten/"
+                           servlet="/ARCIMS/ims"
+						   identifyids=""
+                           mapservice="luchtfoto2009_noscale" >
+	</fmc:LayerArcIMS>
+       <fmc:LayerArcIMS    id="ondergrond_top10_wegen_spoorwegen_v"
+                           name="ondergrond_top10_wegen_spoorwegen_v"
+                           identifyall="false"
+						   visible="false"
+                           server="http://www.drenthe.info/kaarten/"
+                           servlet="/ARCIMS/ims"
+			   identifyids=""
+                           mapservice="ondergrond_top10_wegen_spoorwegen_v" >
+	</fmc:LayerArcIMS>
+       <fmc:LayerArcIMS    id="ondergrond_top10_gebouw_v"
+                           name="ondergrond_top10_gebouw_v"
+                           identifyall="false"
+						   visible="false"
+                           server="http://www.drenthe.info/kaarten/"
+                           servlet="/ARCIMS/ims"
+			   identifyids=""
+                           mapservice="ondergrond_top10_gebouw_v" >
+	</fmc:LayerArcIMS>
+       <fmc:LayerArcIMS    id="ondergrond_top10_water_v"
+                           name="ondergrond_top10_water_v"
+                           identifyall="false"
+						   visible="false"
+                           server="http://www.drenthe.info/kaarten/"
+                           servlet="/ARCIMS/ims"
+			   identifyids=""
+                           mapservice="ondergrond_top10_water_v" >
+	</fmc:LayerArcIMS>
+       <fmc:LayerArcIMS    id="ondergrond_top10_terrein_v"
+                           name="ondergrond_top10_terrein_v"
+                           identifyall="false"
+						   visible="false"
+                           server="http://www.drenthe.info/kaarten/"
+                           servlet="/ARCIMS/ims"
+			   identifyids=""
+                           mapservice="ondergrond_top10_terrein_v" >
+	</fmc:LayerArcIMS>
+       <fmc:LayerArcIMS    id="ondergrond_top50_v"
+                           name="ondergrond_top50_v"
+                           identifyall="false"
+						   visible="false"
+                           server="http://www.drenthe.info/kaarten/"
+                           servlet="/ARCIMS/ims"
+			   identifyids=""
+                           mapservice="ondergrond_top50_v" >
+	</fmc:LayerArcIMS>
+       <fmc:LayerArcIMS    id="ondergrond_top250_v"
+                           name="ondergrond_top250_v"
+                           identifyall="false"
+						   visible="false"
+                           server="http://www.drenthe.info/kaarten/"
+                           servlet="/ARCIMS/ims"
+			   identifyids=""
+                           mapservice="ondergrond_top250_v" >
+	</fmc:LayerArcIMS>    
+    </fmc:Map>
+</fmc:Container>
+
+
+
+    <fmc:Container left="right -240" height="100%" right="right" top="40" backgroundcolor="#F5F5F5">	
+	
+	<fmc:Legend id="legend" skin="f2" symbolpath="assets" shadowsymbols="false" width="215" right="right" top="top" bottom="bottom" listento="map" backgroundcolor="#F5F5F5">  	
+	<string id="outofscale" nl="Buiten schaalbereik;&lt;br&gt;zoom naar deze laag..." en="Outside range;&lt;br&gt;zoom to layer" de="Au?rhalb des Ma?tabsbereichs;&lt;br&gt;vergr??" fr="Hors ?elle..." />
+	<style id=".group" font-family="arial,verdana" font-size="12px" color="#000000" display="block" font-weight="normal" />
+	<style id=".group_mouseover" font-family="arial,verdana" font-size="12px" color="#000000" display="block" font-weight="normal" />
+	<style id=".item" font-family="arial,verdana" font-size="11px" color="#333333" display="block" font-weight="normal" />
+	<style id=".item_link" font-family="arial,verdana" font-size="11px" color="#0033cc" display="block" font-weight="normal" text-decoration="underline" />
+	<style id=".symbol" font-family="arial,verdana" font-size="11px" color="#333333" display="block" font-weight="normal" />
+	<style id=".symbol_link" font-family="arial,verdana" font-size="11px" color="#0033cc" display="block" font-weight="normal" text-decoration="underline" />
+	<style id=".outofscale" font-family="arial,verdana" font-size="10px" color="#0066cc" display="block" font-style="italic" />
+	<style id=".text" font-family="arial,verdana" font-size="10px" color="#333333" display="block" font-style="italic" />	
+	<group label ="Referentie ondergronden" canhide="true" open="true" hideallbutone="true">	
+	<item label="Topografie" canhide="true" listento="ondergrond_top250_v, ondergrond_top50_v, ondergrond_top10_wegen_spoorwegen_v, ondergrond_top10_gebouw_v, ondergrond_top10_water_v, ondergrond_top10_terrein_v"/>		
+	<item label="Luchtfoto" canhide="true" listento="luchtfoto.luchtfoto"/>
+	</group>	
+  </fmc:Legend> 		
+    <fmc:Image width="68" height="49" bottom="bottom -50" right="right -5" vstretch="true" hstretch="true" url="../images/povwapen.png"/>
+    <fmc:Image width="184" height="522" bottom="bottom" right="right" vstretch="true" hstretch="true" url="../images/flamingo_blauw_style.png"/>
+    </fmc:Container>
+	
+<fmc:Container id="c_footer" left="180" bottom="bottom" width="100%" height="50" right="right -180" backgroundcolor="#F5F5F5">
+    <fmc:Scalebar top="5" left="10" width="190" listento="map" skin="f2" minscale="100" magicnumber="1000" units=" km">
+			<style id=".label" font-family="arial,verdana" font-size="11px" color="#666666" display="block" />
+			<style id=".units" font-family="arial,verdana" font-size="11px" color="#666666" display="block" />
+    </fmc:Scalebar>
+    <fmc:Scalebar top="5" left="10" width="190" listento="map" skin="f2" maxscale="100" magicnumber="1" units=" m">
+			<style id=".label" font-family="arial,verdana" font-size="11px" color="#666666" display="block" />
+			<style id=".units" font-family="arial,verdana" font-size="11px" color="#666666" display="block" />
+    </fmc:Scalebar>
+    <fmc:Coordinates  id="coordinates" listento="map"  right="right -200" top="5" decimals="0">
+       <string id="xy" nl="X:[x]  Y:[y]"/>
+       <style id=".xy" font-family="arial,verdana" font-size="11px" color="#666666" display="block" />
+    </fmc:Coordinates>		
+	<fmc:Text id="text_footer" left="0" top="15">
+		<style id=".text" font-family="arial,verdana" font-size="11px" color="#000000" display="block" />				
+		<string id="text">
+				<nl><![CDATA[<span class='text'>Aan deze kaart kunnen geen rechten worden ontleend.</span>]]></nl>
+				<en><![CDATA[<span class='text'>No rights map be derived from this map.</span>]]></en>
+				<de><![CDATA[<span class='text'>Aus dem Inhalt dieser Karte können keine Rechte hergeleitet werden.</span>]]></de>
+				<fr><![CDATA[<span class='text'>Cette carte n’est constitutive d’aucun droit.</span>]]></fr>
+		</string>
+	</fmc:Text>	
+</fmc:Container>
+
+</flamingo>
